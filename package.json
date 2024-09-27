@@ -1,0 +1,19 @@
+{
+  "name": "117_ssg",
+  "version": "0.0.1",
+  "description": "Student Survival Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JLalomia/117_SSG.git"
+  },
+  "author": "Julianna Lalomia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JLalomia/117_SSG/issues"
+  },
+  "homepage": "https://github.com/JLalomia/117_SSG#readme"
+}
