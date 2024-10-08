@@ -24,7 +24,7 @@
 13. Internet
 - Arpanet
 - Vint Cerf / Bob Kahn
-- find some of the first programs used on arpanet like Gopher
+- Gopher
 
 14. Web 1.0
 - [HTML / HTTP Protocol (HTTP Browser / Server) - Tim Berners Lee](HTML.md)
