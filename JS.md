@@ -2,9 +2,6 @@
 * The inventor of Javascript was Brendan Eich in 1995
     * It was developed for Netscape 2( web browser initially released in 1995, discontinued in 2008)
     * Technically, Javascript's correct name today would be "ECMAscript"
-* Ryan Dahl is the inventor of Node JS
-    * Node JS allows users to use javascript on their machines locally instead of on a browser
-    * Node JS has one version of javascript locally, but web browsers may have different versions
 ## Commands, What they do, and Examples:
 | Command | Description | Example |
 |---|---|---|
