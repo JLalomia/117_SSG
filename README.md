@@ -28,11 +28,13 @@
 - [Early Programs and Technologies on ARPANET](EPTA.md)
 
 14. Web 1.0
-- [HTML / HTTP Protocol (HTTP Browser / Server) - Tim Berners Lee](HTML.md)
+- [Inception of World Wide Web](WORLDWW.md)
+- [Development of Early Browsers](EarlyBrowsers.md)
 - [JavaScript](JS.md)
 - [CSS](CSS.md)
 - [Perl & PHP Server](PPHP.md)
 - [Linux - Linus Torvulds](LinuxHis.md)
+- [Web Hosting Technologies](WHT.md)
 - [Early Search - Altavista and Hotbot](EarlySearch.md)
 
 15. Web 2.0
