@@ -24,8 +24,8 @@
 
 13. Internet
 - [Arpanet](Arpanet.md)
-- [Vint Cerf / Bob Kahn](VCBK.md)
-- [Gopher](Gopher.md)
+- [Protocols and Technologies](VCBK.md)
+- [Early Programs and Technologies on ARPANET](EPTA.md)
 
 14. Web 1.0
 - [HTML / HTTP Protocol (HTTP Browser / Server) - Tim Berners Lee](HTML.md)
