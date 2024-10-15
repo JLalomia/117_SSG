@@ -14,6 +14,14 @@
 - Development Start: Linux development began in 1991 when Linus Torvalds announced the project on the comp.os.minix newsgroup.
 - First Release: The first version of the Linux kernel (0.01) was released in September 1991.
 - Version Milestones: The first stable version (1.0) was released in March 1994.
+### WHERE
+- Origin: Linux was developed by Linus Torvalds in Helsinki, Finland, where he was studying computer science at the University of Helsinki.
+- Global Development: After its release, Linux became a global project with developers contributing from around the world. Its open-source nature allowed it to spread rapidly, with major contributions coming from countries like the United States, Germany, Brazil, and India.
+- Widespread Use: Linux is now used globally across different sectors, including in:
+    - Data Centers and Cloud Computing (Amazon Web Services, Google, Facebook).
+    - Supercomputing (dominates the TOP500 supercomputers worldwide).
+    - Consumer Devices (Android phones, smart TVs, and various IoT devices).
+
 ### HOW
 - Open Source Model: Linux is developed collaboratively, with its source code publicly available for anyone to view, modify, and distribute under the terms of the GNU General Public License (GPL).
 - Community Contributions: Developers around the world contribute to Linux by submitting patches, bug reports, and enhancements, creating a robust ecosystem.
