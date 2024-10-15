@@ -58,3 +58,6 @@
 - [Impact of Accessibility on Modern Web Design](AccMWD.md)
 
 17. Future of the Internet
+- [Web 3.0 & Semantic Web](SemWeb.md)
+- [Internet of Things (IoT)](IOT.md)
+- [Quantum Computing and Internet Technologies](QuantumComp.md)
