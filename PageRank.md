@@ -13,6 +13,12 @@
 ### WHEN
 - Development Start: PageRank was developed in 1996 while Page and Brin were PhD students at Stanford University.
 - Google Launch: Google was founded in September 1998, with PageRank as a core component of its search algorithm.
+### WHERE
+- **Stanford University, California, USA**: The idea for PageRank was developed while Larry Page and Sergey Brin were PhD students at Stanford University in 1996. This academic setting provided the foundation for their research into search engine algorithms and link analysis.
+- **Google Headquarters, Mountain View, California, USA**: Once Google was founded in 1998, the company’s early work on PageRank and the search engine's development took place in Silicon Valley, where Google’s headquarters are located.
+- **Global Impact**: Though developed in the United States, PageRank and Google’s search technology quickly became globally influential, affecting how websites across the world are ranked and discovered. Google's reach expanded to become the dominant search engine in nearly every country, with localized versions of the search engine in various languages and regions. 
+- **The World Wide Web**: The PageRank algorithm was designed to analyze the entire web's hyperlink structure, making the "where" in a broader sense the entire internet, as the algorithm evaluated the interconnectedness of websites around the globe.
+
 ### HOW
 - Link Analysis: PageRank works by analyzing the quantity and quality of links to a web page. Pages that are linked to by many other important pages receive a higher rank.
 - Mathematical Model: The algorithm uses a mathematical formula to calculate a "rank" for each page based on its link structure, iteratively refining the scores to determine the final rankings.

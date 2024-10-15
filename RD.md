@@ -12,6 +12,10 @@
 ### WHEN
 - Development Start: Ryan Dahl started working on Node.js in 2009.
 - First Release: Node.js was first released in May 2009, during a time when web applications were increasingly relying on real-time data and interactivity.
+### WHERE
+- **San Francisco, California**: Ryan Dahl was based in San Francisco when he developed Node.js in 2009.
+- **Global Usage**: After its release, Node.js quickly gained traction and spread globally, with major tech companies and startups adopting it for scalable, high-performance server-side applications.
+- **Open Source Community**: Node.js development is largely driven by contributions from a worldwide open-source community, with major contributors from countries across the globe, including the U.S., Europe, and Asia. Many key advancements and updates are discussed at international conferences such as NodeConf and JSConf.
 ### HOW
 - Event-Driven Architecture: Node.js uses an event-driven, non-blocking I/O model, which means it can handle multiple operations simultaneously without waiting for any single operation to complete.
 - JavaScript Language: By leveraging JavaScript on the server, developers could use a single language across the entire web stack (both client and server), simplifying development and improving collaboration between frontend and backend teams.

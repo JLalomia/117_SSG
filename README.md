@@ -41,12 +41,15 @@
 - [ICANN (Internet Corporation for Assigned Names and Numbers)](ICANN.md)
 
 15. Web 2.0 (2004-Present)
-- [Rise of User-Generated Content and Social Media]
+- [Rise of User-Generated Content and Social Media](SocMed.md)
 - [Google Search - Page Rank](PageRank.md)
-- [Roy Fielding REST](REST.md)
+- [Web Standards and APIs](WebStand.md)
 - [Ryan Dahl Node.js / JavaScript](RD.md)
 - [Python Guido van Rossum](PGVR.md)
 - [GIT Linus Torvulds](GITHis.md)
+- [Web Hosting Technologies in Web 2.0](WHT2.md)
+- [Browser Wars Part 2 (2000s-Present)](BWars2.md)
+- [ECMAScript and JavaScript Standardization](ECMAScript.md)
 
 16. Web Accessibility & Standards
 

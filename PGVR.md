@@ -14,6 +14,11 @@
 - First Release: The first official release, Python 0.9.0, was made in February 1991.
 - Python 2.0 Release: Python 2.0 was released in October 2000, introducing features like list comprehensions and garbage collection.
 - Python 3.0 Release: Python 3.0, a major revision that was not backward compatible, was released in December 2008.
+### WHERE
+- **The Netherlands**: Python was developed by Guido van Rossum while he was working at Centrum Wiskunde & Informatica (CWI) in Amsterdam in the late 1980s.
+- **Global Adoption**: After its initial release in 1991, Python quickly spread to become popular worldwide. Major tech hubs in the U.S. (e.g., Silicon Valley), Europe, and Asia played significant roles in its growth.
+- **Open Source Community**: Python’s development and maintenance are largely driven by a global community of contributors, with active participation from developers across countries, including contributions from international organizations and universities.
+- **Python Software Foundation**: The foundation that manages Python's development is based in the U.S., but it coordinates efforts from contributors globally. Python conferences such as PyCon are held annually in various locations around the world, further spreading its influence.
 ### HOW
 - Interpreted Language: Python is an interpreted language, which means code is executed line-by-line, making debugging easier and enhancing development speed.
 - Dynamic Typing: Python uses dynamic typing, allowing variables to change type, which provides flexibility in coding.
