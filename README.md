@@ -16,18 +16,18 @@
 
 ## History
 
-12. Pre Internet
+12. Pre Internet (1950s-1960s)
 - [JC Licklider](JC.md)
 - [Nuclear Weapons](Nuclear.md)
 - [ARPA - Advanced Research Project Agency later called DARPA](ARPA.md)
 - [Packet Switching](PS.md)
 
-13. Internet
+13. Internet (1969-1989)
 - [Arpanet](Arpanet.md)
 - [Protocols and Technologies](VCBK.md)
 - [Early Programs and Technologies on ARPANET](EPTA.md)
 
-14. Web 1.0
+14. Web 1.0 (1989-2005)
 - [Inception of World Wide Web](WORLDWW.md)
 - [Development of Early Browsers](EarlyBrowsers.md)
 - [JavaScript](JS.md)
@@ -36,10 +36,17 @@
 - [Linux - Linus Torvulds](LinuxHis.md)
 - [Web Hosting Technologies](WHT.md)
 - [Early Search - Altavista and Hotbot](EarlySearch.md)
+- [Browser Wars (1995-2001)](BrowserWars.md)
+- [W3C (World Wide Web Consortium)](W3C.md)
+- [ICANN (Internet Corporation for Assigned Names and Numbers)](ICANN.md)
 
-15. Web 2.0
+15. Web 2.0 (2004-Present)
 - [Google Search - Page Rank](PageRank.md)
 - [Roy Fielding REST](REST.md)
 - [Ryan Dahl Node.js / JavaScript](RD.md)
 - [Python Guido van Rossum](PGVR.md)
 - [GIT Linus Torvulds](GITHis.md)
+
+16. Web Accessibility & Standards
+
+17. Future of the Internet

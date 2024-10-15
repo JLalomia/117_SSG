@@ -1,5 +1,5 @@
 # History Behind Early Search
-## Altavista
+## Altavista 
 ### WHO
 - Developed by: Digital Equipment Corporation (DEC).
 #### Key Figures:
@@ -13,6 +13,8 @@
 ### WHEN
 - Development Start: Altavista was launched in December 1995.
 - Peak Popularity: It became one of the most popular search engines during the late 1990s and early 2000s.
+### WHERE
+- Digital Equipment Corporation (DEC): Altavista was developed at DEC’s research facility in Palo Alto, California, part of the legendary Silicon Valley, the epicenter of technological innovation during that period
 ### HOW
 - Web Crawling Technology: Altavista utilized advanced web crawling techniques to index web pages, allowing it to provide comprehensive search results.
 - Natural Language Processing: The engine employed natural language processing to improve search accuracy and relevance.
@@ -34,6 +36,8 @@
 ### WHEN
 - Development Start: Hotbot was launched in 1996.
 - Growth and Popularity: It gained popularity in the late 1990s as one of the top search engines, especially among users looking for a more tailored search experience.
+### WHERE
+- Lycos, Inc.: HotBot was developed at Lycos’ headquarters in Waltham, Massachusetts, where the company operated as one of the early players in search technology during the mid-1990s internet boom.
 ### HOW
 - Web Indexing: Hotbot utilized a combination of web crawling and indexing techniques to provide relevant search results quickly.
 - Search Features: It offered features like advanced search options, directory-based searching, and the ability to search across multiple search engines
