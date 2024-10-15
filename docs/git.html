@@ -1,1 +1,76 @@
-GIT stuff goes here
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top 10 GIT Commands</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="index.html">Index Page</a>
+    <h1>Commands, What They Do, and Examples</h1>
+    <table>
+        <caption>Common GIT Commands</caption>
+        <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>git init</code></td>
+                <td>Initializes a new Git repository in the current directory</td>
+                <td><code>git init</code> - Initializes a Git repository in the current directory, creating a <code>.git</code> folder</td>
+            </tr>
+            <tr>
+                <td><code>git clone</code></td>
+                <td>Copies a repository from a remote server to your local machine</td>
+                <td><code>git clone https://github.com/user/repo.git</code> - Clones a remote repository located at the URL to your local machine</td>
+            </tr>
+            <tr>
+                <td><code>git add</code></td>
+                <td>Stages changes to be committed</td>
+                <td><code>git add file.txt</code> - Stages <code>file.txt</code> for the next commit</td>
+            </tr>
+            <tr>
+                <td><code>git status</code></td>
+                <td>Shows the status of your working directory, including staged, unstaged, and untracked files</td>
+                <td><code>git status</code> - Shows modified, added, or deleted files</td>
+            </tr>
+            <tr>
+                <td><code>git commit</code></td>
+                <td>Commits the staged changes with a descriptive message</td>
+                <td><code>git commit -m 'Initial Commit'</code> - Commits the changes staged by <code>git add</code> with the message "Initial Commit"</td>
+            </tr>
+            <tr>
+                <td><code>git push</code></td>
+                <td>Pushes the committed changes to a remote repository</td>
+                <td><code>git push origin main</code> - Pushes the committed changes from the <code>main</code> branch to the remote repository <code>origin</code></td>
+            </tr>
+            <tr>
+                <td><code>git pull</code></td>
+                <td>Fetches and merges changes from a remote repository into your local branch</td>
+                <td><code>git pull origin main</code> - Pulls and merges updates from the <code>main</code> branch</td>
+            </tr>
+            <tr>
+                <td><code>git branch</code></td>
+                <td>Lists, creates, or deletes branches</td>
+                <td><code>git branch tree-branch</code> - Creates a new branch called <code>tree-branch</code></td>
+            </tr>
+            <tr>
+                <td><code>git checkout</code></td>
+                <td>Switches to another branch or restores working files</td>
+                <td><code>git checkout tree-branch</code> - Switches to <code>tree-branch</code></td>
+            </tr>
+            <tr>
+                <td><code>git merge</code></td>
+                <td>Merges changes from one branch into the current branch</td>
+                <td><code>git merge tree-branch</code> - Merges <code>tree-branch</code> into the current branch</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
