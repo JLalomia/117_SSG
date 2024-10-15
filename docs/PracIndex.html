@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- 
+    The <!DOCTYPE html> declaration defines the document type and version of HTML.
+    Here, it specifies that the document is an HTML5 document.
+    This helps browsers render the page correctly.
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+  <!-- 
+      The <html> tag is the root element of an HTML page.
+      The 'lang' attribute declares the language of the document's content.
+      'en' stands for English, which assists search engines and accessibility tools.
+  -->
+  <html lang="en">
+  
+  <head>
+    <!-- 
+        The <head> section contains meta-information about the document.
+        This includes metadata, links to stylesheets, scripts, and the title.
+        Content inside <head> is not displayed directly on the web page.
+    -->
+    <head>
+      
+      <meta charset="UTF-8">
+      <!-- 
+          The <meta charset="UTF-8"> tag specifies the character encoding for the HTML document.
+          UTF-8 is a standard encoding that supports most characters from all written languages.
+          This ensures that text is displayed correctly.
+      -->
+      <meta charset="UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 
+          The <meta name="viewport"> tag controls how the webpage is displayed on mobile devices.
+          - 'width=device-width' sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+          - 'initial-scale=1.0' sets the initial zoom level when the page is first loaded.
+          This is crucial for responsive web design, ensuring the site looks good on all devices.
+      -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- 
+          The <meta http-equiv="X-UA-Compatible"> tag is used to specify the version of Internet Explorer that the page should be rendered with.
+          'content="ie=edge"' tells IE to use the latest rendering engine.
+          This helps in avoiding compatibility issues with older versions of IE.
+      -->
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+      <title>HTML 5 Boilerplate</title>
+      <!-- 
+          The <title> tag sets the title of the webpage, which appears in the browser's tab and bookmarks.
+          "HTML 5 Boilerplate" is the title here, which can be customized to reflect the content of your page.
+      -->
+      <title>HTML 5 Boilerplate</title>
+      
+      <link rel="stylesheet" href="style.css">
+      <!-- 
+          The <link> tag links external resources to the HTML document.
+          - 'rel="stylesheet"' specifies that the linked file is a CSS stylesheet.
+          - 'href="style.css"' provides the path to the CSS file.
+          This stylesheet controls the visual presentation of the HTML elements on the page.
+      -->
+      <link rel="stylesheet" href="style.css">
+      
+    </head>
+    
+    <body>
+      <!-- 
+          The <body> tag contains all the content that is displayed on the webpage.
+          This includes text, images, links, lists, and other multimedia.
+      -->
+      <body>
+        
+        <h1>Linux and GIT Student Survival Guide</h1>
+        <!-- 
+            The <h1> tag defines the most important heading on the page.
+            Headings help organize content and improve accessibility.
+            "Linux and GIT Student Survival Guide" is the main title displayed prominently.
+        -->
+        <h1>Linux and GIT Student Survival Guide</h1>
+        
+        <ul>
+          <!-- 
+              The <ul> tag defines an unordered list, which is a collection of list items marked with bullets.
+              It's useful for listing items that don't require a specific order.
+          -->
+          <ul>
+            
+            <li><a href="git.html">GIT List</a></li>
+            <!-- 
+                The <li> tag defines a single item within a list.
+                Inside <li>, the <a> tag creates a hyperlink.
+                - 'href="git.html"' specifies the destination URL when the link is clicked.
+                - "GIT List" is the clickable text that users see.
+                This link navigates to the "git.html" page, presumably containing a list related to GIT.
+            -->
+            <li><a href="git.html">GIT List</a></li>
+            
+            <li><a href="linux.html">Linux List</a></li>
+            <!-- 
+                Another list item containing a link.
+                - 'href="linux.html"' directs the link to the "linux.html" page.
+                - "Linux List" is the visible text for the link.
+                This likely leads to a page with a list of Linux-related resources or information.
+            -->
+            <li><a href="linux.html">Linux List</a></li>
+            
+          </ul>
+        </ul>
+        
+        <script src="js/main.js"></script>
+        <!-- 
+            The <script> tag is used to embed or reference executable scripts, typically JavaScript.
+            - 'src="js/main.js"' specifies the path to the external JavaScript file.
+            Placing scripts just before the closing </body> tag is a common practice to ensure that the HTML content loads before the scripts execute.
+            This can improve page load times and ensure that the DOM is fully loaded before the script runs.
+        -->
+        <script src="js/main.js"></script>
+        
+      </body>
+    </body>
+    
+  </html>

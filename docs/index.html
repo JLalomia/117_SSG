@@ -1,124 +1,79 @@
 <!DOCTYPE html>
-<!-- 
-    The <!DOCTYPE html> declaration defines the document type and version of HTML.
-    Here, it specifies that the document is an HTML5 document.
-    This helps browsers render the page correctly.
--->
-<!DOCTYPE html>
-
 <html lang="en">
-  <!-- 
-      The <html> tag is the root element of an HTML page.
-      The 'lang' attribute declares the language of the document's content.
-      'en' stands for English, which assists search engines and accessibility tools.
-  -->
-  <html lang="en">
-  
-  <head>
-    <!-- 
-        The <head> section contains meta-information about the document.
-        This includes metadata, links to stylesheets, scripts, and the title.
-        Content inside <head> is not displayed directly on the web page.
-    -->
-    <head>
-      
-      <meta charset="UTF-8">
-      <!-- 
-          The <meta charset="UTF-8"> tag specifies the character encoding for the HTML document.
-          UTF-8 is a standard encoding that supports most characters from all written languages.
-          This ensures that text is displayed correctly.
-      -->
-      <meta charset="UTF-8">
-      
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- 
-          The <meta name="viewport"> tag controls how the webpage is displayed on mobile devices.
-          - 'width=device-width' sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
-          - 'initial-scale=1.0' sets the initial zoom level when the page is first loaded.
-          This is crucial for responsive web design, ensuring the site looks good on all devices.
-      -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <!-- 
-          The <meta http-equiv="X-UA-Compatible"> tag is used to specify the version of Internet Explorer that the page should be rendered with.
-          'content="ie=edge"' tells IE to use the latest rendering engine.
-          This helps in avoiding compatibility issues with older versions of IE.
-      -->
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      
-      <title>HTML 5 Boilerplate</title>
-      <!-- 
-          The <title> tag sets the title of the webpage, which appears in the browser's tab and bookmarks.
-          "HTML 5 Boilerplate" is the title here, which can be customized to reflect the content of your page.
-      -->
-      <title>HTML 5 Boilerplate</title>
-      
-      <link rel="stylesheet" href="style.css">
-      <!-- 
-          The <link> tag links external resources to the HTML document.
-          - 'rel="stylesheet"' specifies that the linked file is a CSS stylesheet.
-          - 'href="style.css"' provides the path to the CSS file.
-          This stylesheet controls the visual presentation of the HTML elements on the page.
-      -->
-      <link rel="stylesheet" href="style.css">
-      
-    </head>
-    
-    <body>
-      <!-- 
-          The <body> tag contains all the content that is displayed on the webpage.
-          This includes text, images, links, lists, and other multimedia.
-      -->
-      <body>
-        
-        <h1>Linux and GIT Student Survival Guide</h1>
-        <!-- 
-            The <h1> tag defines the most important heading on the page.
-            Headings help organize content and improve accessibility.
-            "Linux and GIT Student Survival Guide" is the main title displayed prominently.
-        -->
-        <h1>Linux and GIT Student Survival Guide</h1>
-        
-        <ul>
-          <!-- 
-              The <ul> tag defines an unordered list, which is a collection of list items marked with bullets.
-              It's useful for listing items that don't require a specific order.
-          -->
-          <ul>
-            
-            <li><a href="git.html">GIT List</a></li>
-            <!-- 
-                The <li> tag defines a single item within a list.
-                Inside <li>, the <a> tag creates a hyperlink.
-                - 'href="git.html"' specifies the destination URL when the link is clicked.
-                - "GIT List" is the clickable text that users see.
-                This link navigates to the "git.html" page, presumably containing a list related to GIT.
-            -->
-            <li><a href="git.html">GIT List</a></li>
-            
-            <li><a href="linux.html">Linux List</a></li>
-            <!-- 
-                Another list item containing a link.
-                - 'href="linux.html"' directs the link to the "linux.html" page.
-                - "Linux List" is the visible text for the link.
-                This likely leads to a page with a list of Linux-related resources or information.
-            -->
-            <li><a href="linux.html">Linux List</a></li>
-            
-          </ul>
-        </ul>
-        
-        <script src="js/main.js"></script>
-        <!-- 
-            The <script> tag is used to embed or reference executable scripts, typically JavaScript.
-            - 'src="js/main.js"' specifies the path to the external JavaScript file.
-            Placing scripts just before the closing </body> tag is a common practice to ensure that the HTML content loads before the scripts execute.
-            This can improve page load times and ensure that the DOM is fully loaded before the script runs.
-        -->
-        <script src="js/main.js"></script>
-        
-      </body>
-    </body>
-    
-  </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Index</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>Project Index</h1>
+
+    <h2>Git and Linux Commands</h2>
+    <ul>
+        <li><a href="git.md">Top 10 GIT Commands</a></li>
+        <li><a href="linux.md">Top 10 Linux Commands</a></li>
+    </ul>
+
+    <h2>History</h2>
+    <h3>Pre Internet (1950s-1960s)</h3>
+    <ul>
+        <li><a href="JC.md">JC Licklider</a></li>
+        <li><a href="Nuclear.md">Nuclear Weapons</a></li>
+        <li><a href="ARPA.md">ARPA - Advanced Research Project Agency (later DARPA)</a></li>
+        <li><a href="PS.md">Packet Switching</a></li>
+    </ul>
+
+    <h3>Internet (1969-1989)</h3>
+    <ul>
+        <li><a href="Arpanet.md">Arpanet</a></li>
+        <li><a href="VCBK.md">Protocols and Technologies</a></li>
+        <li><a href="EPTA.md">Early Programs and Technologies on ARPANET</a></li>
+    </ul>
+
+    <h3>Web 1.0 (1989-2005)</h3>
+    <ul>
+        <li><a href="WORLDWW.md">Inception of World Wide Web</a></li>
+        <li><a href="EarlyBrowsers.md">Development of Early Browsers</a></li>
+        <li><a href="JS.md">JavaScript</a></li>
+        <li><a href="CSS.md">CSS</a></li>
+        <li><a href="PPHP.md">Perl & PHP Server</a></li>
+        <li><a href="LinuxHis.md">Linux - Linus Torvalds</a></li>
+        <li><a href="WHT.md">Web Hosting Technologies</a></li>
+        <li><a href="EarlySearch.md">Early Search - Altavista and Hotbot</a></li>
+        <li><a href="BrowserWars.md">Browser Wars (1995-2001)</a></li>
+        <li><a href="W3C.md">W3C (World Wide Web Consortium)</a></li>
+        <li><a href="ICANN.md">ICANN (Internet Corporation for Assigned Names and Numbers)</a></li>
+    </ul>
+
+    <h3>Web 2.0 (2004-Present)</h3>
+    <ul>
+        <li><a href="SocMed.md">Rise of User-Generated Content and Social Media</a></li>
+        <li><a href="PageRank.md">Google Search - Page Rank</a></li>
+        <li><a href="WebStand.md">Web Standards and APIs</a></li>
+        <li><a href="RD.md">Ryan Dahl Node.js / JavaScript</a></li>
+        <li><a href="PGVR.md">Python Guido van Rossum</a></li>
+        <li><a href="GITHis.md">GIT Linus Torvalds</a></li>
+        <li><a href="WHT2.md">Web Hosting Technologies in Web 2.0</a></li>
+        <li><a href="BWars2.md">Browser Wars Part 2 (2000s-Present)</a></li>
+        <li><a href="ECMAScript.md">ECMAScript and JavaScript Standardization</a></li>
+    </ul>
+
+    <h3>Web Accessibility & Standards</h3>
+    <ul>
+        <li><a href="WAI.md">WAI (Web Accessibility Initiative)</a></li>
+        <li><a href="Sect508.md">Section 508 (U.S.)</a></li>
+        <li><a href="ARIA.md">ARIA (Accessible Rich Internet Applications)</a></li>
+        <li><a href="AccMWD.md">Impact of Accessibility on Modern Web Design</a></li>
+    </ul>
+
+    <h3>Future of the Internet</h3>
+    <ul>
+        <li><a href="SemWeb.md">Web 3.0 & Semantic Web</a></li>
+        <li><a href="IOT.md">Internet of Things (IoT)</a></li>
+        <li><a href="QuantumComp.md">Quantum Computing and Internet Technologies</a></li>
+    </ul>
+
+</body>
+</html>
