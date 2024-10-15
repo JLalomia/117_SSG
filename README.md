@@ -52,5 +52,9 @@
 - [ECMAScript and JavaScript Standardization](ECMAScript.md)
 
 16. Web Accessibility & Standards
+- [WAI (Web Accessibility Initiative)](WAI.md)
+- [Section 508 (U.S.)](Sect508.md)
+- [ARIA (Accessible Rich Internet Applications)](ARIA.md)
+- [Impact of Accessibility on Modern Web Design](AccMWD.md)
 
 17. Future of the Internet
