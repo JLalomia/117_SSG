@@ -1,76 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basic Commands Guide</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <a href="index.html">Index Page</a>
-    <h1>Commands, What They Do, and Examples</h1>
-    <table>
-        <caption>Basic Command Line Commands</caption>
-        <thead>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><code>mkdir</code></td>
-                <td>Creates a new directory</td>
-                <td><code>mkdir myFolder</code> - Creates a directory named <code>myFolder</code></td>
-            </tr>
-            <tr>
-                <td><code>cd</code></td>
-                <td>Changes the current directory</td>
-                <td><code>cd /home/user/Downloads</code> - Navigates to the Downloads directory</td>
-            </tr>
-            <tr>
-                <td><code>ls</code></td>
-                <td>Lists the directory contents</td>
-                <td><code>ls</code> - Lists all the files and directories in the current directory</td>
-            </tr>
-            <tr>
-                <td><code>pwd</code></td>
-                <td>Displays the current working directory</td>
-                <td><code>pwd</code> - Shows the full path of the current directory, e.g., <code>/home/user/myFolder</code></td>
-            </tr>
-            <tr>
-                <td><code>rm</code></td>
-                <td>Removes files or directories</td>
-                <td><code>rm file.txt</code> - Deletes <code>file.txt</code></td>
-            </tr>
-            <tr>
-                <td><code>chmod</code></td>
-                <td>Changes file or directory permissions</td>
-                <td><code>chmod 755 prog.c</code> - Gives the owner full permissions (read, write, execute), and others only the read and execute permissions for <code>prog.c</code></td>
-            </tr>
-            <tr>
-                <td><code>cp</code></td>
-                <td>Copies files or directories</td>
-                <td><code>cp file.txt backup.txt</code> - Copies the contents of <code>file.txt</code> to <code>backup.txt</code></td>
-            </tr>
-            <tr>
-                <td><code>mv</code></td>
-                <td>Moves or renames files or directories</td>
-                <td><code>mv file.txt /path/to/new/location</code> - Moves <code>file.txt</code> to a new location</td>
-            </tr>
-            <tr>
-                <td><code>touch</code></td>
-                <td>Creates an empty file or updates the timestamp of an existing file</td>
-                <td><code>touch newFile.txt</code> - Creates an empty file called <code>newFile.txt</code>. If the file already exists, it updates its timestamp</td>
-            </tr>
-            <tr>
-                <td><code>cat</code></td>
-                <td>Displays the content of a file or concatenates multiple files</td>
-                <td><code>cat file1.txt file2.txt &gt; combined.txt</code> - Combines the contents of <code>file1.txt</code> and <code>file2.txt</code> into <code>combined.txt</code></td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Basic Commands Guide</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <article class="column-1">
+                <h1>Commands, What They Do, and Examples</h1>
+                <table>
+                    <caption>Basic Command Line Commands</caption>
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>mkdir</code></td>
+                            <td>Creates a new directory</td>
+                            <td><code>mkdir myFolder</code> - Creates a directory named <code>myFolder</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>cd</code></td>
+                            <td>Changes the current directory</td>
+                            <td><code>cd /home/user/Downloads</code> - Navigates to the Downloads directory</td>
+                        </tr>
+                        <tr>
+                            <td><code>ls</code></td>
+                            <td>Lists the directory contents</td>
+                            <td><code>ls</code> - Lists all the files and directories in the current directory</td>
+                        </tr>
+                        <tr>
+                            <td><code>pwd</code></td>
+                            <td>Displays the current working directory</td>
+                            <td><code>pwd</code> - Shows the full path of the current directory, e.g., <code>/home/user/myFolder</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>rm</code></td>
+                            <td>Removes files or directories</td>
+                            <td><code>rm file.txt</code> - Deletes <code>file.txt</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>chmod</code></td>
+                            <td>Changes file or directory permissions</td>
+                            <td><code>chmod 755 prog.c</code> - Gives the owner full permissions (read, write, execute), and others only the read and execute permissions for <code>prog.c</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>cp</code></td>
+                            <td>Copies files or directories</td>
+                            <td><code>cp file.txt backup.txt</code> - Copies the contents of <code>file.txt</code> to <code>backup.txt</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>mv</code></td>
+                            <td>Moves or renames files or directories</td>
+                            <td><code>mv file.txt /path/to/new/location</code> - Moves <code>file.txt</code> to a new location</td>
+                        </tr>
+                        <tr>
+                            <td><code>touch</code></td>
+                            <td>Creates an empty file or updates the timestamp of an existing file</td>
+                            <td><code>touch newFile.txt</code> - Creates an empty file called <code>newFile.txt</code>. If the file already exists, it updates its timestamp</td>
+                        </tr>
+                        <tr>
+                            <td><code>cat</code></td>
+                            <td>Displays the content of a file or concatenates multiple files</td>
+                            <td><code>cat file1.txt file2.txt &gt; combined.txt</code> - Combines the contents of <code>file1.txt</code> and <code>file2.txt</code> into <code>combined.txt</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <aside class="column-2">
+                <nav aria-label="Table of contents">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="index.html">Index Page</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </body>
 </html>
