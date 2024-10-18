@@ -15,6 +15,10 @@ Developed by: Larry Wall, an American programmer.
 - Development Start: Perl was first developed in 1987.
 - Version Releases:
     - Perl 5 was released in 1994, introducing many features that solidified its popularity, including object-oriented programming.
+### WHERE
+- NASA Jet Propulsion Laboratory (JPL): Larry Wall developed Perl while working as a systems administrator at NASA’s Jet Propulsion Laboratory, where the need for text manipulation and reporting in systems administration inspired its creation.
+- Global Use: Perl quickly gained popularity worldwide, especially in industries requiring robust text processing and system automation, including web development, bioinformatics, and network programming.
+- CPAN (Comprehensive Perl Archive Network): Perl’s extensive library of modules is hosted globally through CPAN, which is widely used and mirrored across multiple servers worldwide.
 ### HOW
 - Interpreted Language: Perl is an interpreted language, which means it can be executed directly without the need for prior compilation.
 - Regular Expressions: It has powerful built-in support for regular expressions, making it a favorite for text processing tasks.
@@ -40,6 +44,10 @@ Developed by: Larry Wall, an American programmer.
 - Version Releases:
     - PHP 3 was released in 1998, establishing PHP as a robust scripting language for web development.
     - PHP 5, released in 2004, introduced many new features, including improved object-oriented programming support.
+### WHERE
+- Canada: Rasmus Lerdorf, the creator of PHP, initially developed PHP while living in Canada. It started as a set of CGI scripts to track visitors to his personal website.
+- Global Web Hosting Environments: PHP became ubiquitous on web servers around the world due to its ease of embedding within HTML, enabling millions of websites to offer dynamic content.
+- Open Source Communities Worldwide: PHP’s vast global adoption is reflected in its widespread use in popular platforms like WordPress, Joomla, and Drupal, which are hosted on web servers globally.
 ### HOW
 - Interpreted Language: Like Perl, PHP is an interpreted language executed on the server side.
 - Database Integration: PHP has strong support for various databases, especially MySQL, allowing developers to create data-driven applications easily.
