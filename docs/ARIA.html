@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>History Behind ARIA (Accessible Rich Internet Applications)</title>
-</head>
-<body>
-    <a href="index.html">Index Page</a>
-    <h1>History Behind ARIA (Accessible Rich Internet Applications)</h1>
-
-    <h2>WHO</h2>
-    <ul>
-        <li><strong>WAI (Web Accessibility Initiative)</strong>: The organization within the World Wide Web Consortium (W3C) that develops guidelines and resources to improve web accessibility.</li>
-        <li><strong>Key Figures</strong>:
-            <ul>
-                <li><strong>W3C</strong>: The World Wide Web Consortium, which oversees the development of web standards, including ARIA.</li>
-                <li><strong>Developers and Designers</strong>: Individuals and organizations creating web applications are responsible for implementing ARIA to enhance accessibility.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>WHAT</h2>
-    <ul>
-        <li><strong>WAI-ARIA</strong>: A technical specification that provides a framework for making dynamic web applications and user interface components accessible to people with disabilities.</li>
-        <li><strong>Core Features</strong>:
-            <ul>
-                <li><strong>Roles</strong>: Defines the roles of UI components (e.g., button, slider) to help assistive technologies understand their purpose.</li>
-                <li><strong>States and Properties</strong>: Provides additional context about UI elements (e.g., whether a button is disabled or an element is expanded/collapsed) to improve user interaction.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>WHY</h2>
-    <ul>
-        <li><strong>Need for Accessibility</strong>: The rise of complex web applications (often referred to as "rich internet applications") necessitated a way to ensure that all users, including those with disabilities, could interact with and navigate these applications effectively.</li>
-        <li><strong>Assistive Technology Support</strong>: ARIA aims to enhance the compatibility of web applications with assistive technologies (e.g., screen readers), ensuring that users with disabilities can access all features.</li>
-    </ul>
-
-    <h2>WHEN</h2>
-    <ul>
-        <li><strong>Development Start</strong>: The WAI-ARIA specification was first published in 2008.</li>
-        <li><strong>WAI-ARIA 1.0 Release</strong>: The initial version of the specification (WAI-ARIA 1.0) was published in 2014, establishing guidelines for web developers.</li>
-        <li><strong>Ongoing Updates</strong>: ARIA continues to evolve, with updates and revisions to improve its effectiveness and address emerging web technologies.</li>
-    </ul>
-
-    <h2>WHERE</h2>
-    <ul>
-        <li><strong>Global Usage</strong>: ARIA is used worldwide by web developers and organizations to create accessible web applications and interfaces, regardless of geographical location.</li>
-        <li><strong>Web Development Community</strong>: ARIA is implemented across various platforms, frameworks, and content management systems, influencing the broader web development ecosystem.</li>
-    </ul>
-
-    <h2>HOW</h2>
-    <ul>
-        <li><strong>Implementation in HTML</strong>: ARIA attributes can be added to HTML elements to provide additional semantic meaning, improving accessibility for users of assistive technologies.</li>
-        <li><strong>Best Practices</strong>: Developers are encouraged to follow best practices when using ARIA to ensure that the markup enhances accessibility without introducing confusion or complexity.</li>
-        <li><strong>Compatibility Testing</strong>: Regular testing with assistive technologies is recommended to ensure that ARIA implementations function as intended and provide the desired accessibility improvements.</li>
-    </ul>
-
-    <h2>EXAMPLES AND CONTRIBUTIONS</h2>
-    <ul>
-        <li><strong>Dynamic Content</strong>: ARIA is particularly valuable in web applications that use dynamic content (e.g., single-page applications) where traditional HTML elements may not convey the necessary accessibility information.</li>
-        <li><strong>Framework Integration</strong>: Many popular web frameworks and libraries (e.g., React, Angular) support ARIA attributes, encouraging developers to build accessible applications by default.</li>
-        <li><strong>Improved User Experience</strong>: The use of ARIA enhances the experience for all users, not just those with disabilities, by providing clearer interactions and feedback within web applications.</li>
-    </ul>
-
-    <h2>IMPORTANCE</h2>
-    <ul>
-        <li><strong>Enhancing Web Accessibility</strong>: ARIA plays a crucial role in making complex web applications accessible, ensuring inclusivity for users with disabilities.</li>
-        <li><strong>Guidance for Developers</strong>: It provides a set of guidelines and best practices for developers, promoting awareness and understanding of accessibility needs in web design.</li>
-        <li><strong>Standardization</strong>: ARIA contributes to the standardization of accessibility practices across the web, encouraging developers to prioritize inclusive design principles and improve the overall quality of web applications.</li>
-    </ul>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>History Behind ARIA (Accessible Rich Internet Applications)</title>
+    </head>
+    <body>
+        <main>
+            <article class="column-1">
+                <h1>History Behind ARIA (Accessible Rich Internet Applications)</h1>
+                <section id="WHO">
+                    <h2>WHO</h2>
+                    <ul>
+                        <li><strong>WAI (Web Accessibility Initiative)</strong>: The organization within the World Wide Web Consortium (W3C) that develops guidelines and resources to improve web accessibility.</li>
+                        <li><strong>Key Figures</strong>:
+                            <ul>
+                                <li><strong>W3C</strong>: The World Wide Web Consortium, which oversees the development of web standards, including ARIA.</li>
+                                <li><strong>Developers and Designers</strong>: Individuals and organizations creating web applications are responsible for implementing ARIA to enhance accessibility.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="WHAT">
+                    <h2>WHAT</h2>
+                    <ul>
+                        <li><strong>WAI-ARIA</strong>: A technical specification that provides a framework for making dynamic web applications and user interface components accessible to people with disabilities.</li>
+                        <li><strong>Core Features</strong>:
+                            <ul>
+                                <li><strong>Roles</strong>: Defines the roles of UI components (e.g., button, slider) to help assistive technologies understand their purpose.</li>
+                                <li><strong>States and Properties</strong>: Provides additional context about UI elements (e.g., whether a button is disabled or an element is expanded/collapsed) to improve user interaction.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="WHY">
+                    <h2>WHY</h2>
+                    <ul>
+                        <li><strong>Need for Accessibility</strong>: The rise of complex web applications (often referred to as "rich internet applications") necessitated a way to ensure that all users, including those with disabilities, could interact with and navigate these applications effectively.</li>
+                        <li><strong>Assistive Technology Support</strong>: ARIA aims to enhance the compatibility of web applications with assistive technologies (e.g., screen readers), ensuring that users with disabilities can access all features.</li>
+                    </ul>
+                </section>
+                <section id="WHEN">
+                    <h2>WHEN</h2>
+                    <ul>
+                        <li><strong>Development Start</strong>: The WAI-ARIA specification was first published in 2008.</li>
+                        <li><strong>WAI-ARIA 1.0 Release</strong>: The initial version of the specification (WAI-ARIA 1.0) was published in 2014, establishing guidelines for web developers.</li>
+                        <li><strong>Ongoing Updates</strong>: ARIA continues to evolve, with updates and revisions to improve its effectiveness and address emerging web technologies.</li>
+                    </ul>
+                </section>
+                <section id="WHERE">
+                    <h2>WHERE</h2>
+                    <ul>
+                        <li><strong>Global Usage</strong>: ARIA is used worldwide by web developers and organizations to create accessible web applications and interfaces, regardless of geographical location.</li>
+                        <li><strong>Web Development Community</strong>: ARIA is implemented across various platforms, frameworks, and content management systems, influencing the broader web development ecosystem.</li>
+                    </ul>
+                </section>
+                <section id="HOW">
+                    <h2>HOW</h2>
+                    <ul>
+                        <li><strong>Implementation in HTML</strong>: ARIA attributes can be added to HTML elements to provide additional semantic meaning, improving accessibility for users of assistive technologies.</li>
+                        <li><strong>Best Practices</strong>: Developers are encouraged to follow best practices when using ARIA to ensure that the markup enhances accessibility without introducing confusion or complexity.</li>
+                        <li><strong>Compatibility Testing</strong>: Regular testing with assistive technologies is recommended to ensure that ARIA implementations function as intended and provide the desired accessibility improvements.</li>
+                    </ul>
+                </section>
+                <section id="EX">
+                    <h2>EXAMPLES AND CONTRIBUTIONS</h2>
+                    <ul>
+                        <li><strong>Dynamic Content</strong>: ARIA is particularly valuable in web applications that use dynamic content (e.g., single-page applications) where traditional HTML elements may not convey the necessary accessibility information.</li>
+                        <li><strong>Framework Integration</strong>: Many popular web frameworks and libraries (e.g., React, Angular) support ARIA attributes, encouraging developers to build accessible applications by default.</li>
+                        <li><strong>Improved User Experience</strong>: The use of ARIA enhances the experience for all users, not just those with disabilities, by providing clearer interactions and feedback within web applications.</li>
+                    </ul>
+                </section>
+                <section id="IMP">
+                    <h2>IMPORTANCE</h2>
+                    <ul>
+                        <li><strong>Enhancing Web Accessibility</strong>: ARIA plays a crucial role in making complex web applications accessible, ensuring inclusivity for users with disabilities.</li>
+                        <li><strong>Guidance for Developers</strong>: It provides a set of guidelines and best practices for developers, promoting awareness and understanding of accessibility needs in web design.</li>
+                        <li><strong>Standardization</strong>: ARIA contributes to the standardization of accessibility practices across the web, encouraging developers to prioritize inclusive design principles and improve the overall quality of web applications.</li>
+                    </ul>
+                </section>
+            </article>
+            <aside class="column-2">
+                <nav aria-label="Table of contents">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="index.html">Index Page</a></li>
+                        <li><a href="#WHO">WHO</a></li>
+                        <li><a href="#WHAT">WHAT</a></li>
+                        <li><a href="#WHY">WHY</a></li>
+                        <li><a href="#WHEN">WHEN</a></li>
+                        <li><a href="#WHERE">WHERE</a></li>
+                        <li><a href="#HOW">HOW</a></li>
+                        <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
+                        <li><a href="#IMP">IMPORTANCE</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </body>
 </html>
