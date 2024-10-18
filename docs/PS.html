@@ -1,86 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>History of Packet Switching</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<a href="index.html">Index Page</a>
-<h1>History of Packet Switching</h1>
-
-<h2>WHO</h2>
-<ul>
-    <li><strong>Paul Baran:</strong> An American engineer working for the RAND Corporation in the U.S. He developed the concept of packet switching in the early 1960s as a way to create a more resilient communication system.</li>
-    <li><strong>Donald Davies:</strong> A British computer scientist at the National Physical Laboratory (NPL) in the U.K., who independently developed a similar concept around the same time as Baran and coined the term "packet switching."</li>
-</ul>
-<h3>Key Figures:</h3>
-<ul>
-    <li>Both Baran and Davies made foundational contributions to what would become the core technology behind internet data transmission.</li>
-</ul>
-
-<h2>WHAT</h2>
-<ul>
-    <li><strong>Packet Switching:</strong> A method of breaking down data into small units called packets. These packets are transmitted individually across a network and reassembled at their destination. Unlike traditional circuit-switched networks (like the telephone system), packet switching does not require a dedicated communication path between two points.</li>
-    <li><strong>Advantages:</strong>
-        <ul>
-            <li>Efficiency: Packets can take the most efficient route to their destination.</li>
-            <li>Resilience: If one route fails, packets can be re-routed, making the system highly reliable.</li>
-            <li>Decentralization: No single point of failure, making it ideal for military communications during the Cold War.</li>
-        </ul>
-    </li>
-</ul>
-
-<h2>WHY</h2>
-<ul>
-    <li><strong>Resilience to Attack (Cold War Context):</strong>
-        <ul>
-            <li><strong>Paul Baran’s Motivation:</strong> Baran was tasked with creating a communication system that could survive a nuclear attack, as traditional, centralized systems were vulnerable to destruction. Packet switching provided the ability to reroute information in the event that parts of the network were destroyed.</li>
-            <li><strong>Donald Davies’ Motivation:</strong> Davies was motivated by the need for more efficient data communication in computer networks, as early networks (like telephone lines) were not designed to handle the bursty nature of computer data traffic.</li>
-        </ul>
-    </li>
-</ul>
-
-<h2>WHEN</h2>
-<ul>
-    <li>1961-1969: The development of packet switching occurred primarily in the 1960s, with both Paul Baran and Donald Davies independently developing the concept:
-        <ul>
-            <li>1961-1964: Baran developed the idea while working at RAND and published his work on distributed communications networks in a series of papers starting in 1964.</li>
-            <li>1965: Donald Davies proposed a similar packet-switched network concept at the National Physical Laboratory (NPL) in the U.K. and built the first small-scale packet-switching network in 1969.</li>
-            <li>1969: Packet switching was implemented in ARPANET, the precursor to the internet, marking its first major practical use.</li>
-        </ul>
-    </li>
-</ul>
-
-<h2>WHERE</h2>
-<ul>
-    <li><strong>United States:</strong> Paul Baran’s work was funded by the U.S. military via the RAND Corporation. His research focused on building communication systems for the U.S. Department of Defense during the Cold War.</li>
-    <li><strong>United Kingdom:</strong> Donald Davies worked at the National Physical Laboratory (NPL) in the U.K., where he developed his version of packet switching. His work was more focused on improving computer communication efficiency within research institutions.</li>
-    <li><strong>Global Impact:</strong> Though developed separately in the U.S. and the U.K., packet switching would become a fundamental technology used in networks around the world, eventually forming the basis for the internet.</li>
-</ul>
-
-<h2>HOW</h2>
-<ul>
-    <li>The Concept of Distributed Networks (Baran): Baran proposed a distributed network where information would be broken into packets and transmitted through a series of nodes. If any node was destroyed (e.g., in a nuclear attack), the packets could still reach their destination by being rerouted.</li>
-    <li><strong>Davies’ Implementation:</strong> Donald Davies independently developed the same idea, focusing on how packets could move more efficiently across a network of computers without the need for a dedicated line, improving the capacity for data transmission.</li>
-    <li><strong>Adoption in ARPANET:</strong> Packet switching was implemented in ARPANET in 1969, the first large-scale packet-switching network. ARPANET, funded by ARPA (now DARPA), used packet switching to allow researchers to share computer resources across various universities and institutions.</li>
-</ul>
-
-<h2>EXAMPLES AND CONTRIBUTIONS</h2>
-<ul>
-    <li><strong>Paul Baran’s Distributed Networks:</strong> His 1964 RAND report, "On Distributed Communications," laid out the idea of decentralized communication using packet switching. Although the military did not adopt it immediately, it heavily influenced future designs for resilient networks.</li>
-    <li><strong>Donald Davies’ NPL Network:</strong> Davies implemented a small-scale packet-switched network at NPL in 1969, which was one of the first operational packet-switching networks in the world.</li>
-    <li><strong>ARPANET (1969):</strong> Packet switching was successfully implemented in ARPANET, laying the foundation for the development of the internet as we know it today.</li>
-</ul>
-
-<h2>IMPORTANCE</h2>
-<ul>
-    <li><strong>Core Technology of the Internet:</strong> Packet switching is the fundamental technology that allows the internet to function. It enables data to be sent efficiently across vast distances without requiring a dedicated communication line.</li>
-    <li><strong>Resilience and Flexibility:</strong> The decentralized nature of packet-switched networks ensures that communication can continue even if parts of the network fail, which is why it was initially developed as a military tool during the Cold War.</li>
-    <li><strong>Legacy in Modern Networking:</strong> Packet switching is used in virtually all modern communication networks, including the internet, mobile networks, and Wi-Fi, enabling the transmission of data, voice, and video.</li>
-</ul>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>History of Packet Switching</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <article class="column-1">
+                <h1>History of Packet Switching</h1>
+                <section id="WHO">
+                    <h2>WHO</h2>
+                        <ul>
+                            <li><strong>Paul Baran:</strong> An American engineer working for the RAND Corporation in the U.S. He developed the concept of packet switching in the early 1960s as a way to create a more resilient communication system.</li>
+                            <li><strong>Donald Davies:</strong> A British computer scientist at the National Physical Laboratory (NPL) in the U.K., who independently developed a similar concept around the same time as Baran and coined the term "packet switching."</li>
+                        </ul>
+                        <h3>Key Figures:</h3>
+                        <ul>
+                            <li>Both Baran and Davies made foundational contributions to what would become the core technology behind internet data transmission.</li>
+                        </ul>
+                </section>
+                <section id="WHAT">
+                    <h2>WHAT</h2>
+                        <ul>
+                            <li><strong>Packet Switching:</strong> A method of breaking down data into small units called packets. These packets are transmitted individually across a network and reassembled at their destination. Unlike traditional circuit-switched networks (like the telephone system), packet switching does not require a dedicated communication path between two points.</li>
+                            <li><strong>Advantages:</strong>
+                                <ul>
+                                    <li>Efficiency: Packets can take the most efficient route to their destination.</li>
+                                    <li>Resilience: If one route fails, packets can be re-routed, making the system highly reliable.</li>
+                                    <li>Decentralization: No single point of failure, making it ideal for military communications during the Cold War.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </section>
+                <section id="WHY">
+                <h2>WHY</h2>
+                    <ul>
+                        <li><strong>Resilience to Attack (Cold War Context):</strong>
+                            <ul>
+                                <li><strong>Paul Baran’s Motivation:</strong> Baran was tasked with creating a communication system that could survive a nuclear attack, as traditional, centralized systems were vulnerable to destruction. Packet switching provided the ability to reroute information in the event that parts of the network were destroyed.</li>
+                                <li><strong>Donald Davies’ Motivation:</strong> Davies was motivated by the need for more efficient data communication in computer networks, as early networks (like telephone lines) were not designed to handle the bursty nature of computer data traffic.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="WHEN">
+                <h2>WHEN</h2>
+                    <ul>
+                        <li>1961-1969: The development of packet switching occurred primarily in the 1960s, with both Paul Baran and Donald Davies independently developing the concept:
+                            <ul>
+                                <li>1961-1964: Baran developed the idea while working at RAND and published his work on distributed communications networks in a series of papers starting in 1964.</li>
+                                <li>1965: Donald Davies proposed a similar packet-switched network concept at the National Physical Laboratory (NPL) in the U.K. and built the first small-scale packet-switching network in 1969.</li>
+                                <li>1969: Packet switching was implemented in ARPANET, the precursor to the internet, marking its first major practical use.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="WHERE">
+                <h2>WHERE</h2>
+                    <ul>
+                        <li><strong>United States:</strong> Paul Baran’s work was funded by the U.S. military via the RAND Corporation. His research focused on building communication systems for the U.S. Department of Defense during the Cold War.</li>
+                        <li><strong>United Kingdom:</strong> Donald Davies worked at the National Physical Laboratory (NPL) in the U.K., where he developed his version of packet switching. His work was more focused on improving computer communication efficiency within research institutions.</li>
+                        <li><strong>Global Impact:</strong> Though developed separately in the U.S. and the U.K., packet switching would become a fundamental technology used in networks around the world, eventually forming the basis for the internet.</li>
+                    </ul>
+                </section>
+                <section id="HOW">
+                <h2>HOW</h2>
+                    <ul>
+                        <li>The Concept of Distributed Networks (Baran): Baran proposed a distributed network where information would be broken into packets and transmitted through a series of nodes. If any node was destroyed (e.g., in a nuclear attack), the packets could still reach their destination by being rerouted.</li>
+                        <li><strong>Davies’ Implementation:</strong> Donald Davies independently developed the same idea, focusing on how packets could move more efficiently across a network of computers without the need for a dedicated line, improving the capacity for data transmission.</li>
+                        <li><strong>Adoption in ARPANET:</strong> Packet switching was implemented in ARPANET in 1969, the first large-scale packet-switching network. ARPANET, funded by ARPA (now DARPA), used packet switching to allow researchers to share computer resources across various universities and institutions.</li>
+                    </ul>
+                </section>
+                <section id="EX">
+                <h2>EXAMPLES AND CONTRIBUTIONS</h2>
+                    <ul>
+                        <li><strong>Paul Baran’s Distributed Networks:</strong> His 1964 RAND report, "On Distributed Communications," laid out the idea of decentralized communication using packet switching. Although the military did not adopt it immediately, it heavily influenced future designs for resilient networks.</li>
+                        <li><strong>Donald Davies’ NPL Network:</strong> Davies implemented a small-scale packet-switched network at NPL in 1969, which was one of the first operational packet-switching networks in the world.</li>
+                        <li><strong>ARPANET (1969):</strong> Packet switching was successfully implemented in ARPANET, laying the foundation for the development of the internet as we know it today.</li>
+                    </ul>
+                </section>
+                <section id="IMP">
+                    <h2>IMPORTANCE</h2>
+                        <ul>
+                            <li><strong>Core Technology of the Internet:</strong> Packet switching is the fundamental technology that allows the internet to function. It enables data to be sent efficiently across vast distances without requiring a dedicated communication line.</li>
+                            <li><strong>Resilience and Flexibility:</strong> The decentralized nature of packet-switched networks ensures that communication can continue even if parts of the network fail, which is why it was initially developed as a military tool during the Cold War.</li>
+                            <li><strong>Legacy in Modern Networking:</strong> Packet switching is used in virtually all modern communication networks, including the internet, mobile networks, and Wi-Fi, enabling the transmission of data, voice, and video.</li>
+                        </ul>
+                </section>
+            </article>
+            <aside class="column-2">
+                <nav aria-label="Table of contents">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="index.html">Index Page</a></li>
+                        <li><a href="#WHO">WHO</a></li>
+                        <li><a href="#WHAT">WHAT</a></li>
+                        <li><a href="#WHY">WHY</a></li>
+                        <li><a href="#WHEN">WHEN</a></li>
+                        <li><a href="#WHERE">WHERE</a></li>
+                        <li><a href="#HOW">HOW</a></li>
+                        <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
+                        <li><a href="#IMP">IMPORTANCE</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </body>
 </html>
