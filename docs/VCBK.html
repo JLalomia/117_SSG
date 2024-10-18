@@ -1,100 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>History Behind Vint Cerf and Bob Kahn</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<a href="index.html">Index Page</a>
-<h1>History Behind Vint Cerf and Bob Kahn</h1>
-
-<h2>WHO</h2>
-<ul>
-    <li><strong>Vint Cerf:</strong> Known as one of the "fathers of the internet," Cerf is a computer scientist who co-designed TCP/IP, a set of protocols critical to the functioning of the internet.</li>
-    <li><strong>Bob Kahn:</strong> Another key figure in the development of the internet, Kahn worked with Cerf to create TCP/IP, aiming to solve the challenges of connecting multiple different networks.</li>
-</ul>
-
-<h2>WHAT</h2>
-<ul>
-    <li><strong>Transmission Control Protocol (TCP):</strong> A communication protocol designed to provide reliable, ordered, and error-checked data transmission between different computers over a network. TCP ensures that data is sent in the correct order and received without errors.
-        <ul>
-            <li><strong>Key Function:</strong> TCP breaks large chunks of data into smaller packets, sends them over the network, and ensures that they are reassembled correctly at the destination.</li>
-        </ul>
-    </li>
-    <li><strong>Internet Protocol (IP):</strong> The addressing system that allows data to be sent from one computer to another over the internet. It assigns unique addresses to each device (like a home address) and is responsible for routing the packets across networks.
-        <ul>
-            <li><strong>Key Function:</strong> IP is responsible for routing packets across different networks and making sure they reach their intended destination.</li>
-        </ul>
-    </li>
-</ul>
-
-<h2>WHY</h2>
-<ul>
-    <li><strong>Interoperability Across Networks:</strong> In the early 1970s, there was no unified way for different types of networks to communicate with each other. Networks had unique architectures, making them incompatible. Cerf and Kahn’s goal was to create a standardized protocol that could link various networks (e.g., ARPANET, satellite networks, local area networks) so they could share information.</li>
-    <li><strong>Reliable Data Transmission:</strong> They needed a solution that could transmit data reliably, even over unreliable networks, where data might be lost, duplicated, or arrive out of order. TCP/IP was designed to handle these challenges by ensuring the integrity of data transmissions.</li>
-</ul>
-
-<h2>WHEN</h2>
-<ul>
-    <li><strong>Vint Cerf:</strong>
-        <ul>
-            <li>Cerf and Kahn began their work on TCP/IP in 1973.</li>
-            <li>The protocol was finalized in 1978 and became the standard for ARPANET in 1983, eventually forming the basis of the modern internet.</li>
-        </ul>
-    </li>
-    <li><strong>Bob Kahn:</strong>
-        <ul>
-            <li>Kahn first conceived of the internet's "network of networks" architecture in the early 1970s.</li>
-            <li>He began collaborating with Cerf in 1973, leading to the development of TCP/IP.</li>
-            <li>ARPANET adopted TCP/IP as its standard in 1983, which laid the foundation for the modern internet.</li>
-        </ul>
-    </li>
-    <li><strong>Overall Timeline:</strong>
-        <ul>
-            <li>1973: Bob Kahn first proposed the concept of TCP while working at ARPA (Advanced Research Projects Agency). He invited Vint Cerf to help develop it.</li>
-            <li>1974: Cerf and Kahn published their landmark paper, "A Protocol for Packet Network Intercommunication," which described TCP/IP.</li>
-            <li>1983: TCP/IP was adopted as the standard protocol for ARPANET, and from that point, it became the foundation for the internet.</li>
-        </ul>
-    </li>
-</ul>
-
-<h2>WHERE</h2>
-<ul>
-    <li><strong>United States:</strong> The development of TCP/IP took place primarily through ARPA, which was based in the U.S. The early implementations occurred in research labs and universities.</li>
-    <li><strong>Global Influence:</strong> As the internet grew, TCP/IP became the dominant protocol suite worldwide, enabling the growth of the global internet infrastructure.</li>
-</ul>
-
-<h2>HOW</h2>
-<ul>
-    <li>Cerf and Kahn designed TCP/IP to handle the technical challenges of internetworking, specifically packet-switched data transmission across various networks.</li>
-    <li>TCP handles breaking data into packets and reassembling them, while IP ensures the packets are routed to the right destination.</li>
-    <li>Kahn developed the open-architecture networking approach, meaning that different networks could be interconnected without needing to change their internal structure.</li>
-    <li>Together with Cerf, he designed TCP/IP to handle end-to-end data transmission between computers, regardless of the underlying network infrastructure.</li>
-    <li><strong>TCP/IP Architecture:</strong> TCP and IP work together to ensure the reliable transmission of data:
-        <ul>
-            <li><strong>IP:</strong> Handles the routing of packets from one computer to another by assigning IP addresses to each device and determining the best path through the network.</li>
-            <li><strong>TCP:</strong> Ensures that packets arrive correctly by establishing a connection between two devices and handling error correction, retransmission of lost packets, and reordering packets that arrive out of sequence.</li>
-        </ul>
-    </li>
-    <li><strong>Packet-Switched Networks:</strong> TCP/IP was designed to work over packet-switched networks, where data is broken into small packets that are sent individually and reassembled at the destination. This approach allows for efficient use of network resources, as packets can take different routes to their destination depending on network conditions.</li>
-</ul>
-
-<h2>EXAMPLES</h2>
-<ul>
-    <li><strong>The Internet:</strong> TCP/IP is the underlying protocol that allows the modern internet to function. Every time you send an email, stream a video, or browse the web, TCP/IP is responsible for routing and ensuring the reliable delivery of your data.</li>
-    <li><strong>Adoption by ARPANET (1983):</strong> When ARPANET adopted TCP/IP in 1983, it became the first major network to use the protocol, marking the beginning of the modern internet era.</li>
-    <li><strong>IPv4 and IPv6:</strong> The current versions of the Internet Protocol, IPv4 and IPv6, are direct descendants of the original IP protocol developed by Cerf and Kahn. IPv6 was introduced to address the limited number of IP addresses available in IPv4, allowing for continued growth of the internet.</li>
-</ul>
-
-<h2>IMPORTANCE</h2>
-<ul>
-    <li><strong>Standardized Communication:</strong> TCP/IP provides a universal standard for communication across different types of networks, enabling the internet to grow into a truly global system.</li>
-    <li><strong>Scalability:</strong> TCP/IP was designed to be scalable, making it possible for the internet to expand from a small number of nodes in ARPANET to billions of devices around the world today.</li>
-    <li><strong>End-to-End Principle:</strong> One of the key principles behind TCP/IP is the end-to-end principle, where the intelligence of the network is located at the endpoints (the devices), rather than in the network itself. This flexibility has allowed for innovation and the development of new applications, from the web to peer-to-peer communication.</li>
-</ul>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>History Behind Vint Cerf and Bob Kahn</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <article class="column-1">
+                <h1>History Behind Vint Cerf and Bob Kahn</h1>
+                <section id="WHO">
+                    <h2>WHO</h2>
+                        <ul>
+                            <li><strong>Vint Cerf:</strong> Known as one of the "fathers of the internet," Cerf is a computer scientist who co-designed TCP/IP, a set of protocols critical to the functioning of the internet.</li>
+                            <li><strong>Bob Kahn:</strong> Another key figure in the development of the internet, Kahn worked with Cerf to create TCP/IP, aiming to solve the challenges of connecting multiple different networks.</li>
+                        </ul>
+                </section>
+                <section id="WHAT">
+                    <h2>WHAT</h2>
+                        <ul>
+                            <li><strong>Transmission Control Protocol (TCP):</strong> A communication protocol designed to provide reliable, ordered, and error-checked data transmission between different computers over a network. TCP ensures that data is sent in the correct order and received without errors.
+                                <ul>
+                                    <li><strong>Key Function:</strong> TCP breaks large chunks of data into smaller packets, sends them over the network, and ensures that they are reassembled correctly at the destination.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Internet Protocol (IP):</strong> The addressing system that allows data to be sent from one computer to another over the internet. It assigns unique addresses to each device (like a home address) and is responsible for routing the packets across networks.
+                                <ul>
+                                    <li><strong>Key Function:</strong> IP is responsible for routing packets across different networks and making sure they reach their intended destination.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </section>
+                <section id="WHY">
+                    <h2>WHY</h2>
+                        <ul>
+                            <li><strong>Interoperability Across Networks:</strong> In the early 1970s, there was no unified way for different types of networks to communicate with each other. Networks had unique architectures, making them incompatible. Cerf and Kahn’s goal was to create a standardized protocol that could link various networks (e.g., ARPANET, satellite networks, local area networks) so they could share information.</li>
+                            <li><strong>Reliable Data Transmission:</strong> They needed a solution that could transmit data reliably, even over unreliable networks, where data might be lost, duplicated, or arrive out of order. TCP/IP was designed to handle these challenges by ensuring the integrity of data transmissions.</li>
+                        </ul>
+                </section>
+                <section id="WHEN">
+                    <h2>WHEN</h2>
+                        <ul>
+                            <li><strong>Vint Cerf:</strong>
+                                <ul>
+                                    <li>Cerf and Kahn began their work on TCP/IP in 1973.</li>
+                                    <li>The protocol was finalized in 1978 and became the standard for ARPANET in 1983, eventually forming the basis of the modern internet.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Bob Kahn:</strong>
+                                <ul>
+                                    <li>Kahn first conceived of the internet's "network of networks" architecture in the early 1970s.</li>
+                                    <li>He began collaborating with Cerf in 1973, leading to the development of TCP/IP.</li>
+                                    <li>ARPANET adopted TCP/IP as its standard in 1983, which laid the foundation for the modern internet.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Overall Timeline:</strong>
+                                <ul>
+                                    <li>1973: Bob Kahn first proposed the concept of TCP while working at ARPA (Advanced Research Projects Agency). He invited Vint Cerf to help develop it.</li>
+                                    <li>1974: Cerf and Kahn published their landmark paper, "A Protocol for Packet Network Intercommunication," which described TCP/IP.</li>
+                                    <li>1983: TCP/IP was adopted as the standard protocol for ARPANET, and from that point, it became the foundation for the internet.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </section>
+                <section id="WHERE">
+                    <h2>WHERE</h2>
+                        <ul>
+                            <li><strong>United States:</strong> The development of TCP/IP took place primarily through ARPA, which was based in the U.S. The early implementations occurred in research labs and universities.</li>
+                            <li><strong>Global Influence:</strong> As the internet grew, TCP/IP became the dominant protocol suite worldwide, enabling the growth of the global internet infrastructure.</li>
+                        </ul>
+                </section>
+                <section id="HOW">
+                    <h2>HOW</h2>
+                        <ul>
+                            <li>Cerf and Kahn designed TCP/IP to handle the technical challenges of internetworking, specifically packet-switched data transmission across various networks.</li>
+                            <li>TCP handles breaking data into packets and reassembling them, while IP ensures the packets are routed to the right destination.</li>
+                            <li>Kahn developed the open-architecture networking approach, meaning that different networks could be interconnected without needing to change their internal structure.</li>
+                            <li>Together with Cerf, he designed TCP/IP to handle end-to-end data transmission between computers, regardless of the underlying network infrastructure.</li>
+                            <li><strong>TCP/IP Architecture:</strong> TCP and IP work together to ensure the reliable transmission of data:
+                                <ul>
+                                    <li><strong>IP:</strong> Handles the routing of packets from one computer to another by assigning IP addresses to each device and determining the best path through the network.</li>
+                                    <li><strong>TCP:</strong> Ensures that packets arrive correctly by establishing a connection between two devices and handling error correction, retransmission of lost packets, and reordering packets that arrive out of sequence.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Packet-Switched Networks:</strong> TCP/IP was designed to work over packet-switched networks, where data is broken into small packets that are sent individually and reassembled at the destination. This approach allows for efficient use of network resources, as packets can take different routes to their destination depending on network conditions.</li>
+                        </ul>
+                </section>
+                <section id="EX">
+                    <h2>EXAMPLES</h2>
+                        <ul>
+                            <li><strong>The Internet:</strong> TCP/IP is the underlying protocol that allows the modern internet to function. Every time you send an email, stream a video, or browse the web, TCP/IP is responsible for routing and ensuring the reliable delivery of your data.</li>
+                            <li><strong>Adoption by ARPANET (1983):</strong> When ARPANET adopted TCP/IP in 1983, it became the first major network to use the protocol, marking the beginning of the modern internet era.</li>
+                            <li><strong>IPv4 and IPv6:</strong> The current versions of the Internet Protocol, IPv4 and IPv6, are direct descendants of the original IP protocol developed by Cerf and Kahn. IPv6 was introduced to address the limited number of IP addresses available in IPv4, allowing for continued growth of the internet.</li>
+                        </ul>
+                </section>
+                <section id="IMP">
+                    <h2>IMPORTANCE</h2>
+                        <ul>
+                            <li><strong>Standardized Communication:</strong> TCP/IP provides a universal standard for communication across different types of networks, enabling the internet to grow into a truly global system.</li>
+                            <li><strong>Scalability:</strong> TCP/IP was designed to be scalable, making it possible for the internet to expand from a small number of nodes in ARPANET to billions of devices around the world today.</li>
+                            <li><strong>End-to-End Principle:</strong> One of the key principles behind TCP/IP is the end-to-end principle, where the intelligence of the network is located at the endpoints (the devices), rather than in the network itself. This flexibility has allowed for innovation and the development of new applications, from the web to peer-to-peer communication.</li>
+                        </ul>
+                </section>
+            </article>
+            <aside class="column-2">
+                <nav aria-label="Table of contents">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="index.html">Index Page</a></li>
+                        <li><a href="#WHO">WHO</a></li>
+                        <li><a href="#WHAT">WHAT</a></li>
+                        <li><a href="#WHY">WHY</a></li>
+                        <li><a href="#WHEN">WHEN</a></li>
+                        <li><a href="#WHERE">WHERE</a></li>
+                        <li><a href="#HOW">HOW</a></li>
+                        <li><a href="#EX">EXAMPLES</a></li>
+                        <li><a href="#IMP">IMPORTANCE</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </body>
 </html>
