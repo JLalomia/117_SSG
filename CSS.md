@@ -7,6 +7,11 @@
 ### WHAT
 - CSS: A stylesheet language used to describe the presentation and layout of web pages written in HTML or XML. It controls the visual style of web content, including colors, fonts, spacing, and positioning.
 - Separation of Concerns: CSS allows for the separation of content (HTML) from presentation (CSS), promoting cleaner code and easier maintenance
+### WHERE
+- CERN (European Organization for Nuclear Research): CSS was first proposed by Håkon Wium Lie while working at CERN, the same institution where the World Wide Web was initially developed by Tim Berners-Lee.
+- W3C (World Wide Web Consortium): The development and standardization of CSS were overseen by the W3C, a global organization that develops open web standards. CSS1 was officially published by the W3C in 1996.
+- University of Oslo: Håkon Wium Lie, after his time at CERN, continued his work on CSS at the University of Oslo, contributing to its early development and adoption.
+- Global Adoption: CSS quickly became a standard in web design and was adopted by developers worldwide, allowing web pages to have consistent visual styling across different browsers and platforms.
 ### WHY
 - Improved Web Design: There was a need for a standardized way to control the appearance of web pages, which were previously styled using inline HTML attributes and deprecated tags.
 - Maintainability: CSS provides a more efficient way to manage styles across multiple pages, reducing redundancy and improving maintainability.

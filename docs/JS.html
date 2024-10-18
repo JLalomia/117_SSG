@@ -1,118 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>History Behind JavaScript</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<a href="index.html">Index Page</a>
-<h1>History Behind JavaScript</h1>
-
-<h2>WHO</h2>
-<ul>
-    <li>Developed by: Brendan Eich, a programmer at Netscape Communications Corporation.</li>
-</ul>
-
-<h3>Key Figures:</h3>
-<ul>
-    <li>Brendan Eich: Creator of JavaScript who designed it in a short timeframe to enable interactive web pages.</li>
-    <li>Netscape: The company that popularized JavaScript as part of its web browser, Netscape Navigator.</li>
-</ul>
-
-<h2>WHAT</h2>
-<ul>
-    <li><strong>JavaScript:</strong> A high-level, interpreted programming language that enables interactive web content and dynamic functionality in web browsers. It is a core technology of the World Wide Web alongside HTML and CSS.</li>
-    <li><strong>Multi-Paradigm:</strong> Supports object-oriented, imperative, and functional programming styles.</li>
-</ul>
-
-<h2>WHY</h2>
-<ul>
-    <li><strong>Interactivity on the Web:</strong> In the mid-1990s, there was a need for a scripting language that could enhance web pages by allowing client-side scripting and interactivity.</li>
-    <li><strong>Enhancing User Experience:</strong> JavaScript was designed to allow developers to create more engaging and dynamic user experiences on websites, moving beyond static content.</li>
-</ul>
-
-<h2>WHEN</h2>
-<ul>
-    <li><strong>Development Start:</strong> JavaScript was developed in 1995.</li>
-    <li><strong>First Release:</strong> The initial version was released as LiveScript in Netscape Navigator 2.0 in September 1995.</li>
-    <li><strong>Renaming to JavaScript:</strong> It was renamed to JavaScript in December 1995 to capitalize on the popularity of Java, even though the two languages are not directly related.</li>
-    <li><strong>Standardization:</strong> JavaScript was standardized in 1997 under the name ECMAScript by the European Computer Manufacturers Association (ECMA).</li>
-</ul>
-
-<h2>HOW</h2>
-<ul>
-    <li><strong>Interpreted Language:</strong> JavaScript is executed directly by the web browser's JavaScript engine without the need for prior compilation.</li>
-    <li><strong>DOM Manipulation:</strong> It allows for dynamic manipulation of the Document Object Model (DOM), enabling changes to the HTML and CSS of web pages in real-time.</li>
-    <li><strong>Event-Driven Programming:</strong> JavaScript supports event-driven programming, allowing developers to respond to user actions (e.g., clicks, keyboard inputs).</li>
-</ul>
-
-<h2>EXAMPLES AND CONTRIBUTIONS</h2>
-<ul>
-    <li><strong>Dynamic Web Pages:</strong> JavaScript enables features like form validation, interactive maps, animations, and content updates without requiring a full page reload.</li>
-    <li><strong>AJAX (Asynchronous JavaScript and XML):</strong> Introduced in the early 2000s, AJAX allows web applications to send and retrieve data asynchronously, enhancing the user experience by loading new content without refreshing the page.</li>
-    <li><strong>Libraries and Frameworks:</strong> The development of libraries like jQuery (2006) simplified DOM manipulation and event handling, while frameworks like AngularJS, React, and Vue.js revolutionized how developers build complex web applications.</li>
-    <li><strong>Node.js:</strong> Introduced in 2009, Node.js enables JavaScript to run on the server-side, allowing for full-stack JavaScript development and real-time applications.</li>
-</ul>
-
-<h2>IMPORTANCE</h2>
-<ul>
-    <li><strong>Universal Web Language:</strong> JavaScript is the de facto language of the web, used by the vast majority of websites for client-side scripting, making it essential for modern web development.</li>
-    <li><strong>Versatile and Powerful:</strong> Its versatility allows developers to create everything from simple interactive elements to complex web applications and server-side software.</li>
-    <li><strong>Ecosystem Growth:</strong> JavaScript has a rich ecosystem of libraries, frameworks, and tools that support developers in building high-performance, scalable applications.</li>
-</ul>
-
-<h2>EXTRA</h2>
-<ul>
-    <li>The inventor of JavaScript was Brendan Eich in 1995.</li>
-    <li>It was developed for Netscape 2 (web browser initially released in 1995, discontinued in 2008).</li>
-    <li>Technically, JavaScript's correct name today would be "ECMAScript".</li>
-</ul>
-
-<h2>Commands, What They Do, and Examples:</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Command</th>
-            <th>Description</th>
-            <th>Example</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>console.log()</code></td>
-            <td>Used to print messages to the browser's console. It helps with debugging by showing the output of code or messages.</td>
-            <td><code>console.log("Hello, World!");</code> - The output is "Hello World!"</td>
-        </tr>
-        <tr>
-            <td><code>document.getElementById</code></td>
-            <td>Finds an HTML element by its <code>id</code> attribute. It is commonly used to manipulate or retrieve elements in the DOM.</td>
-            <td><code>let element = document.getElementById("demo"); element.innerHTML = "Paragraph changed!";</code> - The paragraph text changes to: "Paragraph changed!"</td>
-        </tr>
-        <tr>
-            <td><code>addEventListener()</code></td>
-            <td>Attaches an event handler to an HTML element (like a button) without overwriting existing event handlers.</td>
-            <td><code>document.getElementById("myBtn").addEventListener("click", function() { alert("Button was clicked!"); });</code> - An alert box pops up saying "Button was clicked!" when the button is clicked.</td>
-        </tr>
-        <tr>
-            <td><code>setTimeout()</code></td>
-            <td>Executes a function after a specified delay (in milliseconds).</td>
-            <td><code>setTimeout(function() { console.log("Executed after 3 seconds"); }, 3000);</code> - "Executed after 3 seconds" is logged to the console after a 3-second delay.</td>
-        </tr>
-        <tr>
-            <td><code>setInterval()</code></td>
-            <td>Executes a function repeatedly, with a fixed time delay between each call.</td>
-            <td><code>let count = 0; setInterval(function() { count++; console.log("Counter: " + count); }, 1000);</code> - Logs the increasing count every second.</td>
-        </tr>
-        <tr>
-            <td><code>alert()</code></td>
-            <td>Displays an alert dialog box with a specified message and an "OK" button.</td>
-            <td><code>alert("Welcome to my website!");</code> - Will display a pop-up alert with the message in the quotes.</td>
-        </tr>
-    </tbody>
-</table>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>History Behind JavaScript</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <article class="column-1">
+                <h1>History Behind JavaScript</h1>
+                <section id="WHO">
+                    <h2>WHO</h2>
+                        <ul>
+                            <li>Developed by: Brendan Eich, a programmer at Netscape Communications Corporation.</li>
+                        </ul>
+                    <h3>Key Figures:</h3>
+                        <ul>
+                            <li>Brendan Eich: Creator of JavaScript who designed it in a short timeframe to enable interactive web pages.</li>
+                            <li>Netscape: The company that popularized JavaScript as part of its web browser, Netscape Navigator.</li>
+                        </ul>
+                </section>
+                <section id="WHAT">
+                    <h2>WHAT</h2>
+                        <ul>
+                            <li><strong>JavaScript:</strong> A high-level, interpreted programming language that enables interactive web content and dynamic functionality in web browsers. It is a core technology of the World Wide Web alongside HTML and CSS.</li>
+                            <li><strong>Multi-Paradigm:</strong> Supports object-oriented, imperative, and functional programming styles.</li>
+                        </ul>
+                </section>
+                <section id="WHY">
+                    <h2>WHY</h2>
+                        <ul>
+                            <li><strong>Interactivity on the Web:</strong> In the mid-1990s, there was a need for a scripting language that could enhance web pages by allowing client-side scripting and interactivity.</li>
+                            <li><strong>Enhancing User Experience:</strong> JavaScript was designed to allow developers to create more engaging and dynamic user experiences on websites, moving beyond static content.</li>
+                        </ul>
+                </section>
+                <section id="WHEN">
+                    <h2>WHEN</h2>
+                        <ul>
+                            <li><strong>Development Start:</strong> JavaScript was developed in 1995.</li>
+                            <li><strong>First Release:</strong> The initial version was released as LiveScript in Netscape Navigator 2.0 in September 1995.</li>
+                            <li><strong>Renaming to JavaScript:</strong> It was renamed to JavaScript in December 1995 to capitalize on the popularity of Java, even though the two languages are not directly related.</li>
+                            <li><strong>Standardization:</strong> JavaScript was standardized in 1997 under the name ECMAScript by the European Computer Manufacturers Association (ECMA).</li>
+                        </ul>
+                </section>
+                <section id="WHERE">
+                    <h2>WHERE</h2>
+                        <ul>
+                            <li><strong>Netscape Communications Corporation:</strong>JavaScript was created at Netscape, a pioneering web browser company, in 1995. Netscape Navigator was one of the most popular browsers of the time, and JavaScript was implemented to enhance web interactivity.</li>
+                            <li><strong>Silicon Valley, California:</strong>The development of JavaScript occurred at Netscape’s headquarters in Silicon Valley, which was (and still is) a hub for tech innovation and development.</li>
+                            <li><strong>Worldwide Adoption:</strong>JavaScript quickly gained global adoption through its inclusion in web browsers like Netscape Navigator and later, Internet Explorer. This ensured its rapid spread and use by web developers globally.</li>
+                            <li><strong>ECMA International:</strong>JavaScript was standardized by ECMA International, an organization based in Europe, which oversees the ECMAScript standard, ensuring consistent implementation across browsers.</li>
+                        </ul>
+                </section>
+                <section id="HOW">
+                    <h2>HOW</h2>
+                        <ul>
+                            <li><strong>Interpreted Language:</strong> JavaScript is executed directly by the web browser's JavaScript engine without the need for prior compilation.</li>
+                            <li><strong>DOM Manipulation:</strong> It allows for dynamic manipulation of the Document Object Model (DOM), enabling changes to the HTML and CSS of web pages in real-time.</li>
+                            <li><strong>Event-Driven Programming:</strong> JavaScript supports event-driven programming, allowing developers to respond to user actions (e.g., clicks, keyboard inputs).</li>
+                        </ul>
+                </section>
+                <section id="EX">
+                    <h2>EXAMPLES AND CONTRIBUTIONS</h2>
+                        <ul>
+                            <li><strong>Dynamic Web Pages:</strong> JavaScript enables features like form validation, interactive maps, animations, and content updates without requiring a full page reload.</li>
+                            <li><strong>AJAX (Asynchronous JavaScript and XML):</strong> Introduced in the early 2000s, AJAX allows web applications to send and retrieve data asynchronously, enhancing the user experience by loading new content without refreshing the page.</li>
+                            <li><strong>Libraries and Frameworks:</strong> The development of libraries like jQuery (2006) simplified DOM manipulation and event handling, while frameworks like AngularJS, React, and Vue.js revolutionized how developers build complex web applications.</li>
+                            <li><strong>Node.js:</strong> Introduced in 2009, Node.js enables JavaScript to run on the server-side, allowing for full-stack JavaScript development and real-time applications.</li>
+                        </ul>
+                </section>
+                <section id="IMP">
+                    <h2>IMPORTANCE</h2>
+                        <ul>
+                            <li><strong>Universal Web Language:</strong> JavaScript is the de facto language of the web, used by the vast majority of websites for client-side scripting, making it essential for modern web development.</li>
+                            <li><strong>Versatile and Powerful:</strong> Its versatility allows developers to create everything from simple interactive elements to complex web applications and server-side software.</li>
+                            <li><strong>Ecosystem Growth:</strong> JavaScript has a rich ecosystem of libraries, frameworks, and tools that support developers in building high-performance, scalable applications.</li>
+                        </ul>
+                </section>
+                <section id="XTRA">
+                    <h2>EXTRA</h2>
+                        <ul>
+                            <li>The inventor of JavaScript was Brendan Eich in 1995.</li>
+                            <li>It was developed for Netscape 2 (web browser initially released in 1995, discontinued in 2008).</li>
+                            <li>Technically, JavaScript's correct name today would be "ECMAScript".</li>
+                        </ul>
+                </section>
+                <section id="TBLE">
+                    <h2>Commands, What They Do, and Examples:</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>console.log()</code></td>
+                                <td>Used to print messages to the browser's console. It helps with debugging by showing the output of code or messages.</td>
+                                <td><code>console.log("Hello, World!");</code> - The output is "Hello World!"</td>
+                            </tr>
+                            <tr>
+                                <td><code>document.getElementById</code></td>
+                                <td>Finds an HTML element by its <code>id</code> attribute. It is commonly used to manipulate or retrieve elements in the DOM.</td>
+                                <td><code>let element = document.getElementById("demo"); element.innerHTML = "Paragraph changed!";</code> - The paragraph text changes to: "Paragraph changed!"</td>
+                            </tr>
+                            <tr>
+                                <td><code>addEventListener()</code></td>
+                                <td>Attaches an event handler to an HTML element (like a button) without overwriting existing event handlers.</td>
+                                <td><code>document.getElementById("myBtn").addEventListener("click", function() { alert("Button was clicked!"); });</code> - An alert box pops up saying "Button was clicked!" when the button is clicked.</td>
+                            </tr>
+                            <tr>
+                                <td><code>setTimeout()</code></td>
+                                <td>Executes a function after a specified delay (in milliseconds).</td>
+                                <td><code>setTimeout(function() { console.log("Executed after 3 seconds"); }, 3000);</code> - "Executed after 3 seconds" is logged to the console after a 3-second delay.</td>
+                            </tr>
+                            <tr>
+                                <td><code>setInterval()</code></td>
+                                <td>Executes a function repeatedly, with a fixed time delay between each call.</td>
+                                <td><code>let count = 0; setInterval(function() { count++; console.log("Counter: " + count); }, 1000);</code> - Logs the increasing count every second.</td>
+                            </tr>
+                            <tr>
+                                <td><code>alert()</code></td>
+                                <td>Displays an alert dialog box with a specified message and an "OK" button.</td>
+                                <td><code>alert("Welcome to my website!");</code> - Will display a pop-up alert with the message in the quotes.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+            <aside class="column-2">
+                <nav aria-label="Table of contents">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="index.html">Index Page</a></li>
+                        <li><a href="#WHO">WHO</a></li>
+                        <li><a href="#WHAT">WHAT</a></li>
+                        <li><a href="#WHY">WHY</a></li>
+                        <li><a href="#WHEN">WHEN</a></li>
+                        <li><a href="#WHERE">WHERE</a></li>
+                        <li><a href="#HOW">HOW</a></li>
+                        <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
+                        <li><a href="#IMP">IMPORTANCE</a></li>
+                        <li><a href="#XTRA">EXTRA</a></li>
+                        <li><a href="#TBLE">Commands, What They Do, and Examples</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </body>
 </html>
