@@ -16,6 +16,10 @@
 ### WHAT
 - **Git**: Git is a distributed version control system (DVCS) that allows developers to track changes in source code during software development. It supports collaborative work by enabling multiple developers to work on a project simultaneously without interfering with each other's changes. Git is designed to be efficient and scalable, handling projects of all sizes, from small personal projects to large-scale enterprise applications.
 - **Version Control**: Version control is the process of managing changes to documents, programs, and other collections of information. In the context of software development, it involves tracking changes to source code files, allowing developers to revert to previous versions, understand project history, and collaborate more effectively. Git provides powerful branching and merging capabilities, allowing developers to work on features independently and integrate their changes seamlessly into the main codebase.
+### WHERE
+- Finland: Git was created by Linus Torvalds while he was working on the development of the Linux kernel, which originated in Finland.
+- Worldwide Use: Git quickly gained global adoption, especially in open-source projects like the Linux kernel, and is now used by millions of developers across the world in various industries, including technology, finance, and entertainment.
+- GitHub: Git’s widespread adoption led to the creation of GitHub, a popular platform for hosting Git repositories, which is used by developers and companies worldwide to manage and collaborate on code projects.
 ### HOW
 - Distributed Architecture: Unlike centralized version control systems, Git is distributed, meaning every developer has a complete copy of the repository, including its history, enabling offline work and faster operations.
 - Snapshot-Based: Git stores data as snapshots of the file system at a given point in time rather than as a series of changes, making it easier to manage and retrieve previous versions.

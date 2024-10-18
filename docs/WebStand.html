@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>History Behind Web Standards and APIs: Roy Fielding's REST</title>
-</head>
-<body>
-    <a href="index.html">Index Page</a>
-    <h1>History Behind Web Standards and APIs: Roy Fielding's REST (Representational State Transfer)</h1>
-
-    <h2>WHO</h2>
-    <ul>
-        <li><strong>Roy Fielding</strong>: Co-founder of the Apache HTTP Server project and one of the key authors of the HTTP specification.</li>
-        <li>Key Figure:
-            <ul>
-                <li><strong>Roy Fielding</strong>: In 2000, he introduced REST in his PhD dissertation as an architectural style for designing networked applications.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>WHAT</h2>
-    <ul>
-        <li><strong>REST (Representational State Transfer)</strong>: An architectural style used for building scalable web services and APIs. RESTful services allow systems to communicate over HTTP by using standard HTTP methods (GET, POST, PUT, DELETE) to operate on web resources.</li>
-        <li><strong>API Design Principle</strong>: REST principles emphasize stateless communication, client-server architecture, and the use of standard HTTP methods for interacting with resources represented as URLs.</li>
-    </ul>
-
-    <h2>WHY</h2>
-    <ul>
-        <li><strong>Need for Simple, Scalable Web Interactions</strong>: The web was growing rapidly, and there was a need for a standardized way for different systems to communicate with each other, while maintaining simplicity and scalability.</li>
-        <li><strong>Web as a Platform</strong>: Fielding's idea was rooted in the vision of making the web a reliable platform for building distributed systems, where APIs could easily exchange information.</li>
-        <li><strong>Standardization</strong>: REST offered a uniform way to create APIs that could scale efficiently, simplifying communication across different services and platforms.</li>
-    </ul>
-
-    <h2>WHEN</h2>
-    <ul>
-        <li><strong>2000</strong>: Roy Fielding formalized the concept of REST in his doctoral dissertation, outlining its principles and architecture.</li>
-        <li><strong>Post-2000</strong>: REST became the dominant approach for building web APIs, particularly with the rise of modern web applications and cloud-based services.</li>
-    </ul>
-
-    <h2>WHERE</h2>
-    <ul>
-        <li><strong>University of California, Irvine</strong>: Roy Fielding introduced REST as part of his PhD work while studying at the University of California, Irvine.</li>
-        <li><strong>Global Impact</strong>: RESTful APIs are now used worldwide by web applications, mobile apps, and cloud services, making REST the standard for modern API development.</li>
-    </ul>
-
-    <h2>HOW</h2>
-    <ul>
-        <li><strong>Stateless Communication</strong>: Each request from a client to a server must contain all the information needed to understand and process the request, without relying on stored context on the server.</li>
-        <li><strong>Use of HTTP Methods</strong>: REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) to perform CRUD (Create, Read, Update, Delete) operations on resources identified by URLs.</li>
-        <li><strong>Resource-Based Interaction</strong>: REST treats every piece of data (like a user, a document, or an image) as a resource that can be accessed via a unique URL, following a uniform interface for interactions.</li>
-        <li><strong>Scalability and Flexibility</strong>: REST's statelessness and resource-oriented nature make it easier to scale and maintain, allowing developers to build flexible and modular systems.</li>
-    </ul>
-
-    <h2>EXAMPLES AND CONTRIBUTIONS</h2>
-    <ul>
-        <li><strong>Web APIs</strong>: REST is used by major platforms such as Twitter, Google, and Facebook to provide APIs that allow third-party developers to interact with their services.</li>
-        <li><strong>Cloud Services</strong>: Many cloud providers use RESTful APIs for managing resources in cloud environments (e.g., Amazon Web Services, Microsoft Azure).</li>
-        <li><strong>Mobile and Web Applications</strong>: REST is the backbone for APIs in modern web applications and mobile apps, enabling seamless integration and data exchange between client and server.</li>
-    </ul>
-
-    <h2>IMPORTANCE</h2>
-    <ul>
-        <li><strong>Dominance in API Development</strong>: REST became the most popular approach to building APIs due to its simplicity, scalability, and compatibility with web protocols.</li>
-        <li><strong>Influence on Modern Software</strong>: REST has influenced many other architectural styles and protocols in software development, shaping how APIs and distributed systems are designed.</li>
-        <li><strong>Foundational to Web Evolution</strong>: REST has played a crucial role in the growth of the web as a platform for application development, enabling cross-platform compatibility and modular application design.</li>
-    </ul>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>History Behind Web Standards and APIs: Roy Fielding's REST</title>
+    </head>
+    <body>
+        <main>
+            <article class="column-1">
+                <h1>History Behind Web Standards and APIs: Roy Fielding's REST (Representational State Transfer)</h1>
+                <section id="WHO">
+                    <h2>WHO</h2>
+                    <ul>
+                        <li><strong>Roy Fielding</strong>: Co-founder of the Apache HTTP Server project and one of the key authors of the HTTP specification.</li>
+                        <li>Key Figure:
+                            <ul>
+                                <li><strong>Roy Fielding</strong>: In 2000, he introduced REST in his PhD dissertation as an architectural style for designing networked applications.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="WHAT">
+                    <h2>WHAT</h2>
+                    <ul>
+                        <li><strong>REST (Representational State Transfer)</strong>: An architectural style used for building scalable web services and APIs. RESTful services allow systems to communicate over HTTP by using standard HTTP methods (GET, POST, PUT, DELETE) to operate on web resources.</li>
+                        <li><strong>API Design Principle</strong>: REST principles emphasize stateless communication, client-server architecture, and the use of standard HTTP methods for interacting with resources represented as URLs.</li>
+                    </ul>
+                </section>
+                <section id="WHY">
+                    <h2>WHY</h2>
+                    <ul>
+                        <li><strong>Need for Simple, Scalable Web Interactions</strong>: The web was growing rapidly, and there was a need for a standardized way for different systems to communicate with each other, while maintaining simplicity and scalability.</li>
+                        <li><strong>Web as a Platform</strong>: Fielding's idea was rooted in the vision of making the web a reliable platform for building distributed systems, where APIs could easily exchange information.</li>
+                        <li><strong>Standardization</strong>: REST offered a uniform way to create APIs that could scale efficiently, simplifying communication across different services and platforms.</li>
+                    </ul>
+                </section>
+                <section id="WHEN">
+                    <h2>WHEN</h2>
+                    <ul>
+                        <li><strong>2000</strong>: Roy Fielding formalized the concept of REST in his doctoral dissertation, outlining its principles and architecture.</li>
+                        <li><strong>Post-2000</strong>: REST became the dominant approach for building web APIs, particularly with the rise of modern web applications and cloud-based services.</li>
+                    </ul>
+                </section>
+                <section id="WHERE">
+                    <h2>WHERE</h2>
+                    <ul>
+                        <li><strong>University of California, Irvine</strong>: Roy Fielding introduced REST as part of his PhD work while studying at the University of California, Irvine.</li>
+                        <li><strong>Global Impact</strong>: RESTful APIs are now used worldwide by web applications, mobile apps, and cloud services, making REST the standard for modern API development.</li>
+                    </ul>
+                </section>
+                <section id="HOW">
+                    <h2>HOW</h2>
+                    <ul>
+                        <li><strong>Stateless Communication</strong>: Each request from a client to a server must contain all the information needed to understand and process the request, without relying on stored context on the server.</li>
+                        <li><strong>Use of HTTP Methods</strong>: REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) to perform CRUD (Create, Read, Update, Delete) operations on resources identified by URLs.</li>
+                        <li><strong>Resource-Based Interaction</strong>: REST treats every piece of data (like a user, a document, or an image) as a resource that can be accessed via a unique URL, following a uniform interface for interactions.</li>
+                        <li><strong>Scalability and Flexibility</strong>: REST's statelessness and resource-oriented nature make it easier to scale and maintain, allowing developers to build flexible and modular systems.</li>
+                    </ul>
+                </section>
+                <section id="EX">
+                    <h2>EXAMPLES AND CONTRIBUTIONS</h2>
+                    <ul>
+                        <li><strong>Web APIs</strong>: REST is used by major platforms such as Twitter, Google, and Facebook to provide APIs that allow third-party developers to interact with their services.</li>
+                        <li><strong>Cloud Services</strong>: Many cloud providers use RESTful APIs for managing resources in cloud environments (e.g., Amazon Web Services, Microsoft Azure).</li>
+                        <li><strong>Mobile and Web Applications</strong>: REST is the backbone for APIs in modern web applications and mobile apps, enabling seamless integration and data exchange between client and server.</li>
+                    </ul>
+                </section>
+                <section id="IMP">
+                    <h2>IMPORTANCE</h2>
+                    <ul>
+                        <li><strong>Dominance in API Development</strong>: REST became the most popular approach to building APIs due to its simplicity, scalability, and compatibility with web protocols.</li>
+                        <li><strong>Influence on Modern Software</strong>: REST has influenced many other architectural styles and protocols in software development, shaping how APIs and distributed systems are designed.</li>
+                        <li><strong>Foundational to Web Evolution</strong>: REST has played a crucial role in the growth of the web as a platform for application development, enabling cross-platform compatibility and modular application design.</li>
+                    </ul>
+                </section>
+            </article>
+            <aside class="column-2">
+                <nav aria-label="Table of contents">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="index.html">Index Page</a></li>
+                        <li><a href="#WHO">WHO</a></li>
+                        <li><a href="#WHAT">WHAT</a></li>
+                        <li><a href="#WHY">WHY</a></li>
+                        <li><a href="#WHEN">WHEN</a></li>
+                        <li><a href="#WHERE">WHERE</a></li>
+                        <li><a href="#HOW">HOW</a></li>
+                        <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
+                        <li><a href="#IMP">IMPORTANCE</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </body>
 </html>
