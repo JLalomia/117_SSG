@@ -4,12 +4,6 @@
     --line-height: 1.6;
     --max-width: 1200px;
     --primary-color: #3e513b;
-    --secondary-color: #242a3e;
-    --heading-margin: 1em;
-    --container-padding: 1.5rem;
-    --bg-color: #f9f9f9;
-    --link-color: #007acc;
-    --golden-ratio: 1.618;
 }
 
 body {
@@ -28,6 +22,7 @@ main {
     gap: 20px;
 }
 
+/*
 .column-1 {
     flex: 0 0 60%;
     padding: var(--container-padding);
@@ -54,6 +49,7 @@ main {
         flex: 1 0 100%;
     }
 }
+*/
 
 h1 {
     font-size: calc(var(--base-font-size) * 2);
