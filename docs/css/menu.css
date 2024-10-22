@@ -166,14 +166,14 @@ nav ul li {
         transform: translateX(100%);
     }
 
-    #menu-items.active {
+    .menu-items.active {
         transform: translateX(0);
     }
 
     .menu-toggle {
         display: flex;
     }
-
+    
     .menu-toggle.open div:first-child {
         transform: rotate(45deg);
     }
@@ -186,6 +186,7 @@ nav ul li {
         transform: rotate(-45deg);
     }
 }
+
 
 .fa, .fas {
     margin-right: 0.5em;
