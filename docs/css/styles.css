@@ -1,7 +1,11 @@
 :root {
-  --base-font-size: 16px;
-  --container-padding: 20px;
+  --base-font-size: 18px;
+  --line-height: 1.6;
   --max-width: 1200px;
+  --heading-margin: 1em;
+  --container-padding: 20px;
+  --link-color: #007acc;
+  --golden-ratio: 1.618;
 }
 
 body {
@@ -15,7 +19,12 @@ body {
 }
 
 h1 {
-  color: #0c5713;
+  color: #616d81;
+  text-align: center;
+}
+
+h2 {
+  color: #b3a862;
   text-align: center;
 }
 
