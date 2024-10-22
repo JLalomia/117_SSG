@@ -99,7 +99,6 @@ nav ul li {
     margin-bottom: 0.75em;
 }
 
-/* Updated Responsive Navigation Menu */
 .menu {
     display: flex;
     justify-content: space-between;
@@ -188,14 +187,12 @@ nav ul li {
     }
 }
 
-/* Font Awesome Icons */
 .fa, .fas {
     margin-right: 0.5em;
-    width: 20px;  /* Fixed width for better alignment */
+    width: 20px;
     text-align: center;
 }
 
-/* Footer styles */
 footer {
     margin-top: 20px;
     padding: 20px;
