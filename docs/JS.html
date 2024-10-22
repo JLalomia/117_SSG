@@ -5,9 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>History Behind JavaScript</title>
+        <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
+        <header>
+            <nav class="menu">
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div class="menu-items" id="menuItems">
+                    <a href="#"><i class="fas fa-home"></i>Home</a>
+                    <a href="#"><i class="fas fa-info-circle"></i>About</a>
+                    <a href="#"><i class="fas fa-cogs"></i>Services</a>
+                    <a href="#"><i class="fas fa-briefcase"></i>Portfolio</a>
+                    <a href="#"><i class="fas fa-envelope"></i>Contact</a>
+                </div>
+              <script src="script.js"></script>
+            </nav>
+        </header>
+    </body>
+    <body class="container">
         <main>
             <article class="column-1">
                 <h1>History Behind JavaScript</h1>
@@ -89,47 +110,49 @@
                 </section>
                 <section id="TBLE">
                     <h2>Commands, What They Do, and Examples:</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Command</th>
-                                <th>Description</th>
-                                <th>Example</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>console.log()</code></td>
-                                <td>Used to print messages to the browser's console. It helps with debugging by showing the output of code or messages.</td>
-                                <td><code>console.log("Hello, World!");</code> - The output is "Hello World!"</td>
-                            </tr>
-                            <tr>
-                                <td><code>document.getElementById</code></td>
-                                <td>Finds an HTML element by its <code>id</code> attribute. It is commonly used to manipulate or retrieve elements in the DOM.</td>
-                                <td><code>let element = document.getElementById("demo"); element.innerHTML = "Paragraph changed!";</code> - The paragraph text changes to: "Paragraph changed!"</td>
-                            </tr>
-                            <tr>
-                                <td><code>addEventListener()</code></td>
-                                <td>Attaches an event handler to an HTML element (like a button) without overwriting existing event handlers.</td>
-                                <td><code>document.getElementById("myBtn").addEventListener("click", function() { alert("Button was clicked!"); });</code> - An alert box pops up saying "Button was clicked!" when the button is clicked.</td>
-                            </tr>
-                            <tr>
-                                <td><code>setTimeout()</code></td>
-                                <td>Executes a function after a specified delay (in milliseconds).</td>
-                                <td><code>setTimeout(function() { console.log("Executed after 3 seconds"); }, 3000);</code> - "Executed after 3 seconds" is logged to the console after a 3-second delay.</td>
-                            </tr>
-                            <tr>
-                                <td><code>setInterval()</code></td>
-                                <td>Executes a function repeatedly, with a fixed time delay between each call.</td>
-                                <td><code>let count = 0; setInterval(function() { count++; console.log("Counter: " + count); }, 1000);</code> - Logs the increasing count every second.</td>
-                            </tr>
-                            <tr>
-                                <td><code>alert()</code></td>
-                                <td>Displays an alert dialog box with a specified message and an "OK" button.</td>
-                                <td><code>alert("Welcome to my website!");</code> - Will display a pop-up alert with the message in the quotes.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>console.log()</code></td>
+                                    <td>Used to print messages to the browser's console. It helps with debugging by showing the output of code or messages.</td>
+                                    <td><code>console.log("Hello, World!");</code> - The output is "Hello World!"</td>
+                                </tr>
+                                <tr>
+                                    <td><code>document.getElementById</code></td>
+                                    <td>Finds an HTML element by its <code>id</code> attribute. It is commonly used to manipulate or retrieve elements in the DOM.</td>
+                                    <td><code>let element = document.getElementById("demo"); element.innerHTML = "Paragraph changed!";</code> - The paragraph text changes to: "Paragraph changed!"</td>
+                                </tr>
+                                <tr>
+                                    <td><code>addEventListener()</code></td>
+                                    <td>Attaches an event handler to an HTML element (like a button) without overwriting existing event handlers.</td>
+                                    <td><code>document.getElementById("myBtn").addEventListener("click", function() { alert("Button was clicked!"); });</code> - An alert box pops up saying "Button was clicked!" when the button is clicked.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>setTimeout()</code></td>
+                                    <td>Executes a function after a specified delay (in milliseconds).</td>
+                                    <td><code>setTimeout(function() { console.log("Executed after 3 seconds"); }, 3000);</code> - "Executed after 3 seconds" is logged to the console after a 3-second delay.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>setInterval()</code></td>
+                                    <td>Executes a function repeatedly, with a fixed time delay between each call.</td>
+                                    <td><code>let count = 0; setInterval(function() { count++; console.log("Counter: " + count); }, 1000);</code> - Logs the increasing count every second.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>alert()</code></td>
+                                    <td>Displays an alert dialog box with a specified message and an "OK" button.</td>
+                                    <td><code>alert("Welcome to my website!");</code> - Will display a pop-up alert with the message in the quotes.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
             </article>
             <aside class="column-2">
