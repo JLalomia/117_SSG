@@ -6,7 +6,7 @@
 2. On a separate branch, set up express
 3. Create files git.md and linux.md
 4. Create the index.js file
-5. Create the docs folder and create git.html, index.html, and linux.html files inside that folder
+5. Create the docs folder and create git.html, LinkPage.html, and linux.html files inside that folder
 6. After setting up express and editing the html files, test your files by running "npm start" in the terminal and going to site "localhost:3000"
 
 ## Commands Lists
