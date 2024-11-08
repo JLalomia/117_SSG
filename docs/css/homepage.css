@@ -27,11 +27,6 @@ header, footer {
     align-items: center;
 }
 
-.logo img {
-    height: 50px;
-    margin-right: 10px;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -62,12 +57,87 @@ nav .fa, .fas {
     text-decoration: none;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+.menu-items {
+    display: flex;
+    gap: 1em;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        flex-direction: column;
+        background-color: #3e513b;
+        padding-top: 3.5rem;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .menu-items.active {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .menu-toggle.open div:first-child {
+        transform: rotate(45deg);
+    }
+
+    .menu-toggle.open div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open div:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .menu-items ul {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .menu-items .cta-button {
+        width: 100%;
+        text-align: center;
+        margin-top: auto;
+        padding: 15px;
+        background-color: #b3a862;
+    }
+}
+
+
 .hero {
     text-align: center;
     padding: 100px 20px;
-    /*background-image: url('hero.jpg');*/
     background-size: cover;
     background-position: center;
+    background-image: url('../images/SageHomepage.png');
+    box-shadow: inset 0 0 0 1000px rgba(217,217,217,.76);;
     color: #616d81;
     -webkit-text-stroke-color: #333;
 }
