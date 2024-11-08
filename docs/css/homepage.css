@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    --link-color: #007acc;
 }
 
 body {
@@ -40,6 +41,17 @@ nav ul {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--link-color);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+nav .fa, .fas {
+    margin-right: 0.5em;
+    width: 20px;
+    text-align: center;
 }
 
 .cta-button {
@@ -98,8 +110,18 @@ footer {
     color: white;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 .cta {
     text-align: center;
+}
+
+.cta a:hover {
+    background-color: var(--link-color);
+    padding: 0.5em 1em;
+    border-radius: 4px;
 }
 
 .download-btn {
@@ -113,6 +135,21 @@ footer {
 
 .progress-tracker {
     margin-top: 20px;
+}
+
+.progress-tracker a:hover {
+    background-color: var(--link-color);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.moti-btn {
+    background-color: #b3a862;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
