@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #b0ceb0;
     --link-color: #007acc;
 }
 
@@ -70,11 +71,17 @@ nav .fa, .fas {
     z-index: 10;
 }
 
+.menu-toggle:focus {
+    outline: none;
+}
+
 .menu-toggle div {
     width: 30px;
     height: 3px;
     background-color: white;
     transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
 }
 
 .menu-items {
@@ -132,14 +139,21 @@ nav .fa, .fas {
 
 
 .hero {
-    text-align: center;
-    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 75px 20px;
     background-size: cover;
     background-position: center;
     background-image: url('../images/SageHomepage.png');
-    box-shadow: inset 0 0 0 1000px rgba(217,217,217,.76);;
+    box-shadow: inset 0 0 0 1000px rgba(217,217,217,.80);
     color: #616d81;
     -webkit-text-stroke-color: #333;
+}
+
+.hero h2, p {
+    max-width: 400px;
+    text-align: center;
 }
 
 .hero h2 {
@@ -164,11 +178,6 @@ nav .fa, .fas {
 .topic {
     text-align: center;
     max-width: 200px;
-}
-
-.topic img {
-    height: 60px;
-    margin-bottom: 15px;
 }
 
 footer {
