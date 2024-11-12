@@ -2,7 +2,7 @@
 
 const routes = {
     home: '/',
-    about: '/links',
+    LinkPage: '/LinkPage',
     JC: '/JC',
     notFound: '/404'
 };

@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../views'));
 
 // Middleware to serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '../docs')));
+//app.use(express.static(path.join(__dirname, '../docs')));
 
 // Make the URL helper and routes available in all EJS templates
 app.locals.url = url;
@@ -21,6 +21,10 @@ app.locals.routes = routes;
 
 app.get(routes.home, (req, res) => {
     res.render('index');  // Assuming you have a view file named 'index.ejs'
+});
+
+app.get(routes.LinkPage, (req, res) => {
+    res.render('LinkPage');
 });
 
 app.get(routes.JC, (req, res) => {
