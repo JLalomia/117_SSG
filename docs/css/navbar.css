@@ -12,12 +12,38 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     font-size: var(--base-font-size);
     line-height: var(--line-height);
     background-color: var(--bg-color);
     margin: 0 auto;
     padding: var(--container-padding);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #3e513b;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo h1 {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.logo h2 {
+    font-size: 12px;
+    margin-top: 1px;
 }
 
 a {
