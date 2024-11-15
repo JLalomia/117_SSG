@@ -193,7 +193,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    gap: 200px;
+    gap: 100px;
     text-align: center;
 }
 
@@ -201,13 +201,15 @@ nav ul {
     width: 500px;
     height: auto;
     border-radius: 30px;
+    padding: 10px;
 }
 
 .WWS-txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 800px;
+    align-items: center;
+    text-align: center;
 }
 
 .WWS-txt h1 {
@@ -216,7 +218,9 @@ nav ul {
     -webkit-text-stroke-width: 0.01px;
     font-size: 70px;
     margin-bottom: 10px;
+    margin-top: 0;
     font-weight: bolder;
+    max-width: 600px;
 }
 
 .WWS-txt p {
@@ -226,6 +230,8 @@ nav ul {
     -webkit-text-stroke-width: 0.7px;
     line-height: 1.5;
     font-weight: 100;
+    font-size: 17px;
+    max-width: 800px;
 }
 
 /* IMPACT SECTION */
@@ -272,6 +278,54 @@ nav ul {
 .Imp p {
     font-size: 15px;
     font-weight: 100;
+}
+
+/* TUTORING */
+.tutor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 150px;
+    text-align: center;
+}
+
+.tutor-img img {
+    width: 700px;
+    height: auto;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.tutor-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tutor-txt h1 {
+    color: #616d81;
+    -webkit-text-stroke-color: #333;
+    -webkit-text-stroke-width: 0.01px;
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: bolder;
+    max-width: 600px;
+}
+
+.tutor-txt p {
+    margin-bottom: 10px;
+    color: #616d81;
+    -webkit-text-stroke-color: #333;
+    -webkit-text-stroke-width: 0.7px;
+    line-height: 1.5;
+    font-weight: 100;
+    font-size: 17px;
+    max-width: 800px;
 }
 
 /* FOOTER */
@@ -359,6 +413,22 @@ footer a {
     }
 
     .WWS-txt {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .tutor {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .tutor-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .tutor-txt {
         max-width: 90%;
         text-align: center;
     }
