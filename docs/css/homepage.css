@@ -66,6 +66,7 @@ nav ul {
     line-height: 60px;
     margin-top: 50px;
     -webkit-text-stroke-width: 0.01px;
+    font-weight: bolder;
 }
 
 .hero-row p {
@@ -113,6 +114,8 @@ nav ul {
 .topics h1 {
     text-align: center;
     margin-top: 0;
+    letter-spacing: 0.5cm;
+    font-weight: 100;
 }
 
 .topics-row {
@@ -213,14 +216,62 @@ nav ul {
     -webkit-text-stroke-width: 0.01px;
     font-size: 70px;
     margin-bottom: 10px;
+    font-weight: bolder;
 }
 
 .WWS-txt p {
     margin-bottom: 10px;
     color: #616d81;
     -webkit-text-stroke-color: #333;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.7px;
     line-height: 1.5;
+    font-weight: 100;
+}
+
+/* IMPACT SECTION */
+.Impact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #d1ddea;
+    color: #b3a862;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.Impact h1, h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.Impact h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.Impact h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.Imp-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Imp {
+    text-align: center;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.Imp p {
+    font-size: 15px;
+    font-weight: 100;
 }
 
 /* FOOTER */
