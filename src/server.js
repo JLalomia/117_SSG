@@ -20,6 +20,9 @@ app.locals.url = url;
 app.locals.routes = routes;
 
 app.get(routes.home, (req, res) => {
+    const data = {
+        title: 'Tech Survival Guide'
+    };
     res.render('index');  // Assuming you have a view file named 'index.ejs'
 });
 
