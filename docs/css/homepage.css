@@ -31,6 +31,7 @@ nav ul {
     gap: 20px;
 }
 
+/* HERO SECTION */
 .hero {
     display: flex;
     flex-direction: column;
@@ -97,6 +98,7 @@ nav ul {
     cursor: pointer;
 }
 
+/* OVERVIEW SECTION */
 .topics {
     display: flex;
     flex-direction: column;
@@ -126,6 +128,7 @@ nav ul {
     box-sizing: border-box;
 }
 
+/* CALL TO ACTION SECTION */
 .RS {
     display: flex;
     flex-direction: column;
@@ -180,6 +183,47 @@ nav ul {
     cursor: pointer;
 }
 
+/* WHY WE STARTED SECTION */
+.WWS {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 200px;
+    text-align: center;
+}
+
+.WWS-img img {
+    width: 500px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.WWS-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.WWS-txt h1 {
+    color: #616d81;
+    -webkit-text-stroke-color: #333;
+    -webkit-text-stroke-width: 0.01px;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.WWS-txt p {
+    margin-bottom: 10px;
+    color: #616d81;
+    -webkit-text-stroke-color: #333;
+    -webkit-text-stroke-width: 0.5px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
 footer {
     display: flex;
     flex-direction: column;
@@ -210,6 +254,7 @@ footer a {
     cursor: pointer;
 }
 
+/* RESPONSIVE SECTION */
 @media (max-width: 1200px) {
     .hero-row h2 {
         font-size: 2.5em;
@@ -249,6 +294,22 @@ footer a {
     .acc-btn {
         font-size: 15px;
         padding: 8px 16px;
+    }
+
+    .WWS {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .WWS-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .WWS-txt {
+        max-width: 90%;
+        text-align: center;
     }
 }
 
