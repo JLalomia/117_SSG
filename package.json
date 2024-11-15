@@ -21,10 +21,10 @@
   "homepage": "https://github.com/JLalomia/117_SSG#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.1",
-    "playwright": "^1.48.2"
+    "express": "^4.21.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.2"
+    "@playwright/test": "^1.48.2",
+    "playwright": "^1.48.2"
   }
 }
