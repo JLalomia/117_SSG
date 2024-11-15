@@ -56,7 +56,6 @@ nav ul {
 
 .hero-row h2, p {
     max-width: 400px;
-    /*text-align: center;*/
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -99,15 +98,10 @@ nav ul {
 }
 
 .topics {
-    /*display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background-color: #d1ddea;
-    color: #b3a862;*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: #d1ddea;
     color: #b3a862;
     max-width: 100%;
@@ -116,7 +110,7 @@ nav ul {
 
 .topics h1 {
     text-align: center;
-   /* margin-bottom: 20px;*/
+    margin-top: 0;
 }
 
 .topics-row {
@@ -132,7 +126,7 @@ nav ul {
     box-sizing: border-box;
 }
 
-footer {
+.RS {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,12 +135,36 @@ footer {
     color: white;
 }
 
-footer a {
+.RS a {
     text-decoration: none;
+    font-size: 20px;
+}
+
+.RS h4 {
+    font-size: 30px;
 }
 
 .cta {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 400px;
+
+}
+
+.cta-1, .cta-2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta-1 h4 {
+    max-width: 300px;
+}
+
+.cta-2 h4 {
+    max-width: 400px;
 }
 
 .cta a:hover {
@@ -160,6 +178,19 @@ footer a {
     padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #3e513b;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .progress-tracker {
