@@ -338,12 +338,19 @@ footer {
     color: white;
 }
 
-footer a {
-    text-decoration: none;
+.progress-tracker {
+    margin-top: 0;
 }
 
-.progress-tracker {
-    margin-top: 20px;
+.progress-tracker h4 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.progress-tracker a {
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .progress-tracker a:hover {
