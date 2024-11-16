@@ -67,7 +67,7 @@ main {
   gap: 20px;
   align-items: flex-start;
   padding: 20px;
-  margin-top: 20px; /* Add space between the main content and header */
+  margin-top: 20px;
 }
 
 .column-1, .column-2 h2 {
@@ -161,7 +161,7 @@ main {
 
 .Content-img img {
   border-radius: 30px;
-  max-width: 100%; /* Ensure images resize correctly */
+  max-width: 100%;
   height: auto;
 }
 
