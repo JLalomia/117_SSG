@@ -144,7 +144,7 @@ main {
 }
 
 .Content-pic {
-  background-color: #f9f9f4;;
+  background-color: #e4e4da;;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -167,6 +167,33 @@ main {
 
 main {
   padding: 20px;
+}
+
+caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f4;
+}
+
+code {
+  background-color: #e8e8e8;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 @media (max-width: 1024px) {
