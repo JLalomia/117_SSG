@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>History of J.C.R. Licklider</title>
-        <!--<link rel="stylesheet" href="css/menu.css">-->
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,8 +17,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap">
     </noscript>
     </head>
+    <script src="js/script.js"></script>
     <body>
-        <header>
+        <header class="Content-Nav">
+            <div class="logo">
+                <h1>IS117</h1>
+                <h2>Your Guide to the Tech Frontier</h2>
+            </div>
             <nav class="menu">
                 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                     <div></div>
@@ -27,20 +31,46 @@
                     <div></div>
                 </button>
                 <div class="menu-items" id="menuItems">
-                    <a href="#"><i class="fas fa-home"></i>Home</a>
-                    <a href="#"><i class="fas fa-info-circle"></i>About</a>
-                    <a href="#"><i class="fas fa-cogs"></i>Services</a>
-                    <a href="#"><i class="fas fa-briefcase"></i>Portfolio</a>
-                    <a href="#"><i class="fas fa-envelope"></i>Contact</a>
+                    <ul>
+                        <li><a href="LinkPage.html">Learning Index</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                        <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
     </body>
-    <script src="js/script.js"></script>
     <body class="container">
+        <div class="Content-title">
+            <h1>History of J.C.R. Licklider</h1>
+        </div>
         <main>
+            <div class="photos">
+                <div class="Content-pic">
+                    <div class="Content-img">
+                        <img src="images/JCR.png" height="400" width="auto">
+                    </div>
+                    <p>"Over 1 billion people now use networks built on Licklider's concepts."</p>
+                </div>
+                <div class="Content-pic">
+                    <div class="Content-img">
+                        <img src="images/origin.jpg" width="400" height="auto">
+                    </div>
+                    <p>"Licklider's vision changed the world" —Dr. Jane Doe, Internet Historian</p>
+                </div>
+                <div class="Content-pic">
+                    <div class="Content-img">
+                        <img src="images/JCQuote.jpg" width="400" height="auto">
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="download-btn">Premium JCR Content Available Free For Limited Time</a>
+                    </div>
+                </div>
+            </div>
             <article class="column-1">
-                <h1>History of J.C.R. Licklider</h1>
                     <section id="WHO">
                         <h2>WHO</h2>
                             <ul>
@@ -52,6 +82,9 @@
                         <h2>WHAT</h2>
                             <ul>
                                 <li>Licklider is best known for his work on interactive computing and the concept of a "man-computer symbiosis"—the idea that computers should enhance human intellect and allow people to interact directly with machines.</li>
+                                <div class="btn-container">
+                                    <a href="#" class="download-btn">Free PDF of "Man-Computer Symbiosis"</a>
+                                </div>
                                 <li>Conceptualized the "Intergalactic Computer Network": Licklider envisioned a global network of computers that could communicate and share information in real-time. His idea was one of the first conceptual foundations for the internet.</li>
                                 <li>Role in the Development of ARPANET: Licklider's vision of connected computers heavily influenced the creation of ARPANET, the predecessor of the modern internet.
                                     <ul>
@@ -74,10 +107,10 @@
                             <ul>
                                 <li>Early 1960s: Licklider's most significant contributions began when he joined ARPA in 1962, where he pushed for research into networking computers.</li>
                                 <li>1963: Licklider published memos outlining his vision for an "Intergalactic Computer Network," which became the intellectual foundation for computer networking.</li>
-                                <li>In the 1960s, during his time at DARPA (Defense Advanced Research Projects Agency), Licklider’s ideas began to influence the course of computer science.
+                                <li>In the 1960s, during his time at DARPA (Defense Advanced Research Projects Agency), Licklider's ideas began to influence the course of computer science.
                                     <ul>
                                         <li>His landmark paper, "Man-Computer Symbiosis," was published in 1960, laying the groundwork for his future contributions.</li>
-                                        <li>Licklider’s direct influence on networking, especially ARPANET, happened from 1962-1964, when he was at DARPA. He also returned to DARPA in 1973 for a second stint.</li>
+                                        <li>Licklider's direct influence on networking, especially ARPANET, happened from 1962-1964, when he was at DARPA. He also returned to DARPA in 1973 for a second stint.</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -114,6 +147,9 @@
                         <li>Legacy: Known as one of the "Fathers of the Internet," Licklider’s ideas about a network of computers created a paradigm shift that continues to shape the digital world today.</li>
                     </ul>
                 </section>
+                <div class="btn-container">
+                    <a href="#" class="download-btn">Join us in continuing Licklider’s mission by learning to code</a>
+                </div>
             </article>
             <aside class="column-2">
                 <nav aria-label="Table of contents">
