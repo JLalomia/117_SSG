@@ -8,6 +8,10 @@
 - [Web Hosting Technologies](docs/WHT.html)
 - [Git History](docs/GITHis.html)
 
+Figma Designs:
+- [Homepage](https://www.figma.com/design/GGDKw97l1Y08YDTdU0xIxe/Julianna-Lalomia---SSG-Homepage-Design?node-id=0-1&t=T5tdjTtkpDmiDpYE-1)
+- [JC]
+
 ## Setup Steps:
 
 1. Initialize npm on the main branch and get node set up
