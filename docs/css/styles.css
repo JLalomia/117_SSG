@@ -184,6 +184,12 @@ main {
     width: 100%;
     flex: 1 0 100%;
   }
+
+  .Content-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -201,5 +207,11 @@ main {
 
   .Content-title h1 {
     font-size: 32px;
+  }
+
+  .Content-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 }
