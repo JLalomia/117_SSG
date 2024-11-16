@@ -1,5 +1,13 @@
 # IS117-007 Linux and GIT Command Line Survival Guide
 
+## MIDTERM SUBMISSION
+
+- [Homepage](docs/index.html)
+- [JCR Licklider](docs/JC.html)
+- [Linux History](docs/LinuxHis.html)
+- [Web Hosting Technologies](docs/WHT.html)
+- [Git History](docs/GITHis.html)
+
 ## Setup Steps:
 
 1. Initialize npm on the main branch and get node set up

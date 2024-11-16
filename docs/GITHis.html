@@ -5,12 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>History Behind Version Control and GIT</title>
-        <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        </noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap">
+        </noscript>
     </head>
+    <script src="js/script.js"></script>
     <body>
-        <header>
+        <header class="Content-Nav">
+            <div class="logo">
+                <h1>IS117</h1>
+                <h2>Your Guide to the Tech Frontier</h2>
+            </div>
             <nav class="menu">
                 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                     <div></div>
@@ -18,25 +31,52 @@
                     <div></div>
                 </button>
                 <div class="menu-items" id="menuItems">
-                    <a href="#"><i class="fas fa-home"></i>Home</a>
-                    <a href="#"><i class="fas fa-info-circle"></i>About</a>
-                    <a href="#"><i class="fas fa-cogs"></i>Services</a>
-                    <a href="#"><i class="fas fa-briefcase"></i>Portfolio</a>
-                    <a href="#"><i class="fas fa-envelope"></i>Contact</a>
+                    <ul>
+                        <li><a href="LinkPage.html">Learning Index</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                        <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
-        <script src="js/script.js"></script>
     </body>
     <body class="container">
+        <div class="Content-title">
+            <h1>History Behind Version Control and GIT</h1>
+            <p>Explore the innovation that changed the way we develop software</p>
+        </div>
         <main>
+            <div class="photos">
+                <div class="Content-pic">
+                    <div class="Content-img">
+                        <img src="images/GITlogo.png" width="1000" height="auto">
+                    </div>
+                    <p><strong>Git Logo</strong> - A symbol of distributed version control.</p>
+                </div>
+                <div class="Content-pic">
+                    <div class="Content-img">
+                        <img src="images/GitInfo.png" width="1000" height="auto">
+                    </div>
+                    <div class="btn-container">
+                        <a href="git.html" class="download-btn">Access Our Git Command Cheat Sheet</a>
+                    </div>
+                </div>
+                <div class="Content-pic">
+                    <div class="Content-img">
+                        <img src="images/VCGraph.png" width="1000" height="auto">
+                    </div>
+                    <p><em>How Version Control Works</em></p>
+                </div>
+            </div>
             <article class="column-1">
-                <h1>History Behind Version Control and GIT</h1>
                 <section id="WHO">
                     <h2>WHO</h2>
                     <ul>
-                        <li><strong>Developed by</strong>: Linus Torvalds, a Finnish-American software engineer.</li>
-                        <li>Key Figures:
+                        <li><strong>Developed by</strong>: Linus Torvalds, a renowned Finnish-American software engineer.</li>
+                        <li><strong><em>Key Figures:</em></strong>
                             <ul>
                                 <li><strong>Linus Torvalds</strong>: Creator of Git and the Linux operating system, known for his influential work in open-source software development.</li>
                             </ul>
@@ -68,9 +108,9 @@
                 <section id="WHERE">
                     <h2>WHERE</h2>
                     <ul>
-                        <li><strong>Finland:</strong></li> Git was created by Linus Torvalds while he was working on the development of the Linux kernel, which originated in Finland.
-                        <li><strong>Worldwide Use:</strong></li> Git quickly gained global adoption, especially in open-source projects like the Linux kernel, and is now used by millions of developers across the world in various industries, including technology, finance, and entertainment.
-                        <li><strong>GitHub:</strong></li> Git’s widespread adoption led to the creation of GitHub, a popular platform for hosting Git repositories, which is used by developers and companies worldwide to manage and collaborate on code projects.
+                        <li><strong>Finland:</strong> Git was created by Linus Torvalds while he was working on the development of the Linux kernel, which originated in Finland.</li>
+                        <li><strong>Worldwide Use:</strong> Git quickly gained global adoption, especially in open-source projects like the Linux kernel, and is now used by millions of developers across the world in various industries, including technology, finance, and entertainment.</li>
+                        <li><strong>GitHub:</strong> Git’s widespread adoption led to the creation of GitHub, a popular platform for hosting Git repositories, which is used by developers and companies worldwide to manage and collaborate on code projects.</li>
                     </ul>
                 </section>
                 <section id="HOW">
@@ -97,6 +137,9 @@
                         <li><strong>Widespread Adoption</strong>: Today, Git is used by millions of developers and organizations worldwide, making it a cornerstone of modern software development practices.</li>
                     </ul>
                 </section>
+                <div class="btn-container">
+                    <a href="git.html" class="download-btn">Clone Our GIT Repo Tutorial To Get Started On GitHub</a>
+                </div>
             </article>
             <aside class="column-2">
                 <nav aria-label="Table of contents">
