@@ -7,7 +7,7 @@
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
-    "start": "node ./src/server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
