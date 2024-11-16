@@ -10,7 +10,7 @@
 
 Figma Designs:
 - [Homepage](https://www.figma.com/design/GGDKw97l1Y08YDTdU0xIxe/Julianna-Lalomia---SSG-Homepage-Design?node-id=0-1&t=T5tdjTtkpDmiDpYE-1)
-- [JC]
+- [JC](https://www.figma.com/design/5r6L5JxokidobGusqPTNda/Julianna-Lalomia---SSG-JC.html-Design?t=GVK8iBeqams7q4kA-1)
 
 ## Setup Steps:
 
