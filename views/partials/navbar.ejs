@@ -1,5 +1,5 @@
 <!-- views/partials/navbar.ejs -->
-<body>
+<!--<body>
     <header>
         <nav class="menu">
             <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -14,6 +14,32 @@
                 <a href="#"><i class="fas fa-cogs"></i>Services</a>
                 <a href="#"><i class="fas fa-briefcase"></i>Portfolio</a>
                 <a href="#"><i class="fas fa-envelope"></i>Contact</a>
+            </div>
+        </nav>
+    </header>
+</body>-->
+
+<body>
+    <header class="Content-Nav">
+        <div class="logo">
+            <h1>IS117</h1>
+            <h2>Your Guide to the Tech Frontier</h2>
+        </div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="menu-items" id="menuItems">
+                <ul>
+                    <li><a href="<%= url('LinkPage') %>">Learning Index</a></li>
+                    <li><a href="<%= url('home') %>"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
