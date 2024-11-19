@@ -30,10 +30,7 @@ app.locals.url = url;
 app.locals.routes = routes;
 
 app.get(routes.home, (req, res) => {
-    const data = {
-        title: 'Tech Survival Guide'
-    };
-    res.render('index', data);
+    res.render('index');
 });
 
 app.get(routes.LinkPage, (req, res) => {
