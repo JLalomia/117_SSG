@@ -18,6 +18,12 @@ app.set('views', path.join(__dirname, '../views'));
 app.use('/css', express.static('docs/css'));
 app.use('/images', express.static('docs/images'));
 app.use('/js', express.static('docs/js'));
+app.use((req, res, next) => {
+    // Extract the last part of the URL path as the current page name
+    const path = req.path.split('/').filter(Boolean).pop();
+    res.locals.currentPage = path || 'home'; // Default to 'home' if the path is empty
+    next();
+});
 
 // Make the URL helper and routes available in all EJS templates
 app.locals.url = url;
@@ -38,9 +44,6 @@ app.get(routes.LinkPage, (req, res) => {
 });
 
 app.get(routes.JC, (req, res) => {
-    res.locals.data = {
-        title: 'History of J.C.R. Licklider'
-    };
     res.render('JC');
 });
 
