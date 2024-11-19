@@ -1,0 +1,17 @@
+<%- include('partials/layout', {
+    title: 'History Behind Linux',
+    contentTitle: 'History Behind Linux',
+    contentSubtitle: 'Discover the journey of one of the world\'s most influential operating systems',
+    photos: [
+        { src: 'images/LinuxLogo.png', width: '1000', height: 'auto', caption: null },
+        { src: 'images/linus.jpg', width: '1000', height: 'auto', caption: '<em>Linus Torvalds</em>' },
+        { src: 'images/LinusPenguin.jpg', width: '1000', height: 'auto', caption: '<em>"Talk is cheap. Show me the code." - Linus Torvalds</em>' },
+        { src: 'images/LinusQuote.jpg', width: '1000', height: 'auto', caption: null }
+    ],
+    sections: [
+        { id: 'WHO', title: 'WHO', content: ['Developed by: Linus Torvalds, a Finnish software engineer...', 'Key Figures: Linus Torvalds, Richard Stallman...'] },
+        { id: 'WHAT', title: 'WHAT', content: ['Linux: An open-source operating system kernel...', 'Unix-like System: Linux is designed to be similar to Unix...'] },
+        // Add more sections as needed
+    ],
+    downloadText: 'Learn More: Download the Linux History Guide'
+}) %>

@@ -1,0 +1,21 @@
+<section id="WHAT">
+    <h2>WHAT</h2>
+    <ul>
+        <% whatData.forEach(function(item, index) { %>
+            <% if (typeof item === 'string') { %>
+                <li><%= item %></li>
+                <% if (showButton && index === buttonIndex && buttonTitle) { %>
+                    <div class="btn-container">
+                        <a href="#" class="download-btn"><%= buttonTitle %></a>
+                    </div>
+                <% } %>
+            <% } else if (Array.isArray(item)) { %>
+                <ul>
+                    <% item.forEach(function(subItem) { %>
+                        <li><%= subItem %></li>
+                    <% }); %>
+                </ul>
+            <% } %>
+        <% }); %>
+    </ul>
+</section>
