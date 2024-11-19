@@ -14,6 +14,9 @@ app.set('views', path.join(__dirname, '../views'));
 
 // Middleware to serve static files from the 'public' directory
 //app.use(express.static(path.join(__dirname, '../docs')));
+app.use('/css', express.static('docs/css'));
+app.use('/images', express.static('docs/images'));
+app.use('/js', express.static('docs/js'));
 
 // Make the URL helper and routes available in all EJS templates
 app.locals.url = url;
@@ -23,15 +26,21 @@ app.get(routes.home, (req, res) => {
     const data = {
         title: 'Tech Survival Guide'
     };
-    res.render('index');  // Assuming you have a view file named 'index.ejs'
+    res.render('index', data);
 });
 
 app.get(routes.LinkPage, (req, res) => {
-    res.render('LinkPage');
+    const data = {
+        title: 'Project Index'
+    };
+    res.render('LinkPage', data);
 });
 
 app.get(routes.JC, (req, res) => {
-    res.render('JC');
+    const data = {
+        title: 'History of J.C.R. Licklider'
+    };
+    res.render('JC', data);
 });
 
 app.use((req, res) => {
