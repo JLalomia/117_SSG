@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 // Set the directory where the template files are located
 app.set('views', path.join(__dirname, '../views'));
@@ -30,17 +31,17 @@ app.get(routes.home, (req, res) => {
 });
 
 app.get(routes.LinkPage, (req, res) => {
-    const data = {
+    res.locals.data = {
         title: 'Project Index'
     };
-    res.render('LinkPage', data);
+    res.render('LinkPage');
 });
 
 app.get(routes.JC, (req, res) => {
-    const data = {
+    res.locals.data = {
         title: 'History of J.C.R. Licklider'
     };
-    res.render('JC', data);
+    res.render('JC');
 });
 
 app.get(routes.LH, (req, res) => {

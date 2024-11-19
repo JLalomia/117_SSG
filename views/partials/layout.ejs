@@ -2,38 +2,62 @@
 <body class="container">
     <%- include('navbar') %>
     <div class="Content-title">
-        <h1><%= contentTitle %></h1>
-        <% if (contentSubtitle) { %>
-            <p><%= contentSubtitle %></p>
+        <h1><%- locals.contentTitle %></h1>
+        <% if (locals.contentSubtitle) { %>
+            <p><%- locals.contentSubtitle %></p>
         <% } %>
     </div>
     <main>
         <div class="photos">
-            <% photos.forEach(photo => { %>
+            <% locals.photos.forEach(photo => { %>
                 <div class="Content-pic">
                     <div class="Content-img">
                         <img src="<%= photo.src %>" width="<%= photo.width %>" height="<%= photo.height %>">
                     </div>
                     <% if (photo.caption) { %>
-                        <p><%= photo.caption %></p>
+                        <p><%- photo.caption %></p>
                     <% } %>
+
+                    <% if (photo.downloadText) { %>
+                        <div class="btn-container">
+                            <a href="#" class="download-btn"><%= photo.downloadText %></a>
+                        </div>
+                    <% } %>
+                    
                 </div>
             <% }) %>
         </div>
         <article class="column-1">
-            <% sections.forEach(section => { %>
+            <% locals.sections.forEach(section => { %>
                 <section id="<%= section.id %>">
-                    <h2><%= section.title %></h2>
+                    <h2><%- section.title %></h2>
                     <ul>
                         <% section.content.forEach(item => { %>
-                            <li><%= item %></li>
+                            <% if (Array.isArray(item)) { %>
+                                <li>
+                                    <ul>
+                                        <% item.forEach(subItem => { %>
+                                            <li><%- subItem %></li>
+                                        <% }) %>
+                                    </ul>
+                                </li>
+                            <% } else { %>
+                                <li><%- item %></li>
+                            <% } %>
                         <% }) %>
                     </ul>
+                    <% if (section.downloadText) { %>
+                        <div class="btn-container">
+                            <a href="#" class="download-btn"><%= section.downloadText %></a>
+                        </div>
+                    <% } %>
                 </section>
             <% }) %>
-            <div class="btn-container">
-                <a href="#" class="download-btn"><%= downloadText %></a>
-            </div>
+            <% if (locals.downloadText) { %>
+                <div class="btn-container">
+                    <a href="#" class="download-btn"><%= locals.downloadText %></a>
+                </div>
+            <% } %>
         </article>
         <%- include('TOC') %>
     </main>

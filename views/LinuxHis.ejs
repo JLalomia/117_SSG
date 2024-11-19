@@ -6,12 +6,88 @@
         { src: 'images/LinuxLogo.png', width: '1000', height: 'auto', caption: null },
         { src: 'images/linus.jpg', width: '1000', height: 'auto', caption: '<em>Linus Torvalds</em>' },
         { src: 'images/LinusPenguin.jpg', width: '1000', height: 'auto', caption: '<em>"Talk is cheap. Show me the code." - Linus Torvalds</em>' },
-        { src: 'images/LinusQuote.jpg', width: '1000', height: 'auto', caption: null }
+        { src: 'images/LinusQuote.jpg', width: '1000', height: 'auto', caption: null, downloadText: 'Access Our Linux Command Cheat Sheet' }
     ],
     sections: [
-        { id: 'WHO', title: 'WHO', content: ['Developed by: Linus Torvalds, a Finnish software engineer...', 'Key Figures: Linus Torvalds, Richard Stallman...'] },
-        { id: 'WHAT', title: 'WHAT', content: ['Linux: An open-source operating system kernel...', 'Unix-like System: Linux is designed to be similar to Unix...'] },
-        // Add more sections as needed
+        {
+            id: 'WHO',
+            title: 'WHO',
+            content: [
+                'Developed by: Linus Torvalds, a Finnish software engineer.',
+                '<strong><em>Key Figures:</em></strong>',
+                [
+                    'Linus Torvalds: Creator of the Linux kernel and primary figure in its early development.',
+                    'Richard Stallman: Founded the Free Software Foundation and promoted the concept of free software, which influenced Linux\'s development philosophy.'
+                ]
+            ]
+        },
+        {
+            id: 'WHAT',
+            title: 'WHAT',
+            content: [
+                '<strong>Linux:</strong> An open-source operating system kernel that serves as the core component of various operating systems known as Linux distributions (distros). It allows users to interact with the hardware of a computer and manage system resources.',
+                '<strong>Unix-like System:</strong> Linux is designed to be similar to Unix, providing a multi-user environment with multitasking capabilities.'
+            ],
+        },
+        {
+            id: 'WHY',
+            title: 'WHY',
+            content: [
+                '<strong>Need for a Free OS:</strong> Linus Torvalds aimed to create a free and open alternative to the MINIX operating system, which was used for educational purposes but had licensing restrictions.',
+                '<strong>Community Collaboration:</strong> The idea of open-source software encouraged collaboration and contributions from developers worldwide, fostering innovation and improvement.'
+            ]
+        },
+        {
+            id: 'WHEN',
+            title: 'WHEN',
+            content: [
+                '<strong>Development Start:</strong> Linux development began in 1991 when Linus Torvalds announced the project on the comp.os.minix newsgroup.',
+                '<strong>First Release:</strong> The first version of the Linux kernel (0.01) was released in September 1991.',
+                '<strong>Version Milestones:</strong> The first stable version (1.0) was released in March 1994.'
+            ]
+        },
+        {
+            id: 'WHERE',
+            title: 'WHERE',
+            content: [
+                '<strong>Origin:</strong> Linux was developed by Linus Torvalds in Helsinki, Finland, where he was studying computer science at the University of Helsinki.',
+                '<strong>Community Contributions:</strong> Developers around the world contribute to Linux by submitting patches, bug reports, and enhancements, creating a robust ecosystem.',
+                '<strong>Distribution Variants:</strong> Numerous Linux distributions have emerged, each tailored for specific use cases, including Ubuntu, Fedora, Debian, Red Hat, and CentOS.',
+                [
+                    'Data Centers and Cloud Computing (Amazon Web Services, Google, Facebook).',
+                    'Supercomputing (dominates the TOP500 supercomputers worldwide).',
+                    'Consumer Devices (Android phones, smart TVs, and various IoT devices).'
+                ]
+            ]
+        },
+        {
+            id: 'HOW',
+            title: 'HOW',
+            content: [
+                '<strong>Open Source Model:</strong> Linux is developed collaboratively, with its source code publicly available for anyone to view, modify, and distribute under the terms of the GNU General Public License (GPL).',
+                '<strong>First Release:</strong> The first version of the Linux kernel (0.01) was released in September 1991.',
+                '<strong>Version Milestones:</strong> The first stable version (1.0) was released in March 1994.'
+            ]
+        },
+        {
+            id: 'EX',
+            title: 'EXAMPLES AND CONTRIBUTIONS',
+            content: [
+                '<strong>Server Operating Systems:</strong> Linux powers a significant portion of web servers, including those running major websites and services due to its stability, security, and performance.',
+                '<strong>Embedded Systems:</strong> Linux is widely used in embedded systems, such as routers, smart TVs, and IoT devices, because of its lightweight nature and flexibility.',
+                '<strong>Supercomputers:</strong> As of 2023, Linux is the dominant operating system on supercomputers, with over 90% of the TOP500 list running Linux due to its performance and scalability.',
+                '<strong>Development Platforms:</strong> Linux provides a development environment for software engineers, especially for open-source software development, supporting a wide range of programming languages and tools.'
+            ]
+        },
+        {
+            id: 'IMP',
+            title: 'IMPORTANCE',
+            content: [
+                '<strong>Free and Open Source:</strong> Linux promotes the principles of free and open-source software, encouraging community involvement and innovation while reducing software costs.',
+                '<strong>Flexibility and Customization:</strong> Users can customize and configure Linux distributions to meet specific needs, making it suitable for a wide range of applications.',
+                '<strong>Security and Stability:</strong> Linux is known for its security and stability, making it a preferred choice for servers, enterprise applications, and critical systems.'
+            ]
+        }
     ],
     downloadText: 'Learn More: Download the Linux History Guide'
 }) %>
