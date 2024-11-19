@@ -1,0 +1,41 @@
+<%- include('RegHead') %>
+<body class="container">
+    <%- include('navbar') %>
+    <div class="Content-title">
+        <h1><%= contentTitle %></h1>
+        <% if (contentSubtitle) { %>
+            <p><%= contentSubtitle %></p>
+        <% } %>
+    </div>
+    <main>
+        <div class="photos">
+            <% photos.forEach(photo => { %>
+                <div class="Content-pic">
+                    <div class="Content-img">
+                        <img src="<%= photo.src %>" width="<%= photo.width %>" height="<%= photo.height %>">
+                    </div>
+                    <% if (photo.caption) { %>
+                        <p><%= photo.caption %></p>
+                    <% } %>
+                </div>
+            <% }) %>
+        </div>
+        <article class="column-1">
+            <% sections.forEach(section => { %>
+                <section id="<%= section.id %>">
+                    <h2><%= section.title %></h2>
+                    <ul>
+                        <% section.content.forEach(item => { %>
+                            <li><%= item %></li>
+                        <% }) %>
+                    </ul>
+                </section>
+            <% }) %>
+            <div class="btn-container">
+                <a href="#" class="download-btn"><%= downloadText %></a>
+            </div>
+        </article>
+        <%- include('TOC') %>
+    </main>
+</body>
+</html>

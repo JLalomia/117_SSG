@@ -1,0 +1,17 @@
+<div class="photos">
+    <% photosData.forEach(function(photo) { %>
+        <div class="Content-pic">
+            <div class="Content-img">
+                <img src="<%= photo.src %>" height="<%= photo.height %>" width="<%= photo.width %>" alt="<%= photo.alt %>">
+            </div>
+            <% if (photo.caption) { %>
+                <p><%= photo.caption %></p>
+            <% } %>
+            <% if (photo.showButton && photo.buttonTitle) { %>
+                <div class="btn-container">
+                    <a href="<%= photo.buttonLink %>" class="download-btn"><%= photo.buttonTitle %></a>
+                </div>
+            <% } %>
+        </div>
+    <% }); %>
+</div>

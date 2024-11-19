@@ -43,6 +43,10 @@ app.get(routes.JC, (req, res) => {
     res.render('JC', data);
 });
 
+app.get(routes.LH, (req, res) => {
+    res.render('LinuxHis');
+});
+
 app.use((req, res) => {
     res.status(404).render('404', { title: '404: Page Not Found' });
 });
