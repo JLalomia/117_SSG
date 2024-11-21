@@ -44,6 +44,10 @@ app.get(routes.JC, (req, res) => {
     res.render('JC');
 });
 
+app.get(routes.Nuclear, (req, res) => {
+    res.render('Nuclear');
+});
+
 app.get(routes.LH, (req, res) => {
     res.render('LinuxHis');
 });

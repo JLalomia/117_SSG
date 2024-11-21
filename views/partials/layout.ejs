@@ -8,25 +8,25 @@
         <% } %>
     </div>
     <main>
-        <div class="photos">
-            <% locals.photos.forEach(photo => { %>
-                <div class="Content-pic">
-                    <div class="Content-img">
-                        <img src="<%= photo.src %>" width="<%= photo.width %>" height="<%= photo.height %>">
-                    </div>
-                    <% if (photo.caption) { %>
-                        <p><%- photo.caption %></p>
-                    <% } %>
-
-                    <% if (photo.downloadText) { %>
-                        <div class="btn-container">
-                            <a href="#" class="download-btn"><%= photo.downloadText %></a>
+        <% if (locals.photos) { %>
+            <div class="photos">
+                <% locals.photos.forEach(photo => { %>
+                    <div class="Content-pic">
+                        <div class="Content-img">
+                            <img src="<%= photo.src %>" width="<%= photo.width %>" height="<%= photo.height %>">
                         </div>
-                    <% } %>
-                    
-                </div>
-            <% }) %>
-        </div>
+                        <% if (photo.caption) { %>
+                            <p><%- photo.caption %></p>
+                        <% } %>
+                        <% if (photo.downloadText) { %>
+                            <div class="btn-container">
+                                <a href="#" class="download-btn"><%= photo.downloadText %></a>
+                            </div>
+                        <% } %>
+                    </div>
+                <% }) %>
+            </div>
+        <% } %>
         <article class="column-1">
             <% locals.sections.forEach(section => { %>
                 <section id="<%= section.id %>">
