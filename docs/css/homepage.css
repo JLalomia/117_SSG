@@ -44,10 +44,10 @@ nav ul {
     background-size: cover;
     background-position: center;
     background-image: url('../images/SageHomepage.png');
-    box-shadow: inset 0 0 0 1000px rgba(217,217,217,.80);
+    box-shadow: inset 0 0 0 1000px rgba(186, 212, 186, 0.75);
     color: #616d81;
     -webkit-text-stroke-color: #333;
-    padding: 75px 20px;
+    padding: 15px 15px;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -57,27 +57,23 @@ nav ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .hero-row h2, p {
-    max-width: 400px;
+    max-width: 1000px;
     margin-left: 20px;
-    margin-right: 20px;
 }
 
 .hero-row h2 {
-    font-size: 3em;
-    line-height: 60px;
-    margin-top: 50px;
-    -webkit-text-stroke-width: 0.01px;
+    font-size: 5em;
+    line-height: 100px;
+    -webkit-text-stroke-width: 0.1px;
     font-weight: bolder;
 }
 
 .hero-row p {
-    font-size: 1.2em;
+    font-size: 1.7em;
     -webkit-text-stroke-width: 1px;
-    margin-top: 10px;
 }
 
 .access {
@@ -195,7 +191,9 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 20px;
+    text-align: center;
     background-color: #3e513b;
     background-image: url('../images/NavBackground.png');
     background-size: cover;
@@ -217,24 +215,28 @@ nav ul {
 .cta {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    align-items: center;
     flex-wrap: wrap;
-    column-gap: 400px;
+    width: 100%;
+    gap: 20px; 
 
 }
 
-.cta-1, .cta-2 {
+.cta-box {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
+    flex-wrap: nowrap;
+    max-width: 500px;
 }
 
-.cta-1 h4 {
-    max-width: 300px;
-}
-
-.cta-2 h4 {
-    max-width: 400px;
+.cta-box h4 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2;
+    color: white;
+    white-space: nowrap;
 }
 
 .cta a:hover {
@@ -248,10 +250,17 @@ nav ul {
     padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.download-btn:hover {
+    background-color: var(--link-color);
 }
 
 /* WHY WE STARTED SECTION */
-.WWS {
+.WWS, .tutor {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -259,6 +268,7 @@ nav ul {
     padding: 20px;
     gap: 100px;
     text-align: center;
+    background-image: linear-gradient(to top, #b0ceb0, #b0ceb0,  #3e513b);
 }
 
 .WWS-img img {
@@ -308,6 +318,7 @@ nav ul {
 .Impact h1 {
     font-size: 70px;
     font-weight: bolder;
+    letter-spacing: 2cm;
 }
 
 .Impact h3 {
@@ -323,25 +334,27 @@ nav ul {
 }
 
 .Imp {
+    background-color: #ededd9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
+    padding: 20px 20px;
+    margin: 10px;
     max-width: 500px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Imp:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .Imp p {
     font-size: 15px;
     font-weight: 100;
-}
-
-/* TUTORING */
-.tutor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    gap: 150px;
-    text-align: center;
 }
 
 .tutor-img img {
@@ -421,8 +434,14 @@ footer {
 
 /* RESPONSIVE SECTION */
 @media only screen and (max-width: 1200px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .hero-row {
-        padding: 50px 10px;
+        padding: 10px 10px;
     }
 
     .hero-row h2 {
@@ -435,12 +454,16 @@ footer {
     }
 
     .access {
-        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
         transform: translateY(0);
     }
 
     .acc-btn {
-        font-size: 15px;
+        font-size: 30px;
         padding: 8px 16px;
     }
 
@@ -475,6 +498,37 @@ footer {
         max-width: 90%;
         text-align: center;
     }
+
+    .Impact h1 {
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 0.5cm;
+    }
+
+    .acc-btn {
+        font-size: 30px;
+        padding: 8px 16px;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cta-box h4 {
+        font-size: 1.2em;
+    }
+
+    .download-btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -488,12 +542,37 @@ footer {
     }
 
     .access {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 10px;
+        width: 100%;
         transform: translateY(0);
     }
 
     .acc-btn {
-        font-size: 15px;
+        font-size: 30px;
+        padding: 8px 16px;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cta-box h4 {
+        font-size: 1.2em;
+    }
+
+    .download-btn {
+        font-size: 0.9em;
         padding: 8px 16px;
     }
 }
