@@ -14,6 +14,7 @@
     </section>
 
     <!-- Overview of Topics -->
+     <!--
     <section class="topics" id="topics">
         <h1><%= topicsHeading %></h1>
         <div class="topics-row">
@@ -26,7 +27,25 @@
             <% }) %>
         </div>
     </section>
-
+    -->
+    <section class="topics" id="topics">
+        <h1><%= topicsHeading %></h1>
+        <div class="topics-row">
+            <% topics.forEach(topic => { %>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <i class="<%= topic.icon %> fa-3x"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3><%= topic.title %></h3>
+                        <p><%= topic.description %></p>
+                    </div>
+                    <a href="<%= topic.link %>" class="topic-btn">Learn More</a>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    
     <!-- Call to Action -->
     <section class="RS">
         <div class="cta">
