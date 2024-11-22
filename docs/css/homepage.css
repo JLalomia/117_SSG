@@ -105,12 +105,12 @@ nav ul {
 }
 
 /* OVERVIEW SECTION */
-.topics {
+.topics, .Impact {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 20px;
-    background-color: #d1ddea;
+    background-image: linear-gradient(to bottom right, #d1ddea, #b0ceb0);
     color: #b3a862;
     max-width: 100%;
     box-sizing: border-box;
@@ -134,6 +134,60 @@ nav ul {
     text-align: center;
     max-width: 200px;
     box-sizing: border-box;
+}
+
+/* TOPIC CARDS */
+.topic-card {
+    background-color: #ededd9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.topic-icon {
+    color: #b3a862;
+    margin-bottom: 15px;
+}
+
+.topic-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom right, #d1ddea, #b0ceb0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.topic-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+.topic-btn {
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #b3a862;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.topic-btn:hover {
+    background-color: #007acc;
 }
 
 /* CALL TO ACTION SECTION */
@@ -245,6 +299,7 @@ nav ul {
 }
 
 /* IMPACT SECTION */
+/*
 .Impact {
     display: flex;
     flex-direction: column;
@@ -255,6 +310,7 @@ nav ul {
     max-width: 100%;
     box-sizing: border-box;
 }
+*/
 
 .Impact h1, h3 {
     text-align: center;
