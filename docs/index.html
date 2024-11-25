@@ -20,10 +20,10 @@
     <script src="js/script.js"></script>
     <body>
         <!-- Navigation -->
-        <header>
+        <header class="Content-Nav">
             <div class="logo">
-                <h1>IS117</h1>
-                <h2>Your Guide to the Tech Frontier</h2>
+                <h1><em>IS117</em></h1>
+                <h2><em>Your Guide to the Tech Frontier</em></h2>
             </div>
             <nav class="menu">
                 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -34,10 +34,6 @@
                 <div class="menu-items" id="menuItems">
                     <ul>
                         <li><a href="LinkPage.html">Learning Index</a></li>
-                        <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-                        <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
-                        <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
-                        <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -60,25 +56,45 @@
         <section class="topics" id="topics">
             <h1>Our Guides Strive To Teach The Fundamentals Of</h1>
             <div class="topics-row">
-                <div class="topic">
-                    <i class="fa-solid fa-book fa-3x"></i>
-                    <h3>History</h3>
-                    <p>Explore the evolution of the Internet</p>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <i class="fa-solid fa-book fa-3x"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3>History</h3>
+                        <p>Explore the evolution of the Internet</p>
+                    </div>
+                    <a href="LinkPage.html" class="topic-btn">Learn More</a>
                 </div>
-                <div class="topic">
-                    <i class="fa-brands fa-git fa-3x"></i>
-                    <h3>GIT</h3>
-                    <p>Version control skills for all developers</p>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <i class="fa-brands fa-git fa-3x"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3>GIT</h3>
+                        <p>Version control skills for all developers</p>
+                    </div>
+                    <a href="LinkPage.html" class="topic-btn">Learn More</a>
                 </div>
-                <div class="topic">
-                    <i class="fa-brands fa-linux fa-3x"></i>
-                    <h3>Linux</h3>
-                    <p>Master command-line basics in Linux</p>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <i class="fa-brands fa-linux fa-3x"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3>Linux</h3>
+                        <p>Master command-line basics in Linux</p>
+                    </div>
+                    <a href="LinkPage.html" class="topic-btn">Learn More</a>
                 </div>
-                <div class="topic">
-                    <i class="fa-solid fa-laptop fa-3x"></i>
-                    <h3>Web Technology</h3>
-                    <p>Get started with web development fundamentals</p>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <i class="fa-solid fa-laptop fa-3x"></i>
+                    </div>
+                    <div class="topic-content">
+                        <h3>Web Technology</h3>
+                        <p>Get started with web development fundamentals</p>
+                    </div>
+                    <a href="LinkPage.html" class="topic-btn">Learn More</a>
                 </div>
             </div>
         </section>
@@ -86,11 +102,11 @@
         <!-- Call to Action -->
         <section class="RS">
             <div class="cta">
-                <div class="cta-1">
+                <div class="cta-box">
                     <h4>Get Your Free Tech Cheat Sheet</h4>
                     <a href="#" class="download-btn">Download Now</a>
                 </div>
-                <div class="cta-2">
+                <div class="cta-box">
                     <h4>Subscribe For Access To Advanced Materials</h4>
                     <a href="#" class="download-btn">Sign Up</a>
                 </div>
@@ -128,14 +144,14 @@
 
         <!-- Tutoring -->
         <section class="tutor">
-        <div class="tutor-txt">
-            <h1>Top Rated Tutors</h1>
-            <p>Our team of tutors isn't just knowledgeable—they're passionate educators with proven track records in their fields. Each tutor brings years of experience, a commitment to excellence, and a deep understanding of the subjects they teach. With advanced degrees from top institutions and specialized certifications, they are equipped to offer high-quality, customized learning support</p>
-            <p>Beyond qualifications, our tutors are dedicated to continuous growth, staying updated on the latest teaching methods and industry trends to ensure students benefit from cutting-edge insights. Whether guiding students through complex concepts or offering strategies for long-term academic success, our tutors are committed to empowering learners to reach their full potential.</p>
-        </div>
-        <div class="tutor-img">
-            <img src="images/Tutor.png">
-        </div>
+            <div class="tutor-txt">
+                <h1>Top Rated Tutors</h1>
+                <p>Our team of tutors isn't just knowledgeable—they're passionate educators with proven track records in their fields. Each tutor brings years of experience, a commitment to excellence, and a deep understanding of the subjects they teach. With advanced degrees from top institutions and specialized certifications, they are equipped to offer high-quality, customized learning support</p>
+                <p>Beyond qualifications, our tutors are dedicated to continuous growth, staying updated on the latest teaching methods and industry trends to ensure students benefit from cutting-edge insights. Whether guiding students through complex concepts or offering strategies for long-term academic success, our tutors are committed to empowering learners to reach their full potential.</p>
+            </div>
+            <div class="tutor-img">
+                <img src="images/Tutor.png">
+            </div>
         </section>
 
         <!-- Footer -->
