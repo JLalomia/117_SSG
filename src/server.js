@@ -34,10 +34,15 @@ app.get(routes.home, (req, res) => {
 });
 
 app.get(routes.LinkPage, (req, res) => {
-    res.locals.data = {
-        title: 'Project Index'
-    };
     res.render('LinkPage');
+});
+
+app.get(routes.GIT, (req, res) => {
+    res.render('git');
+});
+
+app.get(routes.LINUX, (req, res) => {
+    res.render('linux');
 });
 
 app.get(routes.JC, (req, res) => {

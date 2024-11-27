@@ -1,22 +1,36 @@
 <!-- LinkPage.ejs -->
-
-<%- include('partials/RegHead') %>
-<%- include('partials/navbar') %>
-    <body class="container">
-        <main>
-            <article class="column-1">
-                <h1>IS117-007 Project Index</h1>
-                <h2>History</h2>
-                <h3>Pre Internet (1950s-1960s)</h3>
-                <ul>
-                    <li><a href="<%= url('JC') %>">JC Licklider</a></li>
-                    <li><a href="<%= url('Nuclear') %>">Nuclear Weapons</a></li>
-                </ul>
-                <h3>Web 1.0 (1989-2005)</h3>
-                <ul>
-                    <li><a href="<%= url('LH') %>">Linux - Linus Torvalds</a></li>
-                </ul>
-            </article>
-        </main>
-    </body>
-</html>
+<%- include('partials/LPTemp', {
+    title: 'Learning Index',
+    pageTitle: 'IS117-007 Project Index',
+    topics: [
+        {
+            title: 'Git and Linux Commands',
+            sections: [
+                {
+                    links: [
+                        { name: 'Top 10 GIT Commands', url: 'GIT' },
+                        { name: 'Top 10 Linux Commands', url: 'LINUX' }
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'History',
+            sections: [
+                {
+                    title: 'Pre Internet (1950s-1960s)',
+                    links: [
+                        { name: 'JC Licklider', url: 'JC' },
+                        { name: 'Nuclear Weapons', url: 'Nuclear' },
+                    ]
+                },
+                {
+                    title: 'Web 1.0 (1989-2005)',
+                    links: [
+                        { name: 'Linux - Linus Torvalds', url: 'LH' }
+                    ]
+                },
+            ]
+        }
+    ]
+}) %>

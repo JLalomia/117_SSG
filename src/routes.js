@@ -3,6 +3,8 @@
 const routes = {
     home: '/',
     LinkPage: '/LinkPage',
+    GIT: '/git',
+    LINUX: '/linux',
     JC: '/JC',
     Nuclear: '/Nuclear',
     LH: '/LinuxHis',
