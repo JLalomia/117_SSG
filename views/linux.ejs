@@ -1,0 +1,16 @@
+<%- include('partials/layout', {
+    contentTitle: 'Commands, What They Do, and Examples',
+    sections: [
+        {
+            id: 'linux-commands',
+            title: 'Basic Command Line Commands',
+            type: 'table',
+            tableCaption: 'Common GIT Commands',
+            tableHeaders: ['Command', 'Description', 'Example'],
+            tableRows: [
+                ['<code>mkdir</code>', 'Creates a new directory', '<code>mkdir myFolder</code> - Creates a directory named <code>myFolder</code>'],
+                ['<code>cd</code>', 'Changes the current directory', '<code>cd /home/user/Downloads</code> - Navigates to the Downloads directory'],
+            ]
+        }
+    ]
+}) %>

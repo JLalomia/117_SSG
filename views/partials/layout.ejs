@@ -31,6 +31,31 @@
             <% locals.sections.forEach(section => { %>
                 <section id="<%= section.id %>">
                     <h2><%- section.title %></h2>
+
+                    <% if (section.type === 'table') { %>
+                        <table>
+                            <% if (section.tableCaption) { %>
+                                <caption><%= section.tableCaption %></caption>
+                            <% } %>
+                            <thead>
+                                <tr>
+                                    <% section.tableHeaders.forEach(header => { %>
+                                        <th><%- header %></th>
+                                    <% }) %>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% section.tableRows.forEach(row => { %>
+                                    <tr>
+                                        <% row.forEach(cell => { %>
+                                            <td><%- cell %></td>
+                                        <% }) %>
+                                    </tr>
+                                <% }) %>
+                            </tbody>
+                        </table>
+                    <% } else { %>
+
                     <ul>
                         <% section.content.forEach(item => { %>
                             <% if (Array.isArray(item)) { %>
@@ -46,6 +71,7 @@
                             <% } %>
                         <% }) %>
                     </ul>
+                    <% } %>
                     <% if (section.downloadText) { %>
                         <div class="btn-container">
                             <a href="#" class="download-btn"><%= section.downloadText %></a>

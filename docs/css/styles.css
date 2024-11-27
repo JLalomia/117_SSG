@@ -100,6 +100,9 @@ main {
   background-color: #d1ddea;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .column-1 li {
@@ -113,6 +116,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   align-self: flex-start;
+  box-sizing: border-box;
 }
 
 .btn-container a:hover {
@@ -198,15 +202,19 @@ code {
 
 @media only screen and (max-width: 1200px) {
   main {
-    flex-direction: column-reverse;
+    /*flex-direction: column-reverse;
     align-items: center;
-    padding: 0;
+    padding: 0;*/
+    flex-direction: column-reverse; /* Stack columns vertically */
+    align-items: stretch; /* Ensure columns span the container */
+    padding: 10px; 
   }
 
   .column-1,
   .column-2 {
     width: 100%;
-    flex: 1 1 100%;
+    flex: 1 1 auto;
+    margin-bottom: 20px;
   }
 
   .Content-title h1 {
@@ -217,5 +225,26 @@ code {
     width: 100%;
     max-width: 300px;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Content-title h1 {
+    font-size: 28px;
+  }
+
+  .column-1, .column-2 {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .Content-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .download-btn {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }

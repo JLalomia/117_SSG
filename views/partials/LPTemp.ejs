@@ -1,0 +1,22 @@
+<%- include('RegHead') %>
+<body class="container">
+    <%- include('navbar') %>
+    <main>
+        <article class="column-1">
+            <h1><%= pageTitle %></h1>
+            
+            <% topics.forEach(category => { %>
+                <h2><%= category.title %></h2>
+                <% category.sections.forEach(section => { %>
+                    <h3><%= section.title %></h3>
+                    <ul>
+                        <% section.links.forEach(link => { %>
+                            <li><a href="<%= url(link.url) %>"><%= link.name %></a></li>
+                        <% }) %>
+                    </ul>
+                <% }) %>
+            <% }) %>
+        </article>
+    </main>
+</body>
+</html>

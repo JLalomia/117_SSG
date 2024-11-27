@@ -1,0 +1,16 @@
+<%- include('partials/layout', {
+    contentTitle: 'Commands, What They Do, and Examples',
+    sections: [
+        {
+            id: 'git-commands',
+            title: 'Common GIT Commands',
+            type: 'table',
+            tableCaption: 'Common GIT Commands',
+            tableHeaders: ['Command', 'Description', 'Example'],
+            tableRows: [
+                ['<code>git init</code>', 'Initializes a new Git repository in the current directory', '<code>git init</code> - Initializes a Git repository in the current directory, creating a <code>.git</code> folder'],
+                ['<code>git clone</code>', 'Copies a repository from a remote server to your local machine', '<code>git clone https://github.com/user/repo.git</code> - Clones a remote repository located at the URL to your local machine'],
+            ]
+        }
+    ]
+}) %>
