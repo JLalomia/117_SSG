@@ -8,84 +8,41 @@
         <% } %>
     </div>
     <main>
-        <% if (locals.photos) { %>
-            <div class="photos">
-                <% locals.photos.forEach(photo => { %>
-                    <div class="Content-pic">
-                        <div class="Content-img">
-                            <img src="<%= photo.src %>" width="<%= photo.width %>" height="<%= photo.height %>">
-                        </div>
-                        <% if (photo.caption) { %>
-                            <p><%- photo.caption %></p>
-                        <% } %>
-                        <% if (photo.downloadText) { %>
-                            <div class="btn-container">
-                                <a href="#" class="download-btn"><%= photo.downloadText %></a>
-                            </div>
-                        <% } %>
-                    </div>
-                <% }) %>
-            </div>
-        <% } %>
         <article class="column-1">
             <% locals.sections.forEach(section => { %>
                 <section id="<%= section.id %>">
                     <h2><%- section.title %></h2>
-
-                    <% if (section.type === 'table') { %>
-                        <table>
-                            <% if (section.tableCaption) { %>
-                                <caption><%= section.tableCaption %></caption>
-                            <% } %>
-                            <thead>
-                                <tr>
-                                    <% section.tableHeaders.forEach(header => { %>
-                                        <th><%- header %></th>
-                                    <% }) %>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <% section.tableRows.forEach(row => { %>
-                                    <tr>
-                                        <% row.forEach(cell => { %>
-                                            <td><%- cell %></td>
-                                        <% }) %>
-                                    </tr>
-                                <% }) %>
-                            </tbody>
-                        </table>
-                    <% } else { %>
-
                     <ul>
                         <% section.content.forEach(item => { %>
-                            <% if (Array.isArray(item)) { %>
-                                <li>
-                                    <ul>
-                                        <% item.forEach(subItem => { %>
-                                            <li><%- subItem %></li>
-                                        <% }) %>
-                                    </ul>
-                                </li>
-                            <% } else { %>
+                            <% if (typeof item === 'string') { %>
                                 <li><%- item %></li>
+                            <% } else if (item.type === 'photo') { %>
+                                <div class="photos">
+                                    <div class="Content-pic">
+                                        <div class="Content-img">
+                                            <img src="<%= item.src %>" width="<%= item.width %>" height="<%= item.height %>">
+                                        </div>
+                                        <% if (item.caption) { %>
+                                            <p><%- item.caption %></p>
+                                        <% } %>
+                                        <% if (item.button) { %>
+                                            <div class="btn-container">
+                                                <a href="<%= item.button.url %>" class="download-btn"><%= item.button.text %></a>
+                                            </div>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            <% } else if (item.type === 'button') { %>
+                                <div class="btn-container">
+                                    <a href="<%= item.url %>" class="download-btn"><%= item.text %></a>
+                                </div>
                             <% } %>
                         <% }) %>
                     </ul>
-                    <% } %>
-                    <% if (section.downloadText) { %>
-                        <div class="btn-container">
-                            <a href="#" class="download-btn"><%= section.downloadText %></a>
-                        </div>
-                    <% } %>
                 </section>
             <% }) %>
-            <% if (locals.downloadText) { %>
-                <div class="btn-container">
-                    <a href="#" class="download-btn"><%= locals.downloadText %></a>
-                </div>
-            <% } %>
         </article>
-        <%- include('TOC') %>
+    <%- include('TOC') %>
     </main>
 </body>
 </html>

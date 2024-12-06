@@ -20,7 +20,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(217,217,217,.80);
+  box-shadow: inset 0 0 0 1000px rgba(217, 217, 217, 0.8);
 }
 
 body {
@@ -35,21 +35,19 @@ header {
 }
 
 .Content-title {
-  background-color: #97B1B3;
+  background-color: #97b1b3;
   background-image: url('../images/paisley.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(217, 217, 217, 0.651);
+  box-shadow: inset 0 0 0 1000px rgba(217, 217, 217, 0.65);
   width: 100%;
-  margin: 0;
   padding: var(--container-padding);
 }
 
-.Content-title h1, p {
+.Content-title h1, .Content-title p {
   color: #616d81;
-  -webkit-text-stroke-color: #333;
-  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke: 0.01px #333;
   text-align: center;
   margin: 0;
 }
@@ -66,8 +64,15 @@ main {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  padding: 20px;
+  padding: var(--container-padding);
   margin-top: 20px;
+}
+
+.column-1, .column-2 {
+  padding: var(--container-padding);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .column-1, .column-2 h2 {
@@ -75,33 +80,9 @@ main {
   text-align: left;
 }
 
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  table-layout: auto;
-}
-
-main {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  padding: 20px;
-}
-
 .column-1 {
   flex: 2 1 auto;
-  padding: var(--container-padding);
   background-color: #d1ddea;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  align-self: flex-start;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -111,20 +92,15 @@ main {
 
 .column-2 {
   flex: 0 1 auto;
-  padding: var(--container-padding);
   background-color: #ededd9;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  align-self: flex-start;
-  box-sizing: border-box;
-}
-
-.btn-container a:hover {
-  background-color: var(--link-color);
 }
 
 .btn-container {
   text-align: center;
+}
+
+.btn-container a:hover, .download-btn:hover {
+  background-color: var(--link-color);
 }
 
 .download-btn {
@@ -136,7 +112,6 @@ main {
   cursor: pointer;
   display: inline-block;
   margin: 15px 0;
-  width: auto;
 }
 
 .photos {
@@ -148,18 +123,24 @@ main {
 }
 
 .Content-pic {
-  background-color: #e4e4da;;
+  background-color: #e4e4da;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px 0;
+}
+
+.Content-pic:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .Content-pic p {
   color: #616d81;
-  -webkit-text-stroke-color: #333;
-  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke: 0.01px #333;
   text-align: center;
-  align-items: center;
+  max-width: 400px;
   margin: 0;
 }
 
@@ -169,21 +150,16 @@ main {
   height: auto;
 }
 
-main {
-  padding: 20px;
-}
-
-caption {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 th, td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
-  white-space: normal;
-  word-wrap: break-word;
 }
 
 th {
@@ -202,29 +178,18 @@ code {
 
 @media only screen and (max-width: 1200px) {
   main {
-    /*flex-direction: column-reverse;
-    align-items: center;
-    padding: 0;*/
-    flex-direction: column-reverse; /* Stack columns vertically */
-    align-items: stretch; /* Ensure columns span the container */
-    padding: 10px; 
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding: 10px;
   }
 
-  .column-1,
-  .column-2 {
+  .column-1, .column-2 {
     width: 100%;
-    flex: 1 1 auto;
     margin-bottom: 20px;
   }
 
   .Content-title h1 {
     font-size: 32px;
-  }
-
-  .Content-img img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
   }
 }
 
@@ -239,12 +204,13 @@ code {
   }
 
   .Content-img img {
-    max-width: 100%;
+    border-radius: 8px;
+    max-width: 75%;
     height: auto;
   }
 
   .download-btn {
-    font-size: 14px;
+    font-size: 20px;
     padding: 8px 16px;
   }
 }

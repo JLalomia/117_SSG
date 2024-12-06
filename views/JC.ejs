@@ -1,18 +1,14 @@
 <%- include('partials/layout', {
     title: 'History of J.C.R. Licklider',
     contentTitle: 'History of J.C.R. Licklider',
-    photos: [
-        { src: 'images/JCR.png', width: '400', height: 'auto', caption: '"Over 1 billion people now use networks built on Licklider\'s concepts."' },
-        { src: 'images/origin.jpg', width: '400', height: 'auto', caption: '"Licklider\'s vision changed the world" —Dr. Jane Doe, Internet Historian' },
-        { src: 'images/JCQuote.jpg', width: '400', height: 'auto', caption: null, buttonIndex: 0, downloadText: 'Premium JCR Content Available Free For Limited Time'}
-    ],
     sections: [
         {
             id: 'WHO',
             title: 'WHO',
             content: [
                 'J.C.R. Licklider (1915-1990) was an American psychologist and computer scientist, often referred to as one of the "fathers of the internet". His ideas shaped the development of interactive computing and networking.',
-                'Position: Licklider was the director of the Information Processing Techniques Office (IPTO) at the Advanced Research Projects Agency (ARPA), now DARPA.'
+                'Position: Licklider was the director of the Information Processing Techniques Office (IPTO) at the Advanced Research Projects Agency (ARPA), now DARPA.',
+                { type: 'photo', src: 'images/JCR.png', width: '200', height: 'auto', caption: '"Over 1 billion people now use networks built on Licklider\'s concepts."' }
             ]
         },
         {
@@ -20,11 +16,11 @@
             title: 'WHAT',
             content: [
                 'Licklider is best known for his work on interactive computing and the concept of a "man-computer symbiosis"—the idea that computers should enhance human intellect and allow people to interact directly with machines.',
+                { type: 'button', text: 'Free PDF of "Man-Computer Symbiosis"', url: '#' },
                 'Conceptualized the "Intergalactic Computer Network": Licklider envisioned a global network of computers that could communicate and share information in real-time. His idea was one of the first conceptual foundations for the internet.',
                 'Role in the Development of ARPANET: Licklider\'s vision of connected computers heavily influenced the creation of ARPANET, the predecessor of the modern internet.',
                 ['As the head of the Information Processing Techniques Office (IPTO) at DARPA, he funded early research into time-sharing computers and networking.']
             ],
-            downloadText: 'Free PDF of "Man-Computer Symbiosis"'
         },
         {
             id: 'WHY',
@@ -32,6 +28,7 @@
             content: [
             'Information Sharing and Collaboration: Licklider believed that computers could transform human communicatioAn and collaboration by enabling people to share data and knowledge more easily across distances.',
             'Solving Global Problems: He saw computer networks as a way to share resources and tackle global issues, like science, education, and economics, more efficiently.',
+            { type: 'photo', src: 'images/JCQuote.jpg', width: '400', height: 'auto', button: { url: '#', text: 'Premium JCR Content Available Free For Limited Time' } },
             'Licklider believed that computers should not just be tools for calculation but partners in human problem-solving. He wanted to make computers more accessible, user-friendly, and connected, facilitating collaboration among people across different locations.',
             'His vision was driven by a belief that such technology would lead to a better understanding and use of human knowledge.'
             ]
@@ -82,9 +79,10 @@
             title: 'IMPORTANCE',
             content: [
             'Licklider\'s visionary thinking directly influenced the development of ARPANET and the internet. His foresight in seeing the potential for computers to connect globally helped shape the research agenda that eventually led to the creation of the internet.',
-            'Legacy: Known as one of the "Fathers of the Internet," Licklider’s ideas about a network of computers created a paradigm shift that continues to shape the digital world today.'
+            { type: 'photo', src: 'images/origin.jpg', width: '400', height: 'auto', caption: '"Licklider\'s vision changed the world" —Dr. Jane Doe, Internet Historian' },
+            'Legacy: Known as one of the "Fathers of the Internet," Licklider’s ideas about a network of computers created a paradigm shift that continues to shape the digital world today.',
+            { type: 'button', text: 'Join us in continuing Licklider’s mission by learning to code', url: '#' }
             ]
         }
-    ],
-    downloadText: 'Join us in continuing Licklider’s mission by learning to code'
+    ]
 }) %>
