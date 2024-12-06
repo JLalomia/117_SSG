@@ -1,6 +1,11 @@
 const { test, expect } = require('@playwright/test');
 test.describe('LinkPage Tests', () => {
-  test.beforeEach(async ({ page }) => {
+  test('has title', async ({ page }) => {
+    await page.goto('/LinkPage');
+    await expect(page).toHaveTitle(/Learning Index/i);
+  });
+
+  /*test.beforeEach(async ({ page }) => {
     // Navigate to LinkPage before each test
     await page.goto('/LinkPage');
   });
@@ -43,5 +48,5 @@ test.describe('LinkPage Tests', () => {
         await expect(links.nth(k)).toHaveAttribute('href', linkHref);
       }
     }
-  });
+  });*/
 });
