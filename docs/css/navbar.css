@@ -1,19 +1,16 @@
-/* navbar.css */
 :root {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    --link-color: #007acc;
     --base-font-size: 18px;
     --line-height: 1.6;
     --primary-color: #3e513b;
+    --link-color: #007acc;
+    --container-padding: 15px;
 }
 
 body {
     font-size: var(--base-font-size);
     line-height: var(--line-height);
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
     background-color: #b0ceb0;
 }
 
@@ -21,16 +18,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--primary-color);
+    padding: var(--container-padding);
+    background: var(--primary-color) url('../images/NavBackground.png') no-repeat center / cover;
     color: white;
     position: relative;
-    background-image: url('../images/NavBackground.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: inset 0 0 0 1000px rgba(62,81,59,.80);
+    box-shadow: inset 0 0 0 1000px rgba(62, 81, 59, 0.8);
+    clear: both;
     z-index: 10;
 }
 
@@ -50,7 +43,7 @@ header {
 .logo h2 {
     font-size: 17px;
     letter-spacing: 0.25cm;
-    margin: 2px 0 0;
+    margin-top: 2px;
     font-weight: 300;
 }
 
@@ -90,7 +83,7 @@ a {
     transition: background-color 0.3s, border-radius 0.3s;
 }
 
-.menu a:hover {
+.menu-items a:hover {
     background-color: var(--link-color);
     border-radius: 4px;
 }
@@ -114,10 +107,6 @@ nav .fa, .fas {
     z-index: 20;
 }
 
-.menu-toggle:focus {
-    outline: none;
-}
-
 .menu-toggle div {
     width: 30px;
     height: 3px;
@@ -126,9 +115,163 @@ nav .fa, .fas {
     transform-origin: 1px;
 }
 
-.menu-items.active {
-    transform: translateX(0);
+.menu-toggle:focus {
+    outline: none;
 }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    background: var(--primary-color) url('../images/NavBackground.png') no-repeat center / cover;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(62, 81, 59, 0.8);
+    gap: 10px;
+    clear: both;
+    position: relative;
+    z-index: 5;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.footer-logo h1, .footer-logo a {
+    margin: 0;
+}
+
+.footer-logo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.2cm;
+}
+
+.footer-logo a {
+    font-size: 12px;
+}
+.footer-logo li {
+    list-style: none;
+}
+
+
+.footer-menu {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu h1 {
+    padding-right: 30px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu li {
+    list-style: none;
+}
+
+.footer-menu a, .footer-logo a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.footer-subscription {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.footer-subscription h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.footer-subscription p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+    width: 200px;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: var(--link-color);
+    box-shadow: 0 0 5px var(--link-color);
+}
+
+.subscribe-btn {
+    background-color: #b3a862;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--link-color);
+}
+
+.footer-info {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-info span {
+    margin: 0 5px;
+}
+
 
 @media (max-width: 1200px) {
     .menu-items {
@@ -151,7 +294,7 @@ nav .fa, .fas {
     .menu-toggle {
         display: flex;
     }
-    
+
     .menu-toggle.open div:first-child {
         transform: rotate(45deg);
     }
@@ -167,48 +310,78 @@ nav .fa, .fas {
     .menu-items ul {
         flex-direction: column;
         gap: 1.5em;
-        
     }
 }
 
 @media (max-width: 768px) {
-    .menu-items {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 300px;
+    .menu {
         flex-direction: column;
-        background-color: var(--primary-color);
-        padding-top: 3.5rem;
-        transition: transform 0.3s ease-in-out;
-        transform: translateX(100%);
-    }
-
-    .menu-items.active {
-        transform: translateX(0);
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-    
-    .menu-toggle.open div:first-child {
-        transform: rotate(45deg);
-    }
-
-    .menu-toggle.open div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.open div:nth-child(3) {
-        transform: rotate(-45deg);
+        align-items: flex-start;
     }
 
     .menu-items ul {
         flex-direction: column;
         gap: 1.5em;
-        
+    }
+
+    .menu-toggle {
+        align-self: flex-end;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        flex: none;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-menu {
+        width: 100%;
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .footer-logo h1, .footer-logo a {
+        text-align: center;
+    }
+
+    .footer-info {
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .footer-subscription {
+        align-items: center;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .subscription-form {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .subscribe-btn {
+        width: auto;
     }
 }
 
@@ -218,12 +391,7 @@ nav .fa, .fas {
         align-items: flex-start;
     }
 
-    nav ul {
-        flex-direction: column;
+    .menu-items ul {
         gap: 10px;
-    }
-
-    .menu-toggle {
-        align-self: flex-end;
     }
 }
