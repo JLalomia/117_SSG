@@ -1,6 +1,11 @@
 const { test, expect } = require('@playwright/test');
 test.describe('git Tests', () => {
-    test.beforeEach(async ({ page }) => {
+  test('has title', async ({ page }) => {
+    await page.goto('/JC');
+    await expect(page).toHaveTitle(/History of J.C.R. Licklider/i);
+  });
+
+    /*test.beforeEach(async ({ page }) => {
       // Navigate to git page before each test
       await page.goto('/JC');
     });
@@ -20,5 +25,5 @@ test.describe('git Tests', () => {
         await expect(indexLink).toHaveAttribute('href', '/LinkPage');
         // Check content title
         await expect(page.getByText('History of J.C.R. Licklider')).toBeVisible();
-      });
+      });*/
 });

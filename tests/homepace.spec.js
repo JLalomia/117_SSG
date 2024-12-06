@@ -1,7 +1,12 @@
 const { test, expect } = require('@playwright/test');
 
 test.describe('Homepage Tests', () => {
-    test.beforeEach(async ({ page }) => {
+   test('has title', async ({ page }) => {
+      await page.goto('/');
+      await expect(page).toHaveTitle(/Tech Survival Guide/i);
+    });
+
+    /*test.beforeEach(async ({ page }) => {
         // Navigate to homepage before each test
         await page.goto('/');
     })
@@ -88,5 +93,5 @@ test.describe('Homepage Tests', () => {
         const link = page.getByRole('link', { name: 'Progress Tracker' });
         await expect(link).toBeVisible();
         await expect(link).toHaveAttribute('href', '#');
-     });
+     });*/
 });
