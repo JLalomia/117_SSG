@@ -12,37 +12,65 @@
             <% locals.sections.forEach(section => { %>
                 <section id="<%= section.id %>">
                     <h2><%- section.title %></h2>
-                    <ul>
-                        <% section.content.forEach(item => { %>
-                            <% if (typeof item === 'string') { %>
-                                <li><%- item %></li>
-                            <% } else if (item.type === 'photo') { %>
-                                <div class="photos">
-                                    <div class="Content-pic">
-                                        <div class="Content-img">
-                                            <img src="<%= item.src %>" width="<%= item.width %>" height="<%= item.height %>">
-                                        </div>
-                                        <% if (item.caption) { %>
-                                            <p><%- item.caption %></p>
-                                        <% } %>
-                                        <% if (item.button) { %>
-                                            <div class="btn-container">
-                                                <a href="<%= item.button.url %>" class="download-btn"><%= item.button.text %></a>
-                                            </div>
-                                        <% } %>
-                                    </div>
-                                </div>
-                            <% } else if (item.type === 'button') { %>
-                                <div class="btn-container">
-                                    <a href="<%= item.url %>" class="download-btn"><%= item.text %></a>
-                                </div>
+
+                    <% if (section.type === 'table') { %>
+                        <table>
+                            <% if (section.tableCaption) { %>
+                                <caption><%= section.tableCaption %></caption>
                             <% } %>
-                        <% }) %>
-                    </ul>
+                            <thead>
+                                <tr>
+                                    <% section.tableHeaders.forEach(header => { %>
+                                        <th><%- header %></th>
+                                    <% }) %>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% section.tableRows.forEach(row => { %>
+                                    <tr>
+                                        <% row.forEach(cell => { %>
+                                            <td><%- cell %></td>
+                                        <% }) %>
+                                    </tr>
+                                <% }) %>
+                            </tbody>
+                        </table>
+                    <% } else { %>
+                        <ul>
+                            <% section.content.forEach(item => { %>
+                                <% if (typeof item === 'string') { %>
+                                    <li><%- item %></li>
+                                <% } else if (item.type === 'photo') { %>
+                                    <div class="photos">
+                                        <div class="Content-pic">
+                                            <div class="Content-img">
+                                                <img src="<%= item.src %>" width="<%= item.width %>" height="<%= item.height %>">
+                                            </div>
+                                            <% if (item.caption) { %>
+                                                <p><%- item.caption %></p>
+                                            <% } %>
+                                            <% if (item.button) { %>
+                                                <div class="btn-container">
+                                                    <a href="<%= item.button.url %>" class="download-btn"><%= item.button.text %></a>
+                                                </div>
+                                            <% } %>
+                                        </div>
+                                    </div>
+                                <% } else if (item.type === 'button') { %>
+                                    <div class="btn-container">
+                                        <a href="<%= item.url %>" class="download-btn"><%= item.text %></a>
+                                    </div>
+                                <% } %>
+                            <% }) %>
+                        </ul>
+                    <% } %>
                 </section>
             <% }) %>
         </article>
-    <%- include('TOC') %>
+        <% if (currentPage !== 'git' && currentPage !== 'linux' ) { %>
+            <%- include('TOC') %>
+        <% } %>
     </main>
+    <%- include('footer') %>
 </body>
 </html>
