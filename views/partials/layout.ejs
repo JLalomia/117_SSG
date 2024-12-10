@@ -40,6 +40,12 @@
                             <% section.content.forEach(item => { %>
                                 <% if (typeof item === 'string') { %>
                                     <li><%- item %></li>
+                                <% } else if (Array.isArray(item)) { %>
+                                    <ul>
+                                        <% item.forEach(subItem => { %>
+                                            <li><%- subItem %></li>
+                                        <% }) %>
+                                    </ul>
                                 <% } else if (item.type === 'photo') { %>
                                     <div class="photos">
                                         <div class="Content-pic">

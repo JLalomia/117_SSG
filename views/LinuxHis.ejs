@@ -3,8 +3,6 @@
     contentTitle: 'History Behind Linux',
     contentSubtitle: 'Discover the journey of one of the world\'s most influential operating systems',
     photos: [
-        { src: 'images/LinuxLogo.png', width: '1000', height: 'auto', caption: null },
-        { src: 'images/linus.jpg', width: '1000', height: 'auto', caption: '<em>Linus Torvalds</em>' },
         { src: 'images/LinusPenguin.jpg', width: '1000', height: 'auto', caption: '<em>"Talk is cheap. Show me the code." - Linus Torvalds</em>' },
         { src: 'images/LinusQuote.jpg', width: '1000', height: 'auto', caption: null, buttonIndex: 1, downloadText: 'Access Our Linux Command Cheat Sheet' }
     ],
@@ -13,6 +11,7 @@
             id: 'WHO',
             title: 'WHO',
             content: [
+                { type: 'photo', src: 'images/linus.jpg', width: '200', height: 'auto', caption: '<em>Linus Torvalds</em>'},
                 'Developed by: Linus Torvalds, a Finnish software engineer.',
                 '<strong><em>Key Figures:</em></strong>',
                 [
@@ -25,6 +24,7 @@
             id: 'WHAT',
             title: 'WHAT',
             content: [
+                { type: 'photo', src: 'images/LinuxLogo.png', width: '400', height: 'auto'},
                 '<strong>Linux:</strong> An open-source operating system kernel that serves as the core component of various operating systems known as Linux distributions (distros). It allows users to interact with the hardware of a computer and manage system resources.',
                 '<strong>Unix-like System:</strong> Linux is designed to be similar to Unix, providing a multi-user environment with multitasking capabilities.'
             ],
@@ -34,7 +34,8 @@
             title: 'WHY',
             content: [
                 '<strong>Need for a Free OS:</strong> Linus Torvalds aimed to create a free and open alternative to the MINIX operating system, which was used for educational purposes but had licensing restrictions.',
-                '<strong>Community Collaboration:</strong> The idea of open-source software encouraged collaboration and contributions from developers worldwide, fostering innovation and improvement.'
+                '<strong>Community Collaboration:</strong> The idea of open-source software encouraged collaboration and contributions from developers worldwide, fostering innovation and improvement.',
+                { type: 'photo', src: 'images/LinusPenguin.jpg', width: '400', height: 'auto', caption: '<em>"Talk is cheap. Show me the code." - Linus Torvalds</em>'}
             ]
         },
         {
@@ -85,7 +86,8 @@
             content: [
                 '<strong>Free and Open Source:</strong> Linux promotes the principles of free and open-source software, encouraging community involvement and innovation while reducing software costs.',
                 '<strong>Flexibility and Customization:</strong> Users can customize and configure Linux distributions to meet specific needs, making it suitable for a wide range of applications.',
-                '<strong>Security and Stability:</strong> Linux is known for its security and stability, making it a preferred choice for servers, enterprise applications, and critical systems.'
+                '<strong>Security and Stability:</strong> Linux is known for its security and stability, making it a preferred choice for servers, enterprise applications, and critical systems.',
+                { type: 'photo', src: 'images/LinusQuote.jpg', width: '400', height: 'auto', button: { url: '#', text: 'Access Our Linux Command Cheat Sheet' }}
             ]
         }
     ],
