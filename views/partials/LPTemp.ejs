@@ -1,10 +1,14 @@
 <%- include('RegHead') %>
 <body class="container">
     <%- include('navbar') %>
+    <div class="Content-title">
+        <h1><%- locals.contentTitle %></h1>
+        <% if (locals.contentSubtitle) { %>
+            <p><%- locals.contentSubtitle %></p>
+        <% } %>
+    </div>
     <main>
         <article class="column-1">
-            <h1><%= pageTitle %></h1>
-            
             <% topics.forEach(category => { %>
                 <h2><%= category.title %></h2>
                 <% category.sections.forEach(section => { %>

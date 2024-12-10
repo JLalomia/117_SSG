@@ -15,7 +15,7 @@
         <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
     </nav>
     <div class="footer-subscription">
-        <h3>Subscribe to our Newsletter</h3>
+        <h3>Subscribe For Access To Advanced Materials</h3>
         <p>Join the thousands of students that use our site daily</p>
         <form class="subscription-form">
             <input 
@@ -31,17 +31,12 @@
     </div>
     <script>
         document.querySelector('.subscription-form').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the form from refreshing the page
-            
+            event.preventDefault();
             const emailInput = event.target.querySelector('input[name="email"]');
             const messageElement = document.getElementById('subscription-message');
-    
-            // Show a thank-you message
             if (emailInput.value) {
                 messageElement.textContent = `Thank you for subscribing, ${emailInput.value}!`;
                 messageElement.style.display = 'block';
-    
-                // Clear the email input field
                 emailInput.value = '';
             }
         });
