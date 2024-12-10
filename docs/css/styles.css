@@ -180,7 +180,6 @@ code {
   font-size: 2em;
   text-align: center;
   margin-bottom: 20px;
-  /*color: #3e513b;*/
 }
 
 .topics-row {
@@ -189,6 +188,12 @@ code {
   width: 100%;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    text-align: left;
+    margin: 20px;
 }
 
 .topic {

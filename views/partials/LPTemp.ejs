@@ -10,10 +10,13 @@
     <main>
         <article class="column-1">
             <section class="topics" id="topics">
-                    <% topics.forEach(category => { %>
-                        <h1 class="category-title"><%= category.title %></h1>
+                <% topics.forEach(category => { %>
+                    <h1 class="category-title"><%= category.title %></h1>
+                    <% category.sections.forEach(section => { %>
+                        <% if (section.title) { %>
+                            <h2 class="section-title"><%= section.title %></h2>
+                        <% } %>
                         <div class="topics-row">
-                        <% category.sections.forEach(section => { %>
                             <% section.links.forEach(link => { %>
                                 <div class="topic-card">
                                     <div class="topic-icon">
@@ -26,10 +29,9 @@
                                     <a href="<%= url(link.url) %>" class="topic-btn">Learn More</a>
                                 </div>
                             <% }) %>
-                        <% }) %>
                         </div>
                     <% }) %>
-                </div>
+                <% }) %>
             </section>
         </article>
     </main>
