@@ -9,17 +9,28 @@
     </div>
     <main>
         <article class="column-1">
-            <% topics.forEach(category => { %>
-                <h2><%= category.title %></h2>
-                <% category.sections.forEach(section => { %>
-                    <h3><%= section.title %></h3>
-                    <ul>
-                        <% section.links.forEach(link => { %>
-                            <li><a href="<%= url(link.url) %>"><%= link.name %></a></li>
+            <section class="topics" id="topics">
+                    <% topics.forEach(category => { %>
+                        <h1 class="category-title"><%= category.title %></h1>
+                        <div class="topics-row">
+                        <% category.sections.forEach(section => { %>
+                            <% section.links.forEach(link => { %>
+                                <div class="topic-card">
+                                    <div class="topic-icon">
+                                        <i class="<%= link.icon %> fa-3x"></i>
+                                    </div>
+                                    <div class="topic-content">
+                                        <h3><%= link.name %></h3>
+                                        <p><%= link.description %></p>
+                                    </div>
+                                    <a href="<%= url(link.url) %>" class="topic-btn">Learn More</a>
+                                </div>
+                            <% }) %>
                         <% }) %>
-                    </ul>
-                <% }) %>
-            <% }) %>
+                        </div>
+                    <% }) %>
+                </div>
+            </section>
         </article>
     </main>
     <%- include('footer') %>
