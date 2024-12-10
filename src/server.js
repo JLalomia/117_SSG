@@ -37,6 +37,10 @@ app.get(routes.LinkPage, (req, res) => {
     res.render('LinkPage');
 });
 
+app.get(routes.HisLP, (req, res) => {
+    res.render('HisLP');
+});
+
 app.get(routes.GIT, (req, res) => {
     res.render('git');
 });
