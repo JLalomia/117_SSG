@@ -5,124 +5,292 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Browser Wars Part 2 (2000s-Present)</title>
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        </noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap">
+        </noscript>
     </head>
+    <script src="js/script.js"></script>
+<body class="container">
     <body>
-        <header>
-            <nav class="menu">
-                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
-                <div class="menu-items" id="menuItems">
-                    <a href="#"><i class="fas fa-home"></i>Home</a>
-                    <a href="#"><i class="fas fa-info-circle"></i>About</a>
-                    <a href="#"><i class="fas fa-cogs"></i>Services</a>
-                    <a href="#"><i class="fas fa-briefcase"></i>Portfolio</a>
-                    <a href="#"><i class="fas fa-envelope"></i>Contact</a>
-                </div>
-            </nav>
-        </header>
-        <script src="js/script.js"></script>
-    </body>
-    <body class="container">
-        <main>
-            <article class="column-1">
-                <h1>Browser Wars Part 2 (2000s-Present)</h1>
+    <header class="Content-Nav">
+        <div class="logo">
+            <h1><em>IS117</em></h1>
+            <h2><em>Your Guide to the Tech Frontier</em></h2>
+        </div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="menu-items" id="menuItems">
+                <ul>
+                    
+                        <li><a href="./index.html"><i class="fas fa-home"></i>Home</a></li>
+                    
+                    <li><a href="./LinkPage.html">Learning Index</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+    <div class="Content-title">
+        <h1>Browser Wars Part 2 (2000s-Present)</h1>
+        
+    </div>
+    <main>
+        <article class="column-1">
+            
                 <section id="WHO">
                     <h2>WHO</h2>
-                    <ul>
-                        <li><strong>Key Players</strong>:
-                            <ul>
-                                <li><strong>Internet Explorer</strong>: Developed by Microsoft.</li>
-                                <li><strong>Firefox</strong>: Developed by the Mozilla Foundation, stemming from the Netscape Navigator codebase.</li>
-                                <li><strong>Google Chrome</strong>: Developed by Google.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Key Figures</strong>:
-                            <ul>
-                                <li><strong>Jim Clarke</strong>: Co-founder of Netscape, which led to the creation of Mozilla.</li>
-                                <li><strong>Brendan Eich</strong>: Co-founder of Mozilla and creator of JavaScript, pivotal in Firefox's development.</li>
-                                <li><strong>Sundar Pichai</strong>: CEO of Google, who has overseen the growth of Chrome.</li>
-                            </ul>
-                        </li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Internet Explorer: Developed by Microsoft.</li>
+                                
+                            
+                                
+                                    <li>Firefox: Developed by the Mozilla Foundation, stemming from the Netscape Navigator codebase.</li>
+                                
+                            
+                                
+                                    <li>Google Chrome: Developed by Google.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHAT">
                     <h2>WHAT</h2>
-                    <ul>
-                        <li><strong>Internet Explorer (IE)</strong>: Once the dominant web browser, known for its integration with Windows and various features, but criticized for performance and security vulnerabilities.</li>
-                        <li><strong>Firefox</strong>: An open-source web browser that emerged as a response to the decline of Netscape and the dominance of Internet Explorer, emphasizing user privacy and customization.</li>
-                        <li><strong>Google Chrome</strong>: A web browser launched in 2008, designed for speed, simplicity, and security, featuring a minimalistic interface and powerful performance.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Internet Explorer (IE): Once the dominant web browser, known for its integration with Windows but criticized for performance and security vulnerabilities.</li>
+                                
+                            
+                                
+                                    <li>Firefox: An open-source web browser that emphasized user privacy and customization.</li>
+                                
+                            
+                                
+                                    <li>Google Chrome: A web browser launched in 2008, designed for speed, simplicity, and security, featuring a minimalistic interface and powerful performance.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHY">
                     <h2>WHY</h2>
-                    <ul>
-                        <li><strong>Need for Competition</strong>: After Internet Explorer's dominance led to stagnation and security issues, there was a growing need for alternative browsers that offered better performance, user experience, and security features.</li>
-                        <li><strong>User Demand for Customization and Speed</strong>: Users sought browsers that could offer faster browsing experiences and more customization options, which Firefox aimed to provide through its open-source nature.</li>
-                        <li><strong>Focus on Performance and User Experience</strong>: Google Chrome was developed to create a faster, more efficient browsing experience, addressing the shortcomings of existing browsers, including slow load times and resource consumption.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Need for Competition: After Internet Explorer’s dominance led to stagnation and security issues, there was a need for alternatives with better performance and features.</li>
+                                
+                            
+                                
+                                    <li>User Demand for Customization and Speed: Firefox provided open-source solutions with customizations.</li>
+                                
+                            
+                                
+                                    <li>Focus on Performance: Google Chrome addressed shortcomings of existing browsers, such as slow load times and resource consumption.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHEN">
                     <h2>WHEN</h2>
-                    <ul>
-                        <li><strong>Firefox Launch</strong>: Firefox was officially released in November 2004, quickly gaining popularity among users disillusioned with Internet Explorer.</li>
-                        <li><strong>Google Chrome Launch</strong>: Chrome was released on September 2, 2008, and rapidly gained market share due to its speed and user-friendly design.</li>
-                        <li><strong>Browser Market Dynamics</strong>: The browser market has seen significant changes from the mid-2000s to the present, with Google Chrome becoming the most widely used browser by the early 2010s.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Firefox Launch: Firefox was officially released in November 2004, gaining popularity among users disillusioned with IE.</li>
+                                
+                            
+                                
+                                    <li>Google Chrome Launch: Chrome was released on September 2, 2008, rapidly gaining market share.</li>
+                                
+                            
+                                
+                                    <li>Browser Market Dynamics: By the early 2010s, Chrome became the most widely used browser.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHERE">
                     <h2>WHERE</h2>
-                    <ul>
-                        <li><strong>Global Usage</strong>: Browser usage is global, with millions of users accessing the internet through various devices (desktops, laptops, tablets, smartphones) across different regions.</li>
-                        <li><strong>Online Development Communities</strong>: Firefox and Chrome have active development communities and user forums where developers and users discuss improvements, features, and extensions.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Global Usage: Browser usage became global, accessible across devices like desktops, laptops, tablets, and smartphones.</li>
+                                
+                            
+                                
+                                    <li>Online Development Communities: Firefox and Chrome have active communities contributing to development and extensions.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="HOW">
                     <h2>HOW</h2>
-                    <ul>
-                        <li><strong>Open Source Development</strong>: Firefox's development is community-driven, with contributions from developers worldwide, promoting transparency and rapid iteration.</li>
-                        <li><strong>Engine Innovations</strong>: Chrome introduced the Blink rendering engine, which significantly improved page loading speed and execution of JavaScript.</li>
-                        <li><strong>Market Strategies</strong>: Google leveraged its dominance in search to promote Chrome, integrating it with Google services and making it the default browser on Android devices, further increasing its market presence.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Open Source Development: Firefox’s community-driven development promoted transparency and rapid innovation.</li>
+                                
+                            
+                                
+                                    <li>Engine Innovations: Chrome’s Blink rendering engine improved page loading speed and JavaScript execution.</li>
+                                
+                            
+                                
+                                    <li>Market Strategies: Google leveraged its search dominance to promote Chrome, making it the default browser on Android.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="EX">
                     <h2>EXAMPLES AND CONTRIBUTIONS</h2>
-                    <ul>
-                        <li><strong>Firefox Add-ons</strong>: Firefox popularized the use of browser extensions, allowing users to customize their browsing experience extensively.</li>
-                        <li><strong>Chrome Extensions and Apps</strong>: Chrome's extension ecosystem has led to the development of various tools that enhance productivity, security, and user experience.</li>
-                        <li><strong>Impact on Web Standards</strong>: The competition among browsers has accelerated the development and adoption of web standards, ensuring compatibility and improved features across all platforms.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Firefox Add-ons: Firefox popularized customizable browser extensions.</li>
+                                
+                            
+                                
+                                    <li>Chrome Extensions and Apps: Chrome developed a robust extension ecosystem to improve productivity and experience.</li>
+                                
+                            
+                                
+                                    <li>Impact on Web Standards: Competition accelerated the adoption of web standards, improving compatibility across platforms.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="IMP">
                     <h2>IMPORTANCE</h2>
-                    <ul>
-                        <li><strong>Transformation of Browsing Experience</strong>: The competition among Internet Explorer, Firefox, and Chrome has led to a continuous evolution of browser technology, improving performance, security, and user experience.</li>
-                        <li><strong>Market Dynamics</strong>: Chrome's rise has reshaped the browser market, influencing how web applications are developed and interacted with, with a significant focus on speed and user interface.</li>
-                        <li><strong>Legacy of Open Source</strong>: Firefox's emphasis on open-source principles has influenced other projects, encouraging transparency, community involvement, and user-centric development in software applications.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Transformation of Browsing: Competition among browsers drove significant improvements in performance, security, and user experience.</li>
+                                
+                            
+                                
+                                    <li>Market Dynamics: Chrome’s rise reshaped browser dynamics, focusing on speed and usability.</li>
+                                
+                            
+                                
+                                    <li>Legacy of Open Source: Firefox’s principles influenced transparency and community-driven software development.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
-            </article>
+            
+        </article>
+        
             <aside class="column-2">
-                <nav aria-label="Table of contents">
-                    <h2>Table of Contents</h2>
-                    <ul>
-                        <li><a href="LinkPage.html">Index Page</a></li>
-                        <li><a href="#WHO">WHO</a></li>
-                        <li><a href="#WHAT">WHAT</a></li>
-                        <li><a href="#WHY">WHY</a></li>
-                        <li><a href="#WHEN">WHEN</a></li>
-                        <li><a href="#WHERE">WHERE</a></li>
-                        <li><a href="#HOW">HOW</a></li>
-                        <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
-                        <li><a href="#IMP">IMPORTANCE</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </main>
-    </body>
+    <nav aria-label="Table of contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#WHO">WHO</a></li>
+            <li><a href="#WHAT">WHAT</a></li>
+            <li><a href="#WHY">WHY</a></li>
+            <li><a href="#WHEN">WHEN</a></li>
+            <li><a href="#WHERE">WHERE</a></li>
+            <li><a href="#HOW">HOW</a></li>
+            <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
+            <li><a href="#IMP">IMPORTANCE</a></li>
+        </ul>
+    </nav>
+</aside>
+        
+    </main>
+    <footer class="Content-Footer">
+    <nav class="footer-logo">
+        <h1><em>Site Links</em></h1>
+        <ul>
+            <li><a href="./LinkPage.html">Learning Index</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <nav class="footer-menu">
+        <h1>Follow Us</h1>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+    </nav>
+    <div class="footer-subscription">
+        <h3>Subscribe For Access To Advanced Materials</h3>
+        <p>Join the thousands of students that use our site daily</p>
+        <form class="subscription-form">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required 
+                class="email-input"
+            >
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <p id="subscription-message">Thank you for subscribing!</p>
+    </div>
+    <script>
+        document.querySelector('.subscription-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const emailInput = event.target.querySelector('input[name="email"]');
+            const messageElement = document.getElementById('subscription-message');
+            if (emailInput.value) {
+                messageElement.textContent = `Thank you for subscribing, ${emailInput.value}!`;
+                messageElement.style.display = 'block';
+                emailInput.value = '';
+            }
+        });
+    </script>
+    <div class="footer-info">
+        <p>&copy; 2024 IS117. All Rights Reserved.</p>
+        <p>Designed and Developed by IS117 Team</p>
+    </div>
+</footer>
+</body>
 </html>

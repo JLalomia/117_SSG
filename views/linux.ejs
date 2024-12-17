@@ -7,11 +7,19 @@
             id: 'linux-commands',
             title: 'Basic Command Line Commands',
             type: 'table',
-            tableCaption: 'Common GIT Commands',
+            tableCaption: 'Basic Linux Commands',
             tableHeaders: ['Command', 'Description', 'Example'],
             tableRows: [
                 ['<code>mkdir</code>', 'Creates a new directory', '<code>mkdir myFolder</code> - Creates a directory named <code>myFolder</code>'],
                 ['<code>cd</code>', 'Changes the current directory', '<code>cd /home/user/Downloads</code> - Navigates to the Downloads directory'],
+                ['<code>ls</code>', 'Lists files in the current directory', '<code>ls -la</code> - Lists all files, including hidden ones, with details'],
+                ['<code>rm</code>', 'Removes files or directories', '<code>rm file.txt</code> - Deletes file.txt'],
+                ['<code>cp</code>', 'Copies files or directories', '<code>cp file.txt /backup/</code> - Copies file.txt to the /backup directory'],
+                ['<code>mv</code>', 'Moves or renames files and directories', '<code>mv oldname.txt newname.txt</code> - Renames a file'],
+                ['<code>touch</code>', 'Creates a new empty file', '<code>touch file.txt</code> - Creates a file named file.txt'],
+                ['<code>pwd</code>', 'Displays the current working directory', '<code>pwd</code> - Outputs the full path of the current directory'],
+                ['<code>chmod</code>', 'Changes file permissions', '<code>chmod 755 file.sh</code> - Sets executable permissions for a script'],
+                ['<code>grep</code>', 'Searches for patterns in files', '<code>grep "error" log.txt</code> - Searches for the word "error" in log.txt']
             ]
         }
     ]
