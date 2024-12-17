@@ -5,120 +5,288 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>History Behind ARIA (Accessible Rich Internet Applications)</title>
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        </noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap">
+        </noscript>
     </head>
+    <script src="js/script.js"></script>
+<body class="container">
     <body>
-        <header>
-            <nav class="menu">
-                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
-                <div class="menu-items" id="menuItems">
-                    <a href="#"><i class="fas fa-home"></i>Home</a>
-                    <a href="#"><i class="fas fa-info-circle"></i>About</a>
-                    <a href="#"><i class="fas fa-cogs"></i>Services</a>
-                    <a href="#"><i class="fas fa-briefcase"></i>Portfolio</a>
-                    <a href="#"><i class="fas fa-envelope"></i>Contact</a>
-                </div>
-            </nav>
-        </header>
-        <script src="js/script.js"></script>
-    </body>
-    <body class="container">
-        <main>
-            <article class="column-1">
-                <h1>History Behind ARIA (Accessible Rich Internet Applications)</h1>
+    <header class="Content-Nav">
+        <div class="logo">
+            <h1><em>IS117</em></h1>
+            <h2><em>Your Guide to the Tech Frontier</em></h2>
+        </div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="menu-items" id="menuItems">
+                <ul>
+                    
+                        <li><a href="./index.html"><i class="fas fa-home"></i>Home</a></li>
+                    
+                    <li><a href="./LinkPage.html">Learning Index</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+    <div class="Content-title">
+        <h1>History Behind ARIA (Accessible Rich Internet Applications)</h1>
+        
+    </div>
+    <main>
+        <article class="column-1">
+            
                 <section id="WHO">
                     <h2>WHO</h2>
-                    <ul>
-                        <li><strong>WAI (Web Accessibility Initiative)</strong>: The organization within the World Wide Web Consortium (W3C) that develops guidelines and resources to improve web accessibility.</li>
-                        <li><strong>Key Figures</strong>:
-                            <ul>
-                                <li><strong>W3C</strong>: The World Wide Web Consortium, which oversees the development of web standards, including ARIA.</li>
-                                <li><strong>Developers and Designers</strong>: Individuals and organizations creating web applications are responsible for implementing ARIA to enhance accessibility.</li>
-                            </ul>
-                        </li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>WAI (Web Accessibility Initiative): The organization within the World Wide Web Consortium (W3C) that develops guidelines and resources to improve web accessibility.</li>
+                                
+                            
+                                
+                                    <li>W3C: The World Wide Web Consortium, which oversees the development of web standards, including ARIA.</li>
+                                
+                            
+                                
+                                    <li>Developers and Designers: Individuals and organizations creating web applications are responsible for implementing ARIA to enhance accessibility.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHAT">
                     <h2>WHAT</h2>
-                    <ul>
-                        <li><strong>WAI-ARIA</strong>: A technical specification that provides a framework for making dynamic web applications and user interface components accessible to people with disabilities.</li>
-                        <li><strong>Core Features</strong>:
-                            <ul>
-                                <li><strong>Roles</strong>: Defines the roles of UI components (e.g., button, slider) to help assistive technologies understand their purpose.</li>
-                                <li><strong>States and Properties</strong>: Provides additional context about UI elements (e.g., whether a button is disabled or an element is expanded/collapsed) to improve user interaction.</li>
-                            </ul>
-                        </li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>WAI-ARIA: A technical specification that provides a framework for making dynamic web applications and user interface components accessible to people with disabilities.</li>
+                                
+                            
+                                
+                                    <li>Roles: Defines the roles of UI components (e.g., button, slider) to help assistive technologies understand their purpose.</li>
+                                
+                            
+                                
+                                    <li>States and Properties: Provides additional context about UI elements (e.g., whether a button is disabled or an element is expanded/collapsed) to improve user interaction.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHY">
                     <h2>WHY</h2>
-                    <ul>
-                        <li><strong>Need for Accessibility</strong>: The rise of complex web applications (often referred to as "rich internet applications") necessitated a way to ensure that all users, including those with disabilities, could interact with and navigate these applications effectively.</li>
-                        <li><strong>Assistive Technology Support</strong>: ARIA aims to enhance the compatibility of web applications with assistive technologies (e.g., screen readers), ensuring that users with disabilities can access all features.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Need for Accessibility: The rise of complex web applications (often referred to as "rich internet applications") necessitated a way to ensure that all users, including those with disabilities, could interact with and navigate these applications effectively.</li>
+                                
+                            
+                                
+                                    <li>Assistive Technology Support: ARIA aims to enhance the compatibility of web applications with assistive technologies (e.g., screen readers), ensuring that users with disabilities can access all features.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHEN">
                     <h2>WHEN</h2>
-                    <ul>
-                        <li><strong>Development Start</strong>: The WAI-ARIA specification was first published in 2008.</li>
-                        <li><strong>WAI-ARIA 1.0 Release</strong>: The initial version of the specification (WAI-ARIA 1.0) was published in 2014, establishing guidelines for web developers.</li>
-                        <li><strong>Ongoing Updates</strong>: ARIA continues to evolve, with updates and revisions to improve its effectiveness and address emerging web technologies.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Development Start: The WAI-ARIA specification was first published in 2008.</li>
+                                
+                            
+                                
+                                    <li>WAI-ARIA 1.0 Release: The initial version of the specification (WAI-ARIA 1.0) was published in 2014, establishing guidelines for web developers.</li>
+                                
+                            
+                                
+                                    <li>Ongoing Updates: ARIA continues to evolve, with updates and revisions to improve its effectiveness and address emerging web technologies.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHERE">
                     <h2>WHERE</h2>
-                    <ul>
-                        <li><strong>Global Usage</strong>: ARIA is used worldwide by web developers and organizations to create accessible web applications and interfaces, regardless of geographical location.</li>
-                        <li><strong>Web Development Community</strong>: ARIA is implemented across various platforms, frameworks, and content management systems, influencing the broader web development ecosystem.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Global Usage: ARIA is used worldwide by web developers and organizations to create accessible web applications and interfaces, regardless of geographical location.</li>
+                                
+                            
+                                
+                                    <li>Web Development Community: ARIA is implemented across various platforms, frameworks, and content management systems, influencing the broader web development ecosystem.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="HOW">
                     <h2>HOW</h2>
-                    <ul>
-                        <li><strong>Implementation in HTML</strong>: ARIA attributes can be added to HTML elements to provide additional semantic meaning, improving accessibility for users of assistive technologies.</li>
-                        <li><strong>Best Practices</strong>: Developers are encouraged to follow best practices when using ARIA to ensure that the markup enhances accessibility without introducing confusion or complexity.</li>
-                        <li><strong>Compatibility Testing</strong>: Regular testing with assistive technologies is recommended to ensure that ARIA implementations function as intended and provide the desired accessibility improvements.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Implementation in HTML: ARIA attributes can be added to HTML elements to provide additional semantic meaning, improving accessibility for users of assistive technologies.</li>
+                                
+                            
+                                
+                                    <li>Best Practices: Developers are encouraged to follow best practices when using ARIA to ensure that the markup enhances accessibility without introducing confusion or complexity.</li>
+                                
+                            
+                                
+                                    <li>Compatibility Testing: Regular testing with assistive technologies is recommended to ensure that ARIA implementations function as intended and provide the desired accessibility improvements.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="EX">
                     <h2>EXAMPLES AND CONTRIBUTIONS</h2>
-                    <ul>
-                        <li><strong>Dynamic Content</strong>: ARIA is particularly valuable in web applications that use dynamic content (e.g., single-page applications) where traditional HTML elements may not convey the necessary accessibility information.</li>
-                        <li><strong>Framework Integration</strong>: Many popular web frameworks and libraries (e.g., React, Angular) support ARIA attributes, encouraging developers to build accessible applications by default.</li>
-                        <li><strong>Improved User Experience</strong>: The use of ARIA enhances the experience for all users, not just those with disabilities, by providing clearer interactions and feedback within web applications.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Dynamic Content: ARIA is particularly valuable in web applications that use dynamic content (e.g., single-page applications) where traditional HTML elements may not convey the necessary accessibility information.</li>
+                                
+                            
+                                
+                                    <li>Framework Integration: Many popular web frameworks and libraries (e.g., React, Angular) support ARIA attributes, encouraging developers to build accessible applications by default.</li>
+                                
+                            
+                                
+                                    <li>Improved User Experience: The use of ARIA enhances the experience for all users, not just those with disabilities, by providing clearer interactions and feedback within web applications.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="IMP">
                     <h2>IMPORTANCE</h2>
-                    <ul>
-                        <li><strong>Enhancing Web Accessibility</strong>: ARIA plays a crucial role in making complex web applications accessible, ensuring inclusivity for users with disabilities.</li>
-                        <li><strong>Guidance for Developers</strong>: It provides a set of guidelines and best practices for developers, promoting awareness and understanding of accessibility needs in web design.</li>
-                        <li><strong>Standardization</strong>: ARIA contributes to the standardization of accessibility practices across the web, encouraging developers to prioritize inclusive design principles and improve the overall quality of web applications.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Enhancing Web Accessibility: ARIA plays a crucial role in making complex web applications accessible, ensuring inclusivity for users with disabilities.</li>
+                                
+                            
+                                
+                                    <li>Guidance for Developers: It provides a set of guidelines and best practices for developers, promoting awareness and understanding of accessibility needs in web design.</li>
+                                
+                            
+                                
+                                    <li>Standardization: ARIA contributes to the standardization of accessibility practices across the web, encouraging developers to prioritize inclusive design principles and improve the overall quality of web applications.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
-            </article>
+            
+        </article>
+        
             <aside class="column-2">
-                <nav aria-label="Table of contents">
-                    <h2>Table of Contents</h2>
-                    <ul>
-                        <li><a href="LinkPage.html">Index Page</a></li>
-                        <li><a href="#WHO">WHO</a></li>
-                        <li><a href="#WHAT">WHAT</a></li>
-                        <li><a href="#WHY">WHY</a></li>
-                        <li><a href="#WHEN">WHEN</a></li>
-                        <li><a href="#WHERE">WHERE</a></li>
-                        <li><a href="#HOW">HOW</a></li>
-                        <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
-                        <li><a href="#IMP">IMPORTANCE</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </main>
-    </body>
+    <nav aria-label="Table of contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#WHO">WHO</a></li>
+            <li><a href="#WHAT">WHAT</a></li>
+            <li><a href="#WHY">WHY</a></li>
+            <li><a href="#WHEN">WHEN</a></li>
+            <li><a href="#WHERE">WHERE</a></li>
+            <li><a href="#HOW">HOW</a></li>
+            <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
+            <li><a href="#IMP">IMPORTANCE</a></li>
+        </ul>
+    </nav>
+</aside>
+        
+    </main>
+    <footer class="Content-Footer">
+    <nav class="footer-logo">
+        <h1><em>Site Links</em></h1>
+        <ul>
+            <li><a href="./LinkPage.html">Learning Index</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <nav class="footer-menu">
+        <h1>Follow Us</h1>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+    </nav>
+    <div class="footer-subscription">
+        <h3>Subscribe For Access To Advanced Materials</h3>
+        <p>Join the thousands of students that use our site daily</p>
+        <form class="subscription-form">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required 
+                class="email-input"
+            >
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <p id="subscription-message">Thank you for subscribing!</p>
+    </div>
+    <script>
+        document.querySelector('.subscription-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const emailInput = event.target.querySelector('input[name="email"]');
+            const messageElement = document.getElementById('subscription-message');
+            if (emailInput.value) {
+                messageElement.textContent = `Thank you for subscribing, ${emailInput.value}!`;
+                messageElement.style.display = 'block';
+                emailInput.value = '';
+            }
+        });
+    </script>
+    <div class="footer-info">
+        <p>&copy; 2024 IS117. All Rights Reserved.</p>
+        <p>Designed and Developed by IS117 Team</p>
+    </div>
+</footer>
+</body>
 </html>

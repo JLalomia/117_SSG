@@ -1,0 +1,81 @@
+<%- include('partials/layout', {
+    title: 'History of ARPANET',
+    contentTitle: 'History of ARPANET',
+    sections: [
+        {
+            id: 'WHO',
+            title: 'WHO',
+            content: [
+                'Developed by: The United States Department of Defense’s ARPA (Advanced Research Projects Agency), specifically its Information Processing Techniques Office (IPTO).',
+                'ARPA (Advanced Research Projects Agency): Funded and oversaw the development of ARPANET. ARPA is part of the U.S. Department of Defense.',
+                'Key Figures: J.C.R. Licklider, Robert Kahn, Vint Cerf, Leonard Kleinrock, Bob Taylor, and Larry Roberts.'
+            ]
+        },
+        {
+            id: 'WHAT',
+            title: 'WHAT',
+            content: [
+                'ARPANET: The first operational packet-switching network, which laid the groundwork for the modern internet.',
+                'Packet Switching: A method of grouping data into packets that are sent over a network and reassembled at the destination, allowing efficient data transmission.',
+                'Creation of ARPANET: Designed to allow multiple computers to communicate over long distances without requiring a direct connection.'
+            ]
+        },
+        {
+            id: 'WHY',
+            title: 'WHY',
+            content: [
+                'Need for Communication: To facilitate communication and resource sharing among research institutions and military organizations in the U.S. during the Cold War.',
+                'Decentralization: To create a communication system that could withstand potential disruptions (like a nuclear attack), making it resilient against failures.',
+                'Resource Sharing: The goal was to allow researchers to share expensive computing resources.',
+                'Military Necessity: Ensured communication survivability during military conflict, specifically nuclear attacks.'
+            ]
+        },
+        {
+            id: 'WHEN',
+            title: 'WHEN',
+            content: [
+                'Conceptualization: The idea for ARPANET was proposed in the early 1960s, with planning starting in 1966.',
+                'First Successful Connection: The first message was sent between UCLA and Stanford Research Institute on October 29, 1969.',
+                'Expansion: Through the 1970s and 1980s, ARPANET connected universities and government research facilities.'
+            ]
+        },
+        {
+            id: 'WHERE',
+            title: 'WHERE',
+            content: [
+                'United States: ARPANET initially connected research institutions in the U.S.',
+                'First Nodes: The first four nodes were located at UCLA, Stanford Research Institute (SRI), UC Santa Barbara, and the University of Utah.'
+            ]
+        },
+        {
+            id: 'HOW',
+            title: 'HOW',
+            content: [
+                'Funding and Development: ARPA funded research at universities and private contractors.',
+                'Network Design: ARPANET used a decentralized architecture to ensure communication resilience.',
+                'Packet Switching: Data was broken into packets, sent individually across the network, and reassembled at the destination.',
+                'First Message: On October 29, 1969, the first message sent was “LO” (the system crashed after sending two letters of "LOGIN").'
+            ]
+        },
+        {
+            id: 'EX',
+            title: 'EXAMPLES AND CONTRIBUTIONS',
+            content: [
+                'First Message: The first successful message sent was “LO” between UCLA and Stanford.',
+                'Email: Introduced in 1971 by Ray Tomlinson, allowing users to send messages across ARPANET.',
+                'TCP/IP Implementation: Vinton Cerf and Robert Kahn developed the TCP/IP protocol suite, adopted in 1983, forming the backbone of the modern internet.',
+                'Networking Protocols: ARPANET developed protocols like FTP and Telnet for file sharing and remote access.'
+            ]
+        },
+        {
+            id: 'IMP',
+            title: 'IMPORTANCE',
+            content: [
+                'Foundation of the Internet: ARPANET demonstrated the feasibility of packet-switching networks and laid the groundwork for the internet.',
+                'Decentralized Communication: Ensured communication resilience, a key concern during the Cold War.',
+                'Collaboration: Fostered interdisciplinary collaboration among scientists, engineers, and researchers.',
+                'Innovation: ARPANET provided a platform for applications like email, file sharing, and remote access, which continue to influence technology today.'
+            ]
+        }
+    ],
+}) %>

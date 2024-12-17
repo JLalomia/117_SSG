@@ -5,114 +5,296 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>History Behind The Impact of Accessibility on Modern Web Design</title>
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        </noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Outfit&display=swap">
+        </noscript>
     </head>
+    <script src="js/script.js"></script>
+<body class="container">
     <body>
-        <header>
-            <nav class="menu">
-                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
-                <div class="menu-items" id="menuItems">
-                    <a href="#"><i class="fas fa-home"></i>Home</a>
-                    <a href="#"><i class="fas fa-info-circle"></i>About</a>
-                    <a href="#"><i class="fas fa-cogs"></i>Services</a>
-                    <a href="#"><i class="fas fa-briefcase"></i>Portfolio</a>
-                    <a href="#"><i class="fas fa-envelope"></i>Contact</a>
-                </div>
-            </nav>
-        </header>
-        <script src="js/script.js"></script>
-    </body>
-    <body class="container">
-        <main>
-            <article class="column-1">
-                <h1>History Behind The Impact of Accessibility on Modern Web Design</h1>
+    <header class="Content-Nav">
+        <div class="logo">
+            <h1><em>IS117</em></h1>
+            <h2><em>Your Guide to the Tech Frontier</em></h2>
+        </div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="menu-items" id="menuItems">
+                <ul>
+                    
+                        <li><a href="./index.html"><i class="fas fa-home"></i>Home</a></li>
+                    
+                    <li><a href="./LinkPage.html">Learning Index</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i>Services</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+    <div class="Content-title">
+        <h1>History Behind The Impact of Accessibility on Modern Web Design</h1>
+        
+    </div>
+    <main>
+        <article class="column-1">
+            
                 <section id="WHO">
                     <h2>WHO</h2>
-                    <ul>
-                        <li><strong>Web Designers and Developers</strong>: Professionals who create websites and web applications are primarily responsible for implementing accessibility features and inclusive design principles.</li>
-                        <li><strong>Organizations</strong>: Nonprofits, advocacy groups, and standards organizations (e.g., W3C, ADA) promote accessibility and provide guidelines for best practices.</li>
-                        <li><strong>Users with Disabilities</strong>: Individuals who rely on assistive technologies to navigate and interact with web content, including those with visual, auditory, motor, or cognitive impairments.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Web Designers and Developers: Professionals who create websites and web applications are primarily responsible for implementing accessibility features and inclusive design principles.</li>
+                                
+                            
+                                
+                                    <li>Organizations: Nonprofits, advocacy groups, and standards organizations (e.g., W3C, ADA) promote accessibility and provide guidelines for best practices.</li>
+                                
+                            
+                                
+                                    <li>Users with Disabilities: Individuals who rely on assistive technologies to navigate and interact with web content, including those with visual, auditory, motor, or cognitive impairments.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHAT">
                     <h2>WHAT</h2>
-                    <ul>
-                        <li><strong>Accessibility</strong>: The practice of designing and developing web content that can be accessed and used by everyone, including people with disabilities.</li>
-                        <li><strong>Inclusive Design Principles</strong>: A set of design guidelines that prioritize the needs of diverse users, ensuring that products and services are usable by the widest range of people possible.</li>
-                        <li><strong>Web Technologies</strong>: The tools, frameworks, and standards (such as HTML, CSS, ARIA) that support the creation of accessible web experiences.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Accessibility: The practice of designing and developing web content that can be accessed and used by everyone, including people with disabilities.</li>
+                                
+                            
+                                
+                                    <li>Inclusive Design Principles: A set of design guidelines that prioritize the needs of diverse users, ensuring that products and services are usable by the widest range of people possible.</li>
+                                
+                            
+                                
+                                    <li>Web Technologies: The tools, frameworks, and standards (such as HTML, CSS, ARIA) that support the creation of accessible web experiences.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHY">
                     <h2>WHY</h2>
-                    <ul>
-                        <li><strong>Legal and Ethical Responsibility</strong>: Many countries have laws and regulations (e.g., ADA in the U.S., EN 301 549 in the EU) requiring web accessibility, making it essential for organizations to comply.</li>
-                        <li><strong>Enhanced User Experience</strong>: Accessible design improves the overall user experience, making websites more intuitive and easier to navigate for all users, regardless of their abilities.</li>
-                        <li><strong>Market Reach</strong>: Ensuring accessibility broadens the audience for products and services, allowing organizations to reach a more diverse customer base.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Legal and Ethical Responsibility: Many countries have laws and regulations (e.g., ADA in the U.S., EN 301 549 in the EU) requiring web accessibility, making it essential for organizations to comply.</li>
+                                
+                            
+                                
+                                    <li>Enhanced User Experience: Accessible design improves the overall user experience, making websites more intuitive and easier to navigate for all users, regardless of their abilities.</li>
+                                
+                            
+                                
+                                    <li>Market Reach: Ensuring accessibility broadens the audience for products and services, allowing organizations to reach a more diverse customer base.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHEN">
                     <h2>WHEN</h2>
-                    <ul>
-                        <li><strong>Growing Awareness</strong>: The focus on accessibility in web design began to gain traction in the early 2000s, with the establishment of guidelines like WCAG (Web Content Accessibility Guidelines) by W3C.</li>
-                        <li><strong>Continued Evolution</strong>: The ongoing development of inclusive design principles and accessibility technologies has continued into the 2010s and 2020s, responding to advancements in web technology and user needs.</li>
-                        <li><strong>Future Trends</strong>: As web technologies evolve, the emphasis on accessibility is expected to grow, leading to more robust solutions and practices in the design process.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Growing Awareness: The focus on accessibility in web design began to gain traction in the early 2000s, with the establishment of guidelines like WCAG (Web Content Accessibility Guidelines) by W3C.</li>
+                                
+                            
+                                
+                                    <li>Continued Evolution: The ongoing development of inclusive design principles and accessibility technologies has continued into the 2010s and 2020s, responding to advancements in web technology and user needs.</li>
+                                
+                            
+                                
+                                    <li>Future Trends: As web technologies evolve, the emphasis on accessibility is expected to grow, leading to more robust solutions and practices in the design process.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="WHERE">
                     <h2>WHERE</h2>
-                    <ul>
-                        <li><strong>Global Influence</strong>: Accessibility principles are applied worldwide across various sectors, including government, education, commerce, and nonprofit organizations.</li>
-                        <li><strong>Web Development Communities</strong>: Online platforms, forums, and communities (e.g., A11Y Project, WebAIM) promote discussions and resources focused on accessibility in web design.</li>
-                        <li><strong>Conferences and Workshops</strong>: Industry conferences (e.g., CSUN Assistive Technology Conference) and workshops often feature sessions dedicated to web accessibility and inclusive design.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Global Influence: Accessibility principles are applied worldwide across various sectors, including government, education, commerce, and nonprofit organizations.</li>
+                                
+                            
+                                
+                                    <li>Web Development Communities: Online platforms, forums, and communities (e.g., A11Y Project, WebAIM) promote discussions and resources focused on accessibility in web design.</li>
+                                
+                            
+                                
+                                    <li>Conferences and Workshops: Industry conferences (e.g., CSUN Assistive Technology Conference) and workshops often feature sessions dedicated to web accessibility and inclusive design.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="HOW">
                     <h2>HOW</h2>
-                    <ul>
-                        <li><strong>User-Centered Design</strong>: Incorporating user feedback and involving individuals with disabilities in the design process to understand their needs and preferences.</li>
-                        <li><strong>Adhering to Standards</strong>: Following established guidelines (e.g., WCAG) and using accessible design patterns to create compliant web content.</li>
-                        <li><strong>Testing for Accessibility</strong>: Conducting regular accessibility audits and user testing to identify and address barriers that may hinder access to web content.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>User-Centered Design: Incorporating user feedback and involving individuals with disabilities in the design process to understand their needs and preferences.</li>
+                                
+                            
+                                
+                                    <li>Adhering to Standards: Following established guidelines (e.g., WCAG) and using accessible design patterns to create compliant web content.</li>
+                                
+                            
+                                
+                                    <li>Testing for Accessibility: Conducting regular accessibility audits and user testing to identify and address barriers that may hinder access to web content.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="EX">
                     <h2>EXAMPLES AND CONTRIBUTIONS</h2>
-                    <ul>
-                        <li><strong>Responsive Design</strong>: Modern web design often embraces responsive design principles, ensuring that websites function well across various devices and screen sizes, which inherently supports accessibility.</li>
-                        <li><strong>Accessible Rich Internet Applications (ARIA)</strong>: The use of ARIA roles and properties enhances the accessibility of dynamic content and web applications, making them more usable for people with disabilities.</li>
-                        <li><strong>Voice and Gesture Recognition</strong>: Advances in technology, such as voice and gesture recognition, are being integrated into web applications, providing alternative interaction methods for users with disabilities.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Responsive Design: Modern web design often embraces responsive design principles, ensuring that websites function well across various devices and screen sizes, which inherently supports accessibility.</li>
+                                
+                            
+                                
+                                    <li>Accessible Rich Internet Applications (ARIA): The use of ARIA roles and properties enhances the accessibility of dynamic content and web applications, making them more usable for people with disabilities.</li>
+                                
+                            
+                                
+                                    <li>Voice and Gesture Recognition: Advances in technology, such as voice and gesture recognition, are being integrated into web applications, providing alternative interaction methods for users with disabilities.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
+            
                 <section id="IMP">
                     <h2>IMPORTANCE</h2>
-                    <ul>
-                        <li><strong>Cultural Shift</strong>: The focus on accessibility has led to a cultural shift in the tech industry, promoting empathy and understanding of diverse user needs among designers and developers.</li>
-                        <li><strong>Future Innovations</strong>: As technology evolves (e.g., AI, machine learning), the potential for innovative solutions to improve accessibility continues to grow, promising a more inclusive digital landscape.</li>
-                        <li><strong>Social Responsibility</strong>: Emphasizing accessibility in web design aligns with broader societal goals of inclusivity and equal access to information and services, reinforcing the idea that technology should serve everyone.</li>
-                    </ul>
+
+                    
+                        <ul>
+                            
+                                
+                                    <li>Cultural Shift: The focus on accessibility has led to a cultural shift in the tech industry, promoting empathy and understanding of diverse user needs among designers and developers.</li>
+                                
+                            
+                                
+                                    <li>Future Innovations: As technology evolves (e.g., AI, machine learning), the potential for innovative solutions to improve accessibility continues to grow, promising a more inclusive digital landscape.</li>
+                                
+                            
+                                
+                                    <li>Social Responsibility: Emphasizing accessibility in web design aligns with broader societal goals of inclusivity and equal access to information and services, reinforcing the idea that technology should serve everyone.</li>
+                                
+                            
+                        </ul>
+                    
                 </section>
-            </article>
+            
+        </article>
+        
             <aside class="column-2">
-                <nav aria-label="Table of contents">
-                    <h2>Table of Contents</h2>
-                    <ul>
-                        <li><a href="LinkPage.html">Index Page</a></li>
-                        <li><a href="#WHO">WHO</a></li>
-                        <li><a href="#WHAT">WHAT</a></li>
-                        <li><a href="#WHY">WHY</a></li>
-                        <li><a href="#WHEN">WHEN</a></li>
-                        <li><a href="#WHERE">WHERE</a></li>
-                        <li><a href="#HOW">HOW</a></li>
-                        <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
-                        <li><a href="#IMP">IMPORTANCE</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </main>
-    </body>
+    <nav aria-label="Table of contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#WHO">WHO</a></li>
+            <li><a href="#WHAT">WHAT</a></li>
+            <li><a href="#WHY">WHY</a></li>
+            <li><a href="#WHEN">WHEN</a></li>
+            <li><a href="#WHERE">WHERE</a></li>
+            <li><a href="#HOW">HOW</a></li>
+            <li><a href="#EX">EXAMPLES AND CONTRIBUTIONS</a></li>
+            <li><a href="#IMP">IMPORTANCE</a></li>
+        </ul>
+    </nav>
+</aside>
+        
+    </main>
+    <footer class="Content-Footer">
+    <nav class="footer-logo">
+        <h1><em>Site Links</em></h1>
+        <ul>
+            <li><a href="./LinkPage.html">Learning Index</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <nav class="footer-menu">
+        <h1>Follow Us</h1>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+    </nav>
+    <div class="footer-subscription">
+        <h3>Subscribe For Access To Advanced Materials</h3>
+        <p>Join the thousands of students that use our site daily</p>
+        <form class="subscription-form">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required 
+                class="email-input"
+            >
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <p id="subscription-message">Thank you for subscribing!</p>
+    </div>
+    <script>
+        document.querySelector('.subscription-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const emailInput = event.target.querySelector('input[name="email"]');
+            const messageElement = document.getElementById('subscription-message');
+            if (emailInput.value) {
+                messageElement.textContent = `Thank you for subscribing, ${emailInput.value}!`;
+                messageElement.style.display = 'block';
+                emailInput.value = '';
+            }
+        });
+    </script>
+    <div class="footer-info">
+        <p>&copy; 2024 IS117. All Rights Reserved.</p>
+        <p>Designed and Developed by IS117 Team</p>
+    </div>
+</footer>
+</body>
 </html>
